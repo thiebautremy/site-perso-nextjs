@@ -1,0 +1,86 @@
+@use "./_variables.scss" as var;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var.$color-bg;
+  color: var.$color-font;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+//? ==== NAVBAR PRIME REACT ==== \\
+.p-menubar {
+  justify-content: space-around;
+  background: rgba(var.$color-bg--secondary, $alpha: 0.95) !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.p-menuitem {
+  padding: var.$gap-small;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem.p-menuitem-active
+  > .p-menuitem-link,
+.p-menubar .p-submenu-list,
+.p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link,
+.p-menubar.p-menubar-mobile-active .p-menubar-root-list {
+  background: rgba(var.$color-bg--secondary, $alpha: 0.9) !important;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem.p-menuitem-active
+  > .p-menuitem-link:not(.p-disabled):hover,
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link:not(.p-disabled):hover,
+.p-menubar .p-menubar-button:hover {
+  background: none !important;
+}
+
+.p-menuitem:focus-visible {
+  border: none !important;
+}
+.p-menuitem-link > span {
+  color: var.$color-font !important;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var.$color-font--secondary !important;
+  }
+}
+
+//Sub menu
+.p-menubar .p-menuitem-link:not(.p-disabled):hover {
+  background: none !important;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: var.$color-font !important;
+  }
+}
+
+.p-menubar .p-menubar-button:focus {
+  box-shadow: 0 0 0 0.2rem var.$color-font !important;
+}
+
+.p-menubar .p-menubar-button {
+  color: var.$color-font !important;
+}

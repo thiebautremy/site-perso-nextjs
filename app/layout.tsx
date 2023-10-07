@@ -6,6 +6,12 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { Signika } from "next/font/google";
+
+const signika = Signika({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "THIEBAUT Rémy - Développeur web",
@@ -18,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={signika.className}>
       <body>
         <Header />
         <main>{children}</main>

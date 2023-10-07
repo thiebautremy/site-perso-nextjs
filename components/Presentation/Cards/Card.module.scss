@@ -1,0 +1,9 @@
+@use "../../../app/styles/variables" as var;
+
+.cardContainer {
+  text-align: center;
+  background-color: var.$color-bg;
+  color: var.$color-font;
+  padding: var.$gap-small;
+  border-radius: var.$radius;
+}

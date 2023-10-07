@@ -1,0 +1,5 @@
+@use "../../app/styles/variables" as var;
+
+.presentationContent {
+  padding: var.$gap-xlarge 0;
+}

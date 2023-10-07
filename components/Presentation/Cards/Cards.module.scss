@@ -1,0 +1,8 @@
+@use "../../../app/styles/variables" as var;
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var.$color-font;
+  padding: var.$gap-xlarge 0;
+}

@@ -4,22 +4,12 @@ import Image from "next/image";
 import { Menubar } from "primereact/menubar";
 import Link from "next/link";
 
-const NavBar = () => {
-  const links = [
-    {
-      url: "/",
-      label: "Accueil",
-    },
-    {
-      url: "/projets",
-      label: "Projets",
-    },
-    {
-      url: "/contact",
-      label: "Contact",
-    },
-  ];
+import { Sidebar } from "primereact/sidebar";
+import { useState } from "react";
+import { Button } from "primereact/button";
+import Nav from "./Nav";
 
+const NavBar = () => {
   const start = (
     <Link href={"/"}>
       {/* <Image
@@ -34,9 +24,20 @@ const NavBar = () => {
     </Link>
   );
 
+  const [visible, setVisible] = useState<boolean>(false);
+
   return (
-    <nav className={styles.nav}>
-      <Menubar model={links} start={start} />
+    <nav className={styles.navBar}>
+      <Sidebar visible={visible} onHide={() => setVisible(false)}>
+        <Nav setVisible={setVisible} />
+      </Sidebar>
+      <Button
+        icon="pi pi-align-justify"
+        className={styles.menuButton}
+        onClick={() => setVisible(true)}
+      >
+        Menu
+      </Button>
     </nav>
   );
 };

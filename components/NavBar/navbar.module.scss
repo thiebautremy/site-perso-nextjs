@@ -1,6 +1,6 @@
 @use "../../app//styles/variables" as var;
 
-.nav {
+.navBar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -10,5 +10,21 @@
 .image {
   &:hover {
     cursor: pointer;
+  }
+}
+
+.menuButton {
+  background-color: var.$color-bg--secondary;
+  border: none;
+  width: 100%;
+  color: var.$color-font;
+  padding: calc(var.$gap-small / 2);
+
+  span {
+    margin-right: var.$gap-small;
+  }
+
+  &:focus {
+    box-shadow: none;
   }
 }

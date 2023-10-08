@@ -3,11 +3,32 @@
 .headerContent {
   display: flex;
   justify-content: space-between;
-  margin-top: var.$gap-xlarge;
+  padding-top: var.$gap-medium;
 }
 .headerContentRight,
 .headerContentLeft {
   width: 50%;
+}
+.headerContentLeft {
+  position: relative;
+  height: 30rem;
+  background-color: var.$color-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-right: 100px solid var.$color-font;
+    border-bottom: 100px solid var.$color-font;
+    bottom: -30px;
+    right: -80px;
+    z-index: 1000;
+    transform: translateX(100%);
+    transform: rotate(60deg);
+  }
 }
 
 .headerContentRight {

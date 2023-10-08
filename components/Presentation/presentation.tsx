@@ -1,6 +1,6 @@
 import Cards from "./Cards/Cards";
 import Container from "../Container/Container";
-import styles from "./presentation.module.scss";
+import styles from "./Presentation.module.scss";
 
 const Presentation = () => {
   return (

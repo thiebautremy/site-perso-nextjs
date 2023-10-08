@@ -1,8 +1,10 @@
 "use client";
 import { PropsWithChildren } from "react";
 import TypeIt from "typeit-react";
-import NavBar from "../NavBar/navBar";
 import styles from "./header.module.scss";
+import NavBar from "../NavBar/NavBar";
+import Image from "next/image";
+import ordi from "../../assets/ordinateur.jpg";
 
 const SuperStrong = ({ children }: PropsWithChildren) => {
   return <strong style={{ fontSize: "20px" }}>{children}</strong>;
@@ -14,7 +16,14 @@ const Header = () => {
       <NavBar />
       <div className={styles.headerContent}>
         <div className={styles.headerContentLeft}>
-          <p>Image à mettre</p>
+          <Image
+            src={ordi}
+            alt="logo-mc-montage"
+            title="logo MC Montage"
+            className={styles.image}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </div>
         <div className={styles.headerContentRight}>
           <TypeIt

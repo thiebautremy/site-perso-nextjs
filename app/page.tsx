@@ -1,9 +1,9 @@
-import Presentation from "@/components/Presentation/Presentation";
+import Description from "@/components/Description/Description";
 
 const Home = () => {
   return (
     <div>
-      <Presentation />
+      <Description />
     </div>
   );
 };

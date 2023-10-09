@@ -20,7 +20,7 @@
     width: 5rem;
     height: 25rem;
     border-right: 1rem solid var.$color-bg;
-    background-color: rgba(var.$color-font, 0.8);
+    background-color: rgba(var.$color-font, 0.9);
     bottom: -5rem;
     right: 5rem;
     z-index: 10;
@@ -35,6 +35,12 @@
   align-items: flex-start;
   justify-content: center;
   padding: 0 0 0 var.$gap-medium;
+
+  .logoContainer {
+    position: relative;
+    width: 10rem;
+    height: 5rem;
+  }
   .title {
     animation: colorChange 8s linear infinite;
     text-transform: uppercase;

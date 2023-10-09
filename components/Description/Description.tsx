@@ -1,11 +1,11 @@
 import Cards from "./Cards/Cards";
 import Container from "../Container/Container";
-import styles from "./Presentation.module.scss";
+import styles from "./Description.module.scss";
 
-const Presentation = () => {
+const Description = () => {
   return (
     <div>
-      <div className={styles.presentationContent}>
+      <div className={styles.descriptionContent}>
         <Container margin="isHuge">
           <p>
             Aujourd&apos;hui, la création d&apos;un site internet est devenue
@@ -76,4 +76,4 @@ const Presentation = () => {
   );
 };
 
-export default Presentation;
+export default Description;

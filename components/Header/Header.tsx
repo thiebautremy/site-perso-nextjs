@@ -1,12 +1,12 @@
-import styles from "./header.module.scss";
+import styles from "./Header.module.scss";
 import NavBar from "../NavBar/NavBar";
 import Image from "next/image";
 import ordi from "../../assets/ordinateur.jpg";
+import logo from "../../assets/logo.png";
 
 const Header = () => {
   return (
     <header>
-      <NavBar />
       <div className={styles.headerContent}>
         <div className={styles.headerContentLeft}>
           <Image
@@ -19,6 +19,16 @@ const Header = () => {
           />
         </div>
         <div className={styles.headerContentRight}>
+          <div className={styles.logoContainer}>
+            <Image
+              src={logo}
+              alt="logo-webcraft"
+              title="logo Webcraft"
+              className={styles.logo}
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </div>
           <h1 className={styles.title}>Création de site internet </h1>
           <p className={styles.text}>
             Je développe un site vitrine qui correspond à vos besoins.

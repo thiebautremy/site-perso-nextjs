@@ -1,6 +1,6 @@
 @use "../../app/styles/variables" as var;
 
-.presentationContent {
+.descriptionContent {
   padding: var.$gap-xlarge 0;
   background: linear-gradient(to bottom, var.$color-bg 10%, var.$color-white);
 }

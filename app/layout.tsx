@@ -7,6 +7,7 @@ import "./styles/globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { Signika } from "next/font/google";
+import NavBar from "@/components/NavBar/NavBar";
 
 const signika = Signika({
   subsets: ["latin"],
@@ -14,8 +15,9 @@ const signika = Signika({
 });
 
 export const metadata: Metadata = {
-  title: "THIEBAUT Rémy - Développeur web",
-  description: "Développeur web, créateur de site web",
+  title: "Webcraft - Création de site internet",
+  description:
+    "Création de site internet et référencement à Pont à Mousson par Webcraft pour un site vitrine de qualité à un prix abordable",
 };
 
 export default function RootLayout({
@@ -25,7 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={signika.className}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body>
+        <NavBar />
         <Header />
         <main>{children}</main>
         <Footer />

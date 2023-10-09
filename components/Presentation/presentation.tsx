@@ -6,8 +6,7 @@ const Presentation = () => {
   return (
     <div>
       <div className={styles.presentationContent}>
-        <Container margin="isBig">
-          <h2>Presentation</h2>
+        <Container margin="isHuge">
           <p>
             Aujourd&apos;hui, la création d&apos;un site internet est devenue
             une étape cruciale pour toute entreprise à Pont-à-Mousson désireuse
@@ -15,7 +14,7 @@ const Presentation = () => {
             organisation plus importante, un site web bien conçu peut apporter
             une vrai valeur ajoutée à votre projet.
           </p>
-          <h3>Pourquoi créer un site internet ?</h3>
+          <h2>Pourquoi créer un site internet ?</h2>
           <p>
             <strong>Visibilité accrue :</strong> Un site web offre une
             visibilité 24/7, permettant aux clients potentiels de trouver
@@ -23,6 +22,8 @@ const Presentation = () => {
             d&apos;ouverture de votre entreprise. Image de marque : Un site
             professionnel renforce la crédibilité de votre entreprise et renvoie
             une image positive à vos visiteurs.
+          </p>
+          <p>
             <strong>Accessibilité :</strong> Les consommateurs
             d&apos;aujourd&apos;hui recherchent souvent des informations en
             ligne avant de prendre une décision d&apos;achat. Un site web permet
@@ -31,10 +32,10 @@ const Presentation = () => {
             d&apos;atteindre un public plus large, que ce soit à Pont-à-Mousson
             ou au-delà, en offrant un moyen de communication universel.{" "}
           </p>
-          <h3>
+          <h2>
             Pourquoi faire appel à un professionnel pour la création de votre
             site web ?
-          </h3>
+          </h2>
           <p>
             <strong>Responsive design :</strong> Les sites web doivent être
             accessibles depuis une variété d&apos;appareils, y compris les
@@ -46,9 +47,13 @@ const Presentation = () => {
             organique. Un professionnel du référencement saura optimiser votre
             site pour les mots-clés pertinents, améliorant ainsi votre
             classement dans les résultats de recherche.{" "}
+          </p>
+          <p>
             <strong>Conception esthétique :</strong> Un site bien conçu est plus
             attrayant pour les visiteurs. Un professionnel de la conception
             saura créer une interface utilisateur agréable et fonctionnelle.{" "}
+          </p>
+          <p>
             <strong>Sécurité et fiabilité :</strong> La sécurité en ligne est
             essentielle. Un professionnel saura mettre en place des mesures de
             sécurité robustes pour protéger votre site contre les menaces

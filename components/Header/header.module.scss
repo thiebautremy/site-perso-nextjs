@@ -19,16 +19,12 @@
     position: absolute;
     width: 5rem;
     height: 25rem;
-    // border-left: 100px solid transparent;
-    // border-top: 100px solid transparent;
     border-right: 1rem solid var.$color-bg;
-    // border-bottom: 100px solid var.$color-font;
     background-color: rgba(var.$color-font, 0.8);
     bottom: -5rem;
     right: 5rem;
     z-index: 10;
     transform: translateX(100%);
-    // transform: rotate(60deg);
   }
 }
 
@@ -42,7 +38,6 @@
   .title {
     animation: colorChange 8s linear infinite;
     text-transform: uppercase;
-    font-size: 2rem;
   }
 
   .text {

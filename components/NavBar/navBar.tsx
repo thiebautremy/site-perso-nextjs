@@ -29,6 +29,10 @@ const NavBar = () => {
       url: "/projets",
       label: "Projets",
     },
+    {
+      url: "/presentation",
+      label: "Présentation",
+    },
   ];
 
   return (

@@ -1,14 +1,7 @@
-"use client";
-import { PropsWithChildren } from "react";
-import TypeIt from "typeit-react";
 import styles from "./header.module.scss";
 import NavBar from "../NavBar/NavBar";
 import Image from "next/image";
 import ordi from "../../assets/ordinateur.jpg";
-
-const SuperStrong = ({ children }: PropsWithChildren) => {
-  return <strong style={{ fontSize: "20px" }}>{children}</strong>;
-};
 
 const Header = () => {
   return (
@@ -26,14 +19,10 @@ const Header = () => {
           />
         </div>
         <div className={styles.headerContentRight}>
-          <TypeIt
-            options={{
-              strings: ["Rémy", "développeur web"],
-              nextStringDelay: 20,
-              speed: 80,
-              waitUntilVisible: true,
-            }}
-          />
+          <h1 className={styles.title}>Création de site internet </h1>
+          <p className={styles.text}>
+            Je développe un site vitrine qui correspond à vos besoins.
+          </p>
         </div>
       </div>
     </header>

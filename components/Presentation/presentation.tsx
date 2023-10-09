@@ -5,8 +5,8 @@ import styles from "./Presentation.module.scss";
 const Presentation = () => {
   return (
     <div>
-      <Container margin="isBig">
-        <div className={styles.presentationContent}>
+      <div className={styles.presentationContent}>
+        <Container margin="isBig">
           <h2>Presentation</h2>
           <p>
             Aujourd&apos;hui, la création d&apos;un site internet est devenue
@@ -64,8 +64,8 @@ const Presentation = () => {
             Ne sous-estimez pas le pouvoir d&apos;un site web bien conçu pour
             stimuler votre entreprise à Pont-à-Mousson.
           </p>
-        </div>
-      </Container>
+        </Container>
+      </div>
       <Cards />
     </div>
   );

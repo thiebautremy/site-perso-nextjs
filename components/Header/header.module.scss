@@ -1,9 +1,9 @@
-@use "../../app//styles/variables" as var;
+@use "../../app/styles/variables" as var;
 
 .headerContent {
   display: flex;
   justify-content: space-between;
-  padding-top: var.$gap-medium;
+  background-color: var.$color-white;
 }
 .headerContentRight,
 .headerContentLeft {
@@ -12,26 +12,55 @@
 .headerContentLeft {
   position: relative;
   height: 30rem;
-  background-color: var.$color-white;
+  margin: var.$gap-medium;
 
   &::after {
     content: "";
     position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-top: 100px solid transparent;
-    border-right: 100px solid var.$color-font;
-    border-bottom: 100px solid var.$color-font;
-    bottom: -30px;
-    right: -80px;
-    z-index: 1000;
+    width: 5rem;
+    height: 25rem;
+    // border-left: 100px solid transparent;
+    // border-top: 100px solid transparent;
+    border-right: 1rem solid var.$color-bg;
+    // border-bottom: 100px solid var.$color-font;
+    background-color: rgba(var.$color-font, 0.8);
+    bottom: -5rem;
+    right: 5rem;
+    z-index: 10;
     transform: translateX(100%);
-    transform: rotate(60deg);
+    // transform: rotate(60deg);
   }
 }
 
 .headerContentRight {
-  background-color: var.$color-font;
-  color: var.$color-bg;
+  color: var.$color-font;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 var.$gap-medium;
+  .title {
+    animation: colorChange 8s linear infinite;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .text {
+    margin-top: var.$gap-medium;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: var.$color-blue;
+  }
+  33% {
+    color: var.$color-font;
+  }
+  66% {
+    color: var.$color-bg--secondary;
+  }
+  100% {
+    color: var.$color-blue;
+  }
 }

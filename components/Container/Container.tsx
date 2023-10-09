@@ -2,18 +2,20 @@ import { ReactNode } from "react";
 
 type ContainerType = {
   children: ReactNode;
-  margin: "isBig" | "isMedium" | "isSmall";
+  margin: "isHuge" | "isBig" | "isMedium" | "isSmall";
 };
 
 const Container = ({ children, margin }: ContainerType) => {
   const getMargin = () => {
     switch (margin) {
+      case "isHuge":
+        return "0 12rem";
       case "isBig":
-        return "0 4rem";
+        return "0 8rem";
       case "isMedium":
-        return "0 2rem";
+        return "0 4rem";
       case "isSmall":
-        return "0 1rem";
+        return "0 2rem";
     }
   };
 

@@ -1,9 +1,9 @@
 import "./styles/reset.scss";
-import "./styles/globals.scss";
 import type { Metadata } from "next";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
+import "./styles/globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { Signika } from "next/font/google";

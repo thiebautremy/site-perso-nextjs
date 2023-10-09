@@ -1,13 +1,9 @@
-import styles from "./navbar.module.scss";
-import Image from "next/image";
+import styles from "./Navbar.module.scss";
 // import logo from "../../assets/images/logoPhotoshop.png";
-import { Menubar } from "primereact/menubar";
 import Link from "next/link";
 
-import { Sidebar } from "primereact/sidebar";
-import { useState } from "react";
 import { Button } from "primereact/button";
-import Nav from "./Nav";
+import Container from "../Container/Container";
 
 const NavBar = () => {
   const start = (
@@ -24,20 +20,35 @@ const NavBar = () => {
     </Link>
   );
 
-  const [visible, setVisible] = useState<boolean>(false);
+  const links: { url: string; label: string }[] = [
+    {
+      url: "/",
+      label: "Accueil",
+    },
+    {
+      url: "/projets",
+      label: "Projets",
+    },
+  ];
 
   return (
     <nav className={styles.navBar}>
-      <Sidebar visible={visible} onHide={() => setVisible(false)}>
-        <Nav setVisible={setVisible} />
-      </Sidebar>
-      <Button
-        icon="pi pi-align-justify"
-        className={styles.menuButton}
-        onClick={() => setVisible(true)}
-      >
-        Menu
-      </Button>
+      <Container margin="isHuge">
+        <div className={styles.navBarContainer}>
+          <div className={styles.linksContainer}>
+            {links.map((link) => (
+              <Link href={link.url} key={link.label} className={styles.link}>
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div>
+            <Link href={"/contact"} className="ctaBtn">
+              Me contacter
+            </Link>
+          </div>
+        </div>
+      </Container>
     </nav>
   );
 };

@@ -1,10 +1,29 @@
-@use "../../app//styles/variables" as var;
+@use "../../app/styles/variables" as var;
 
 .navBar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
+  background: linear-gradient(
+    to right,
+    var.$color-light-blue 20%,
+    var.$color-white
+  );
+
+  .navBarContainer {
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .linksContainer {
+      .link {
+        margin-left: var.$gap-medium;
+      }
+    }
+  }
 }
 
 .image {

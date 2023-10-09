@@ -2,7 +2,7 @@
 
 .cardContainer {
   text-align: center;
-  background-color: var.$color-bg;
+  background: linear-gradient(to top, var.$color-bg 10%, var.$color-white);
   color: var.$color-font;
   padding: var.$gap-small;
   border-radius: var.$radius;

@@ -1,7 +1,7 @@
 @use "../../app/styles/variables" as var;
 
 .footer {
-  background-color: var.$color-bg-footer;
+  background-color: var.$color-bg--dark;
   color: var.$color-light-blue;
 }
 
@@ -16,6 +16,11 @@
   .rightContainer {
     li {
       margin-top: var.$gap-small;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: var.$color-blue;
+      }
     }
   }
 }

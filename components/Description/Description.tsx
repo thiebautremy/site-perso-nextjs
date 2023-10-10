@@ -7,30 +7,39 @@ const Description = () => {
     <div>
       <div className={styles.descriptionContent}>
         <Container margin="isHuge">
-          <p>
+          <p className="textHighlighted">
             Aujourd&apos;hui, la création d&apos;un site internet est devenue
-            une étape cruciale pour toute entreprise à Pont-à-Mousson désireuse
-            de prospérer. Que vous soyez une petite entreprise locale ou une
-            organisation plus importante, un site web bien conçu peut apporter
-            une vrai valeur ajoutée à votre projet.
+            une étape cruciale pour toute entreprise désireuse de prospérer. Que
+            vous soyez une petite entreprise ou une organisation plus
+            importante, un site web bien conçu peut apporter une vrai valeur
+            ajoutée à votre projet. C&apos;est pourquoi, je vous propose mon
+            expertise afin de créer votre site web et devenir ainsi plus visible
+            dans un premier temps sur Pont à mousson.
           </p>
           <h2>Pourquoi créer un site internet ?</h2>
           <p>
-            <strong>Visibilité accrue :</strong> Un site web offre une
-            visibilité 24/7, permettant aux clients potentiels de trouver
-            facilement vos produits ou services, même en dehors des heures
-            d&apos;ouverture de votre entreprise. Image de marque : Un site
-            professionnel renforce la crédibilité de votre entreprise et renvoie
-            une image positive à vos visiteurs.
+            <strong>Visibilité accrue :</strong> Un site offre une visibilité
+            24/7, permettant aux clients potentiels de trouver facilement vos
+            produits ou services, même en dehors des heures d&apos;ouverture de
+            votre entreprise.
+          </p>
+          <p>
+            <strong>Image de marque :</strong> Un site professionnel renforce la
+            crédibilité de votre entreprise et renvoie une image positive à vos
+            visiteurs.
           </p>
           <p>
             <strong>Accessibilité :</strong> Les consommateurs
             d&apos;aujourd&apos;hui recherchent souvent des informations en
             ligne avant de prendre une décision d&apos;achat. Un site web permet
             à votre public de trouver rapidement les informations dont il a
-            besoin. Élargissement de la clientèle : Un site internet permet
-            d&apos;atteindre un public plus large, que ce soit à Pont-à-Mousson
-            ou au-delà, en offrant un moyen de communication universel.{" "}
+            besoin.
+          </p>
+          <p>
+            <strong>Élargissement de la clientèle :</strong> Un site internet
+            permet d&apos;atteindre un public plus large, que ce soit à
+            Pont-à-Mousson ou au-delà, en offrant un moyen de communication
+            universel.{" "}
           </p>
           <h2>
             Pourquoi faire appel à un professionnel pour la création de votre
@@ -59,15 +68,14 @@ const Description = () => {
             sécurité robustes pour protéger votre site contre les menaces
             potentielles.
           </p>
-          <p>
-            En conclusion, la création d&apos;un site internet à Pont-à-Mousson
-            est un investissement essentiel pour votre entreprise. Pour garantir
-            son succès, il est recommandé de faire appel à un professionnel qui
-            peut créer un site responsive, bien référencé et esthétiquement
-            attrayant. Cela vous permettra de maximiser votre visibilité en
-            ligne et de rester compétitif dans un marché en constante évolution.
-            Ne sous-estimez pas le pouvoir d&apos;un site web bien conçu pour
-            stimuler votre entreprise à Pont-à-Mousson.
+          <p className="textHighlighted">
+            La création d&apos;un site internet est un investissement essentiel
+            pour votre entreprise. Pour garantir son succès, il est recommandé
+            de faire appel à un professionnel qui peut créer un site responsive,
+            bien référencé et esthétiquement attrayant. Cela vous permettra de
+            maximiser votre visibilité en ligne. Ne sous-estimez pas le pouvoir
+            d&apos;un site web bien conçu pour stimuler votre entreprise à
+            Pont-à-Mousson.
           </p>
         </Container>
       </div>

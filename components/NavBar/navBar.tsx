@@ -1,8 +1,7 @@
 import styles from "./Navbar.module.scss";
-// import logo from "../../assets/images/logoPhotoshop.png";
 import Link from "next/link";
-
-import { Button } from "primereact/button";
+import Image from "next/image";
+import logo from "../../assets/logo.png";
 import Container from "../Container/Container";
 
 const NavBar = () => {

@@ -1,34 +1,23 @@
 import styles from "./Header.module.scss";
-import NavBar from "../NavBar/NavBar";
 import Image from "next/image";
-import ordi from "../../assets/ordinateur.jpg";
-import logo from "../../assets/logo.png";
+import ordi from "../../assets/ordinateur.png";
+import earth from "../../assets/earth.jpg";
 
 const Header = () => {
   return (
     <header>
       <div className={styles.headerContent}>
-        <div className={styles.headerContentLeft}>
+        <div className={styles.headerContentImage}>
           <Image
-            src={ordi}
-            alt="logo-mc-montage"
-            title="logo MC Montage"
+            src={earth}
+            alt="dessin ordinateur"
+            title="dessin ordinateur création site internet"
             className={styles.image}
             fill
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: "cover" }}
           />
         </div>
-        <div className={styles.headerContentRight}>
-          <div className={styles.logoContainer}>
-            <Image
-              src={logo}
-              alt="logo-webcraft"
-              title="logo Webcraft"
-              className={styles.logo}
-              fill
-              style={{ objectFit: "contain" }}
-            />
-          </div>
+        <div className={styles.headerContentText}>
           <h1 className={styles.title}>Création de site internet </h1>
           <p className={styles.text}>
             Je développe un site vitrine qui correspond à vos besoins.

@@ -5,11 +5,8 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(
-    to right,
-    var.$color-light-blue 20%,
-    var.$color-white
-  );
+  background-color: var.$color-bg--dark;
+  color: var.$color-light-blue;
 
   .navBarContainer {
     height: 5rem;
@@ -18,9 +15,20 @@
     justify-content: space-between;
     align-items: center;
 
+    .logoContainer {
+      position: relative;
+      width: 10rem;
+      height: 5rem;
+    }
+
     .linksContainer {
       .link {
         margin-left: var.$gap-medium;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: var.$color-blue;
+        }
       }
     }
   }
@@ -36,7 +44,7 @@
   background-color: var.$color-bg--secondary;
   border: none;
   width: 100%;
-  color: var.$color-font;
+  color: var.$color-bg--dark;
   padding: calc(var.$gap-small / 2);
 
   span {

@@ -13,7 +13,7 @@ body {
 
 body {
   background-color: var.$color-bg;
-  color: var.$color-font;
+  color: var.$color-bg--dark;
 }
 
 a {
@@ -39,10 +39,10 @@ h2 {
   &::before {
     content: "";
     position: absolute;
-    width: 0.5rem;
+    width: 0.2rem;
     height: 1.5rem;
-    border-right: 0.5rem solid var.$color-bg;
-    background-color: rgba(var.$color-font, 0.8);
+    border-right: 0.2rem solid var.$color-blue;
+    // background-color: rgba(var.$color-bg--dark, 0.8);
     bottom: 0;
     left: 0;
     z-index: 10;
@@ -58,22 +58,109 @@ strong {
   font-weight: bold;
   letter-spacing: 0.15rem;
 }
+
 .ctaBtn {
   border: 1px solid var.$color-bg;
   border-radius: var.$gap-medium;
   padding: calc(var.$gap-small / 2) var.$gap-small;
-  background-color: var.$color-font;
+  background-color: var.$color-bg--dark;
   color: var.$color-bg;
   // background: linear-gradient(to top, var.$color-bg 1%, var.$color-white);
   transition: all 0.2s ease-in-out;
   box-shadow: 0 4px 8px rgba(var.$color-bg, 0.2);
 
   &:hover {
-    background-color: var.$color-bg;
-    color: var.$color-font;
+    background-color: var.$color-blue;
+    color: var.$color-bg--dark;
     cursor: pointer;
     box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25),
       0px 0px 6px 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
+.textHighlighted {
+  margin: var.$gap-xlarge;
+  padding: var.$gap-medium var.$gap-xlarge;
+  font-size: 1.2rem;
+  background-color: var.$color-bg--dark;
+  color: var.$color-bg;
+  position: relative;
+  line-height: 2rem;
+  border-bottom-left-radius: var.$radius;
+  border-top-right-radius: var.$radius;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(var.$color-bg--dark, 0.9);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    &::before,
+    &::after {
+      transition: all 0.2s ease-in-out;
+      border-left: 100px solid transparent;
+      border-bottom: 100px solid var.$color-blue;
+    }
+  }
+
+  @media screen and (max-width: var.$screen-phone) {
+    margin: var.$gap-small;
+    padding: var.$gap-small var.$gap-medium;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid var.$color-blue;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid var.$color-blue;
+  }
+}
+
+//? ==== CONTAINER ==== //
+.isHuge {
+  margin: 0 12rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    margin: 0 4rem;
+  }
+}
+
+.isBig {
+  margin: 0 8rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    margin: 0 2rem;
+  }
+}
+
+.isMedium {
+  margin: 0 4rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    margin: 0 1rem;
+  }
+}
+
+.isSmall {
+  margin: 0 2rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    margin: 0 0.5rem;
   }
 }
 
@@ -115,11 +202,11 @@ strong {
   border: none !important;
 }
 .p-menuitem-link > span {
-  color: var.$color-font !important;
+  color: var.$color-bg--dark !important;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: var.$color-font--secondary !important;
+    color: var.$color-bg--dark !important;
   }
 }
 

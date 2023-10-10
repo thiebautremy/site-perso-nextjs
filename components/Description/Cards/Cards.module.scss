@@ -5,4 +5,10 @@
   justify-content: space-evenly;
   background-color: var.$color-light-blue;
   padding: var.$gap-xlarge 0;
+  height: 30rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

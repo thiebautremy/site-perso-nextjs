@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^10.16.4",
     "next": "13.5.4",
     "primeicons": "^6.0.1",
     "primereact": "^10.0.2",

@@ -6,6 +6,7 @@ import {
   FaRegChartBar,
   FaArrowUpWideShort,
 } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const Cards = () => {
   const cardsData = [
@@ -37,11 +38,18 @@ const Cards = () => {
   ];
 
   return (
-    <div className={styles.cardsContainer}>
-      {cardsData.map((card) => (
-        <Card key={card.id} {...card} />
-      ))}
-    </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
+      <div className={styles.cardsContainer}>
+        {cardsData.map((card) => (
+          <Card key={card.id} {...card} />
+        ))}
+      </div>
+    </motion.div>
   );
 };
 

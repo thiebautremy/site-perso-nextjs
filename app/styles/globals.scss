@@ -91,14 +91,15 @@ strong {
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: rgba(var.$color-bg--dark, 0.9);
+    background-color: rgba(var.$color-bg--dark, 0.8);
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
+    transform: scale(1.005);
     &::before,
     &::after {
       transition: all 0.2s ease-in-out;
-      border-left: 100px solid transparent;
-      border-bottom: 100px solid var.$color-blue;
+      border-left: 70px solid transparent;
+      border-bottom: 70px solid var.$color-blue;
     }
   }
 

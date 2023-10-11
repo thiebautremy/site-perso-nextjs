@@ -15,7 +15,7 @@ const signika = Signika({
 });
 
 export const metadata: Metadata = {
-  title: "Webcraft - Création de site internet",
+  title: "Web craftman - Création de site internet",
   description:
     "Création de site internet et référencement à Pont à Mousson par Webcraft pour un site vitrine de qualité à un prix abordable",
 };

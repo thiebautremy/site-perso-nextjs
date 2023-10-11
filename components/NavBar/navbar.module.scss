@@ -23,8 +23,13 @@
 
     .linksContainer {
       .link {
-        margin-left: var.$gap-medium;
+        margin-right: var.$gap-medium;
         transition: all 0.2s ease-in-out;
+
+        @media screen and (max-width: var.$screen-phone) {
+          font-size: 0.9rem;
+          margin-right: calc(var.$gap-small / 2);
+        }
 
         &:hover {
           color: var.$color-blue;

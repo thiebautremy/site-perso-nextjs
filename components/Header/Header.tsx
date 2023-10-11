@@ -1,6 +1,5 @@
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import ordi from "../../assets/ordinateur.png";
 import earth from "../../assets/earth.jpg";
 
 const Header = () => {
@@ -10,8 +9,8 @@ const Header = () => {
         <div className={styles.headerContentImage}>
           <Image
             src={earth}
-            alt="dessin ordinateur"
-            title="dessin ordinateur création site internet"
+            alt="La Terre avec des inscriptions de programmation"
+            title="Terre avec des inscriptions de programmation"
             className={styles.image}
             fill
             style={{ objectFit: "cover" }}

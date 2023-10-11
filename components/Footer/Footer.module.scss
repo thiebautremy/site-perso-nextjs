@@ -11,6 +11,10 @@
   .leftContainer,
   .rightContainer {
     padding: var.$gap-medium;
+
+    @media screen and (max-width: var.$screen-phone) {
+      padding: var.$gap-small;
+    }
   }
 
   .rightContainer {

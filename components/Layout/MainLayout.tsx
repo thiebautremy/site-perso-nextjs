@@ -4,9 +4,14 @@ import {
   ReactPortal,
   ReactNode,
 } from "react";
-import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
+import { Signika } from "next/font/google";
+import NavBar from "../NavBar/NavBar";
 
+const signika = Signika({
+  subsets: ["latin"],
+  variable: "--font-signika",
+});
 const MainLayout = (props: {
   children:
     | string
@@ -19,7 +24,7 @@ const MainLayout = (props: {
     | undefined;
 }) => {
   return (
-    <main>
+    <main className={signika.variable}>
       <NavBar />
       {props.children}
       <Footer />

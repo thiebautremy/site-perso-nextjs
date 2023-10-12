@@ -1,10 +1,11 @@
 import AchievementsContainer from "@/components/Achievements/Achievements";
+import MainLayout from "@/components/Layout/MainLayout";
 
 export const Achievements = () => {
   return (
-    <main>
+    <MainLayout>
       <AchievementsContainer />
-    </main>
+    </MainLayout>
   );
 };
 export default Achievements;

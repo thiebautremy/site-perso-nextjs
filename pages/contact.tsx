@@ -1,8 +1,10 @@
+import MainLayout from "@/components/Layout/MainLayout";
+
 export const Contact = () => {
   return (
-    <main>
+    <MainLayout>
       <h1>contact</h1>
-    </main>
+    </MainLayout>
   );
 };
 export default Contact;

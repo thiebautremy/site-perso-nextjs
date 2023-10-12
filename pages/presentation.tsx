@@ -1,8 +1,10 @@
+import MainLayout from "@/components/Layout/MainLayout";
+
 export const Presentation = () => {
   return (
-    <main>
+    <MainLayout>
       <h1>Presentation</h1>
-    </main>
+    </MainLayout>
   );
 };
 export default Presentation;

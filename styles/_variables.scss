@@ -18,3 +18,13 @@ $screen-phone: 599px;
 $screen-tablet-portrait: 800px;
 $screen-tablet-landscape: 1024px;
 $screen-desktop: 1200px;
+
+@font-face {
+  font-family: "font-regular";
+  src: url(../assets/font/Signika/static/Signika-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-bold";
+  src: url(../assets/font/Signika/static/Signika-Bold.ttf);
+}

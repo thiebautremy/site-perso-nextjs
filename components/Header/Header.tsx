@@ -1,6 +1,6 @@
-import styles from "./Header.module.scss";
 import Image from "next/image";
 import earth from "../../assets/earth.jpg";
+import styles from "./Header.module.scss";
 
 const Header = () => {
   return (

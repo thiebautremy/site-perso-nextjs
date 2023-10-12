@@ -6,7 +6,7 @@ import "primeicons/primeicons.css";
 import "./styles/globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import NavBar from "../components/NavBar/NavBar";
+import NavBar from "@/components/NavBar/NavBar";
 import { Signika } from "next/font/google";
 
 const signika = Signika({

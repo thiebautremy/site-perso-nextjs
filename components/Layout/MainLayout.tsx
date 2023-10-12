@@ -1,11 +1,6 @@
-import {
-  ReactElement,
-  JSXElementConstructor,
-  ReactPortal,
-  ReactNode,
-} from "react";
+import { ReactElement, JSXElementConstructor, ReactFragment } from "react";
 import Footer from "../Footer/Footer";
-import NavBar from "../NavBar/NavBar";
+import Navigation from "../Navigation/Navigation";
 
 const MainLayout = (props: {
   children:
@@ -13,14 +8,14 @@ const MainLayout = (props: {
     | number
     | boolean
     | ReactElement<any, string | JSXElementConstructor<any>>
-    | ReactPortal
-    | ReactNode
+    | ReactFragment
+    | ReactElement
     | null
     | undefined;
 }) => {
   return (
     <main>
-      <NavBar />
+      <Navigation />
       {props.children}
       <Footer />
     </main>

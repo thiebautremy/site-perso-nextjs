@@ -1,8 +1,8 @@
-import styles from "./NavBar.module.scss";
+import styles from "./Navigation.module.scss";
 import Link from "next/link";
 import Container from "../Container/Container";
 
-const NavBar = () => {
+const Navigation = () => {
   const links: { url: string; label: string }[] = [
     {
       url: "/",
@@ -40,4 +40,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navigation;

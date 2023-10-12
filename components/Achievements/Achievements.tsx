@@ -2,10 +2,11 @@ import Container from "../Container/Container";
 import Achievement from "./Achievement";
 import styles from "./Achievements.module.scss";
 import achievementsData from "./achievementsData";
+import cx from "classnames";
 
 const Achievements = () => {
   return (
-    <div className={styles.achievementsContainer}>
+    <div className={cx(styles.achievementsContainer, "achievementsContainer")}>
       <Container margin="isMedium">
         <h1>Mes réalisations</h1>
       </Container>

@@ -3,11 +3,12 @@ import Cards from "./Cards/Cards";
 import Container from "../Container/Container";
 import styles from "./Description.module.scss";
 import { motion } from "framer-motion";
+import cx from "classnames";
 
 const Description = () => {
   return (
     <div>
-      <div className={styles.descriptionContent}>
+      <div className={cx(styles.descriptionContent, "descriptionContent")}>
         <Container margin="isHuge">
           <motion.div
             animate={{ x: [250, -10] }}

@@ -7,28 +7,37 @@
   z-index: 1000;
   background-color: var.$color-bg--dark;
   color: var.$color-light-blue;
+  height: 5rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    position: relative;
+    height: unset;
+  }
 
   .navBarContainer {
-    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 5rem;
 
-    .logoContainer {
-      position: relative;
-      width: 10rem;
-      height: 5rem;
+    @media screen and (max-width: var.$screen-phone) {
+      height: unset;
     }
 
     .linksContainer {
+      display: flex;
+
+      @media screen and (max-width: var.$screen-phone) {
+        flex-direction: column;
+      }
+
       .link {
         margin-right: var.$gap-medium;
         transition: all 0.2s ease-in-out;
 
         @media screen and (max-width: var.$screen-phone) {
-          font-size: 0.9rem;
-          margin-right: calc(var.$gap-small / 2);
+          margin: calc(var.$gap-small / 2) 0;
         }
 
         &:hover {

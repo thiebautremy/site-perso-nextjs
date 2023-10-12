@@ -13,7 +13,8 @@ const Cards = () => {
     {
       id: 1,
       title: "Création site internet",
-      description: "Bla bla bla",
+      description:
+        "Nous créerons ensemble un site vitrine qui correspond à vos envies",
       logo: <FaCode />,
     },
     {
@@ -26,13 +27,14 @@ const Cards = () => {
     {
       id: 3,
       title: "Site vitrine personnalisé",
-      description: "Bla bla bla dynamique",
+      description: "Afin d'avoir un site agréable, dynamique et performant",
       logo: <FaRegChartBar />,
     },
     {
       id: 4,
       title: "Hébergement",
-      description: "Bla bla bla dynamique",
+      description:
+        "Choisir ensemble la solution d'hébergement gratuite ou payante qui correspond à vos besoins",
       logo: <FaDatabase />,
     },
   ];

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "THIEBAUT Rémy - Projets",
-  description: "Développeur web, créateur de site web",
+  title: "Web craftman - Réalisations",
+  description:
+    "Découvrez toutes les réalisations de Web craftman : sites vitrines, projets professionels ou personnels.",
 };
 
 export default function ProjectsLayout({

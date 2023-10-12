@@ -1,4 +1,9 @@
 import ordi from "@/assets/projects/ordinateur.png";
+import mcmontage from "@/assets/projects/mcmontage.png";
+import pronotdf from "@/assets/projects/pronotdf.png";
+import ccass from "@/assets/projects/ccass.png";
+import kili from "@/assets/projects/kili.png";
+import fti from "@/assets/projects/fti.png";
 
 const achievementsData = [
   {
@@ -7,7 +12,7 @@ const achievementsData = [
     description: "Site vitrine pour une entreprise de rayonnage industriel",
     url: "https://mcmontage.fr",
     picture: {
-      src: ordi,
+      src: mcmontage,
       alt: "Capture d'écran du site https://mcmontage.fr",
       title: "Image du site https://mcmontage.fr",
     },
@@ -19,18 +24,18 @@ const achievementsData = [
       "Site permettant de pronostiquer sur les étapes du Tour de France",
     url: "https://pronotdf.netlify.app/",
     picture: {
-      src: ordi,
+      src: pronotdf,
       alt: "Capture d'écran du site https://pronotdf.netlify.app/",
       title: "Image du site https://pronotdf.netlify.app/",
     },
   },
   {
     id: 3,
-    title: "CCASS",
+    title: "Cours de cassation",
     description: "Site de la cour de cassation",
     url: "https://www.courdecassation.fr/",
     picture: {
-      src: ordi,
+      src: ccass,
       alt: "Capture d'écran du site https://www.courdecassation.fr/",
       title: "Image du site https://www.courdecassation.fr/",
     },
@@ -42,7 +47,7 @@ const achievementsData = [
       "Site de Kili Technology, entreprise d'intelligence artificielle",
     url: "https://kili-technology.com/",
     picture: {
-      src: ordi,
+      src: kili,
       alt: "Capture d'écran du site https://kili-technology.com/",
       title: "Image du site https://kili-technology.com/",
     },
@@ -54,7 +59,7 @@ const achievementsData = [
       "Site vitrine pour la Fédération luxembourgeoise des Travailleurs Intellectuels Indépendants",
     url: "https://www.fti.lu/",
     picture: {
-      src: ordi,
+      src: fti,
       alt: "Capture d'écran du site https://www.fti.lu/",
       title: "Image du site https://www.fti.lu/",
     },

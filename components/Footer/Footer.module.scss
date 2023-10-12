@@ -8,12 +8,22 @@
 .footerContainer {
   display: flex;
 
+  @media screen and (max-width: var.$screen-phone) {
+    flex-direction: column;
+  }
+
   .leftContainer,
   .rightContainer {
     padding: var.$gap-medium;
 
     @media screen and (max-width: var.$screen-phone) {
       padding: var.$gap-small;
+    }
+  }
+
+  .leftContainer {
+    .address {
+      line-height: 2rem;
     }
   }
 

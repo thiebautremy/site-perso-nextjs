@@ -1,6 +1,6 @@
 import ordi from "@/assets/projects/ordinateur.png";
 
-const projectsData = [
+const achievementsData = [
   {
     id: 1,
     title: "MC Montage",
@@ -61,4 +61,4 @@ const projectsData = [
   },
 ];
 
-export default projectsData;
+export default achievementsData;

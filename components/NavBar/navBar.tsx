@@ -25,8 +25,8 @@ const NavBar = () => {
       label: "Accueil",
     },
     {
-      url: "/projets",
-      label: "Projets",
+      url: "/realisations",
+      label: "Réalisations",
     },
     {
       url: "/presentation",

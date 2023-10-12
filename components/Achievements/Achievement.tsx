@@ -1,16 +1,16 @@
 "use client";
 import Link from "next/link";
-import styles from "./Project.module.scss";
+import styles from "./Achievement.module.scss";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 
-type ProjectType = {
+type AchievementType = {
   title: string;
   description: string;
   picture: { src: StaticImageData; alt: string; title: string };
   url: string;
 };
-const Project = ({ title, description, picture, url }: ProjectType) => {
+const Achievement = ({ title, description, picture, url }: AchievementType) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,13 +18,13 @@ const Project = ({ title, description, picture, url }: ProjectType) => {
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
-      <div className={styles.projectContainer}>
-        <div className={styles.projectsDescription}>
+      <div className={styles.achievementContainer}>
+        <div className={styles.achievementDescription}>
           <h2>{title}</h2>
           <p>{description}</p>
           <Link href={url}>Voir la réalisation</Link>
         </div>
-        <div className={styles.projectPictureContainer}>
+        <div className={styles.achievementPictureContainer}>
           <Image
             src={picture.src}
             alt={picture.alt}
@@ -39,4 +39,4 @@ const Project = ({ title, description, picture, url }: ProjectType) => {
   );
 };
 
-export default Project;
+export default Achievement;

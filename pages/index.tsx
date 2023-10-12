@@ -3,11 +3,6 @@ import Description from "@/components/Description/Description";
 import MainLayout from "@/components/Layout/MainLayout";
 import Header from "@/components/Header/Header";
 
-// const signika = Signika({
-//   subsets: ["latin"],
-//   display: "swap",
-// });
-
 export default function Home() {
   return (
     <>

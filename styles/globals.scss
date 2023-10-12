@@ -23,8 +23,13 @@ a {
 }
 
 p {
+  font-size: 1.2rem;
   line-height: 1.5rem;
   margin: var.$gap-small 0;
+
+  @media screen and (max-width: var.$screen-phone) {
+    font-size: 1.1rem;
+  }
 }
 
 h1 {
@@ -54,17 +59,17 @@ h2 {
 
   @media screen and (max-width: var.$screen-phone) {
     text-indent: unset;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     padding-left: 1rem;
   }
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: var.$gap-small 0;
 
   @media screen and (max-width: var.$screen-phone) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -89,6 +94,7 @@ strong {
   background-color: var.$color-blue;
   color: var.$color-bg--dark;
   transition: all 0.2s ease-in-out;
+  font-size: 1.2rem;
   box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25),
     0px 0px 6px 0 rgba(255, 255, 255, 0.3);
 
@@ -138,7 +144,7 @@ strong {
   }
 
   @media screen and (max-width: var.$screen-phone) {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: var.$gap-medium auto;
     padding: var.$gap-small var.$gap-medium;
   }

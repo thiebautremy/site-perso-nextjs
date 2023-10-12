@@ -1,5 +1,6 @@
 import MainLayout from "@/components/Layout/MainLayout";
 import Head from "next/head";
+import PresentationContainer from "@/components/Presentation/Presentation";
 
 export const Presentation = () => {
   return (
@@ -12,7 +13,7 @@ export const Presentation = () => {
         />
       </Head>
       <MainLayout>
-        <h1>Presentation</h1>
+        <PresentationContainer />
       </MainLayout>
     </>
   );

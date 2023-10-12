@@ -7,7 +7,7 @@ import cx from "classnames";
 
 const Description = () => {
   return (
-    <main>
+    <>
       <div className={cx(styles.descriptionContent, "descriptionContent")}>
         <Container margin="isHuge">
           <motion.div
@@ -107,7 +107,7 @@ const Description = () => {
         </Container>
       </div>
       <Cards />
-    </main>
+    </>
   );
 };
 

@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm/ContactForm";
 import MainLayout from "@/components/Layout/MainLayout";
 import Head from "next/head";
 
@@ -9,7 +10,7 @@ export const Contact = () => {
         <meta name="description" content="TODO" />
       </Head>
       <MainLayout>
-        <h1>contact</h1>
+        <ContactForm />
       </MainLayout>
     </>
   );

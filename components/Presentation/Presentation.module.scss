@@ -1,0 +1,18 @@
+@use "styles/variables" as var;
+
+.presentationContainer {
+  padding: var.$gap-xlarge 0;
+  background: linear-gradient(
+    130deg,
+    rgba(var.$color-blue, 0.5) 0%,
+    var.$color-bg 15%
+  );
+
+  .content {
+    padding: 0 var.$gap-xlarge var.$gap-xlarge;
+
+    @media screen and (max-width: var.$screen-phone) {
+      padding: 0 var.$gap-small var.$gap-small;
+    }
+  }
+}

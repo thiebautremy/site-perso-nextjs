@@ -43,4 +43,12 @@
   border-top: 1px solid var.$color-light-blue;
   padding: var.$gap-small;
   text-align: center;
+
+  a > p {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: var.$color-blue;
+    }
+  }
 }

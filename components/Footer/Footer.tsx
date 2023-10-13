@@ -22,7 +22,10 @@ const Footer = () => {
               </address>
               <p>06 42 48 42 49</p>
               <div>
-                <a className={styles.email} href="mailto:webcraft@gmail.com">
+                <a
+                  className={styles.email}
+                  href="mailto:remythiebaut52@gmail.com"
+                >
                   <span>remythiebaut52@gmail.com</span>
                 </a>
               </div>
@@ -45,7 +48,9 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.bottomContainer}>
-            <p>Copyright - Mentions légales</p>
+            <Link href={"/mentions-legales"}>
+              <p>Copyright - Mentions légales</p>
+            </Link>
           </div>
         </Container>
       </footer>

@@ -8,7 +8,35 @@ export const Contact = () => {
     <>
       <Head>
         <title>Web craftman - Mentions légales</title>
-        <meta name="description" content="TODO" />
+        <meta
+          name="description"
+          content="Consultez les mentions légales de Web craftman et découvrez les informations essentielles."
+        />
+        <meta
+          name="og:image"
+          property="og:image"
+          content="https://webcraftman.fr/logo.png"
+        />
+        <meta
+          name="og:title"
+          property="og:title"
+          content="Web craftman - Mentions légales"
+        />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="Consultez les mentions légales de Web craftman et découvrez les informations essentielles."
+        />
+        <meta
+          name="og:url"
+          property="og:url"
+          content="https://webcraftman.fr/mentions-legales"
+        />
+        <link rel="canonical" href="https://webcraftman.fr/mentions-legales" />
+        <meta
+          name="keywords"
+          content="agence digitale, agence web, création site internet, site vitrine, pont à mousson"
+        />
       </Head>
       <MainLayout>
         <div className={styles.mentionsLegales}>

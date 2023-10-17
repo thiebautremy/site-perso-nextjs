@@ -35,7 +35,7 @@ const Footer = () => {
                 <Link href="/" scroll>
                   <li>Accueil</li>
                 </Link>
-                <Link href="/realisation" scroll>
+                <Link href="/realisations" scroll>
                   <li>Réalisations</li>
                 </Link>
                 <Link href="/presentation" scroll>

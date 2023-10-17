@@ -11,27 +11,19 @@ const Description = () => {
     <>
       <div className={cx(styles.descriptionContent, "descriptionContent")}>
         <Container margin="isHuge">
-          <motion.div
-            animate={{ x: [250, 0] }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          >
-            <TextHighlighted
-              text="Aujourd'hui, la création d'un site internet est devenue
+          <TextHighlighted
+            text="Aujourd'hui, la création d'un site internet est devenue
               une étape cruciale pour toute entreprise désireuse de prospérer.
               Que vous soyez une petite entreprise ou une organisation plus
               importante, un site web bien conçu peut apporter une vrai valeur
               ajoutée à votre projet. C'est pourquoi, je vous propose mon
               expertise afin de créer votre site web et devenir ainsi plus
               visible dans un premier temps sur Pont à mousson."
-            />
-          </motion.div>
+          />
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
             <h2 className={styles.text}>Pourquoi créer un site internet ?</h2>

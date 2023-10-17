@@ -1,0 +1,57 @@
+@use "@/styles/_variables" as var;
+
+.textHighlighted {
+  margin: var.$gap-xlarge;
+  padding: var.$gap-medium var.$gap-xlarge;
+  font-size: 1.2rem;
+  background-color: var.$color-bg--dark;
+  color: var.$color-bg;
+  position: relative;
+  line-height: 2rem;
+  border-bottom-left-radius: var.$radius;
+  border-top-right-radius: var.$radius;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var.$color-white;
+    background-color: var.$color-bg--black;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    transform: scale(1.005);
+    &::before,
+    &::after {
+      transition: all 0.2s ease-in-out;
+      border-left: 70px solid transparent;
+      border-bottom: 70px solid var.$color-blue;
+    }
+  }
+
+  @media screen and (max-width: var.$screen-phone) {
+    font-size: 1.1rem;
+    margin: var.$gap-medium auto;
+    padding: var.$gap-small var.$gap-medium;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid var.$color-blue;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid var.$color-blue;
+  }
+}

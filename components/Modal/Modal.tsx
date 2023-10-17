@@ -12,7 +12,6 @@ import { useEffect } from "react";
 const Modal = (props: {
   action: (arg0: boolean) => void;
   setMessageModal: (arg0: string) => void;
-  isVisibleModal: boolean;
   message:
     | string
     | number

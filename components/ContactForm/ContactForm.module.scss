@@ -15,7 +15,7 @@
   &__infosAndform {
     display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
     margin: calc(var.$gap-xlarge * 2) auto var.$gap-xlarge;
 
     @media screen and (max-width: var.$screen-tablet-landscape) {

@@ -68,6 +68,11 @@
   width: 62%;
   z-index: 10;
 
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    height: 18rem;
+    width: 60%;
+  }
+
   @media screen and (max-width: var.$screen-phone) {
     width: 100%;
   }
@@ -83,7 +88,7 @@
     transform: rotate(180deg);
     z-index: 100;
 
-    @media screen and (max-width: var.$screen-phone) {
+    @media screen and (max-width: var.$screen-tablet-landscape) {
       width: 0%;
       height: 0%;
     }

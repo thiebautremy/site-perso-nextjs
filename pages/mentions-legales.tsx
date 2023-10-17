@@ -7,32 +7,32 @@ export const Contact = () => {
   return (
     <>
       <Head>
-        <title>Web craftman - Mentions légales</title>
+        <title>Webosaurus - Mentions légales</title>
         <meta
           name="description"
-          content="Consultez les mentions légales de Web craftman et découvrez les informations essentielles."
+          content="Consultez les mentions légales de Webosaurus et découvrez les informations essentielles."
         />
         <meta
           name="og:image"
           property="og:image"
-          content="https://webcraftman.fr/logo.png"
+          content="https://webosaurus.fr/logo.png"
         />
         <meta
           name="og:title"
           property="og:title"
-          content="Web craftman - Mentions légales"
+          content="Webosaurus - Mentions légales"
         />
         <meta
           name="og:description"
           property="og:description"
-          content="Consultez les mentions légales de Web craftman et découvrez les informations essentielles."
+          content="Consultez les mentions légales de Webosaurus et découvrez les informations essentielles."
         />
         <meta
           name="og:url"
           property="og:url"
-          content="https://webcraftman.fr/mentions-legales"
+          content="https://webosaurus.fr/mentions-legales"
         />
-        <link rel="canonical" href="https://webcraftman.fr/mentions-legales" />
+        <link rel="canonical" href="https://webosaurus.fr/mentions-legales" />
         <meta
           name="keywords"
           content="agence digitale, agence web, création site internet, site vitrine, pont à mousson"
@@ -46,7 +46,7 @@ export const Contact = () => {
             <p>
               En vertu de l&apos;article 6 de la loi n° 2004-575 du 21 juin 2004
               pour la confiance dans l&apos;économie numérique, il est précisé
-              aux utilisateurs du site internet https://webcraftman.fr
+              aux utilisateurs du site internet https://webosaurus.fr
               l&apos;identité des différents intervenants dans le cadre de sa
               réalisation et de son suivi:
             </p>
@@ -56,8 +56,8 @@ export const Contact = () => {
               à mousson
             </p>
             <p>
-              Identification de l&apos;entreprise : Web craftman Adresse postale
-              : 358 rue Pierre ADT, 54700 Pont à mousson
+              Identification de l&apos;entreprise : Webosaurus Adresse postale :
+              358 rue Pierre ADT, 54700 Pont à mousson
             </p>
             <p>
               Directeur de la publication : THIEBAUT Rémy -
@@ -95,16 +95,16 @@ export const Contact = () => {
             <p>
               Rémy THIEBAUT ne pourra être tenu pour responsable des dommages
               directs et indirects causés au matériel de l’utilisateur, lors de
-              l’accès au site https://webcraftman.fr.
+              l’accès au site https://webosaurus.fr.
             </p>
             <p>
               Rémy THIEBAUT décline toute responsabilité quant à l’utilisation
               qui pourrait être faite des informations et contenus présents sur
-              https://webcraftman.fr.
+              https://webosaurus.fr.
             </p>
             <p>
               Rémy THIEBAUT s’engage à sécuriser au mieux le site
-              https://webcraftman.fr, cependant sa responsabilité ne pourra être
+              https://webosaurus.fr, cependant sa responsabilité ne pourra être
               mise en cause si des données indésirables sont importées et
               installées sur son site à son insu.
             </p>
@@ -126,18 +126,18 @@ export const Contact = () => {
             <h2> 4 - CNIL et gestion des données personnelles.</h2>
             <p>
               Conformément aux dispositions de la loi 78-17 du 6 janvier 1978
-              modifiée, l’utilisateur du site https://webcraftman.fr dispose
-              d’un droit d’accès, de modification et de suppression des
-              informations collectées. Pour exercer ce droit, envoyez un message
-              à notre Délégué à la Protection des Données : THIEBAUT Rémy -
+              modifiée, l’utilisateur du site https://webosaurus.fr dispose d’un
+              droit d’accès, de modification et de suppression des informations
+              collectées. Pour exercer ce droit, envoyez un message à notre
+              Délégué à la Protection des Données : THIEBAUT Rémy -
               remythiebaut52@gmail.com.
             </p>
             <h2>5 - Liens hypertextes</h2>
             <p>
-              Le site https://webcraftman.fr contient des liens hypertextes vers
+              Le site https://webosaurus.fr contient des liens hypertextes vers
               d’autres sites et dégage toute responsabilité à propos de ces
               liens externes ou des liens créés par d’autres sites vers
-              https://webcraftman.fr.
+              https://webosaurus.fr.
             </p>
             {/* <p>
           La navigation sur le site https://mcmontage.fr est susceptible de
@@ -162,7 +162,7 @@ export const Contact = () => {
             <p>
               {" "}
               Tout litige en relation avec l’utilisation du site
-              https://webcraftman.fr est soumis au droit français. En dehors des
+              https://webosaurus.fr est soumis au droit français. En dehors des
               cas où la loi ne le permet pas, il est fait attribution exclusive
               de juridiction aux tribunaux compétents de Nancy.
             </p>

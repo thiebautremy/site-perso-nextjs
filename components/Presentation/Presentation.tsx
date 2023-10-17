@@ -8,13 +8,13 @@ const Presentation = () => {
     <div className={styles.presentationContainer}>
       <Container margin="isHuge">
         <motion.div
-          animate={{ x: [250, -10] }}
+          animate={{ x: [250, 0] }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <h1>Présentation de Web craftman</h1>
+          <h1>Présentation de Webosaurus</h1>
           <h2>
             Vous cherchez une agence web spécialisée en création de site web à{" "}
             <strong>Pont-à-Mousson</strong> ?

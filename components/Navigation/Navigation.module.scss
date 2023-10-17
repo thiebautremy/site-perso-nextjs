@@ -9,7 +9,7 @@
   color: var.$color-light-blue;
   height: 5rem;
 
-  @media screen and (max-width: var.$screen-phone) {
+  @media screen and (max-width: 800px) {
     position: relative;
     height: unset;
   }
@@ -21,30 +21,8 @@
     align-items: center;
     height: 5rem;
 
-    @media screen and (max-width: var.$screen-phone) {
+    @media screen and (max-width: 800px) {
       height: unset;
-    }
-
-    .linksContainer {
-      display: flex;
-
-      @media screen and (max-width: var.$screen-phone) {
-        flex-direction: column;
-      }
-
-      .link {
-        font-size: 1.2rem;
-        margin-right: var.$gap-medium;
-        transition: all 0.2s ease-in-out;
-
-        @media screen and (max-width: var.$screen-phone) {
-          margin: calc(var.$gap-small / 2) 0;
-        }
-
-        &:hover {
-          color: var.$color-blue;
-        }
-      }
     }
   }
 }

@@ -49,6 +49,11 @@
     text-align: end;
     width: 100%;
 
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      text-align: center;
+      font-size: 3rem;
+    }
+
     @media screen and (max-width: var.$screen-phone) {
       font-size: 2rem;
     }
@@ -58,7 +63,13 @@
     font-size: 1.5rem;
     margin: var.$gap-medium auto;
 
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+
     @media screen and (max-width: var.$screen-phone) {
+      text-align: center;
       font-size: 1.2rem;
     }
   }

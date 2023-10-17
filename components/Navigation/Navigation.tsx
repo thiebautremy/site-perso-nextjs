@@ -1,6 +1,8 @@
 import styles from "./Navigation.module.scss";
-import Link from "next/link";
 import Container from "../Container/Container";
+import DesktopNav from "./DesktopNav/DesktopNav";
+import { useState, useEffect } from "react";
+import MobileNav from "./MobileNav/MobileNav";
 
 const Navigation = () => {
   const links: { url: string; label: string }[] = [
@@ -18,22 +20,27 @@ const Navigation = () => {
     },
   ];
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
+
   return (
     <nav className={styles.navBar}>
       <Container margin="isHuge">
         <div className={styles.navBarContainer}>
-          <div className={styles.linksContainer}>
-            {links.map((link) => (
-              <Link href={link.url} key={link.label} className={styles.link}>
-                {link.label}
-              </Link>
-            ))}
-          </div>
-          <div>
-            <Link href={"/contact"} className="ctaBtn">
-              Me contacter
-            </Link>
-          </div>
+          {windowWidth > 800 ? (
+            <DesktopNav links={links} />
+          ) : (
+            <MobileNav links={links} />
+          )}
         </div>
       </Container>
     </nav>

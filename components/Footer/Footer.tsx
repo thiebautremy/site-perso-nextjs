@@ -16,7 +16,7 @@ const Footer = () => {
         <Container margin="isMedium">
           <div className={styles.footerContainer}>
             <div className={styles.leftContainer}>
-              <h4>Web craftman - création de site internet</h4>
+              <h4>Webosaurus - création de site internet</h4>
               <address className={styles.address}>
                 358 rue Pierre ADT <br></br> 54700 Pont-à-mousson
               </address>

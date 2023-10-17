@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /*_buildManifest.js$
 Disallow: /*_ssgManifest.js$
-Sitemap: https://webcraftman.fr/sitemap.xml
+Sitemap: https://webosaurus.fr/sitemap.xml

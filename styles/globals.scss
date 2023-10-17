@@ -57,6 +57,11 @@ h2 {
     z-index: 10;
   }
 
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    text-indent: 0;
+    padding-left: var.$gap-medium;
+  }
+
   @media screen and (max-width: var.$screen-phone) {
     text-indent: unset;
     font-size: 1.4rem;
@@ -190,6 +195,10 @@ strong {
 .isHuge {
   margin: 0 12rem;
 
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    margin: 0 4rem;
+  }
+
   @media screen and (max-width: var.$screen-phone) {
     margin: 0 2rem;
   }
@@ -197,6 +206,10 @@ strong {
 
 .isBig {
   margin: 0 8rem;
+
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    margin: 0 2rem;
+  }
 
   @media screen and (max-width: var.$screen-phone) {
     margin: 0 1.5rem;
@@ -206,6 +219,10 @@ strong {
 .isMedium {
   margin: 0 4rem;
 
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    margin: 0 1.5rem;
+  }
+
   @media screen and (max-width: var.$screen-phone) {
     margin: 0 1rem;
   }
@@ -213,6 +230,10 @@ strong {
 
 .isSmall {
   margin: 0 2rem;
+
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    margin: 0 1rem;
+  }
 
   @media screen and (max-width: var.$screen-phone) {
     margin: 0 0.5rem;
@@ -264,7 +285,20 @@ strong {
     color: var.$color-bg--dark !important;
   }
 }
-
+//? ==== SIDEBAR ====\\
 .p-sidebar-left .p-sidebar {
   width: 15rem !important;
+  background-color: var.$color-bg--dark;
+}
+
+.p-sidebar .p-sidebar-header .p-sidebar-close:focus-visible,
+.p-sidebar .p-sidebar-header .p-sidebar-icon:focus-visible {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+//? ==== TOAST ==== \\
+.p-toast-message-content {
+  padding: var.$gap-medium;
 }

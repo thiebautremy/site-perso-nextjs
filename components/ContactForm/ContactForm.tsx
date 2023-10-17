@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import styles from "./ContactForm.module.scss";
 import emailjs from "@emailjs/browser";
 import Modal from "@/components/Modal/Modal";
@@ -41,7 +41,6 @@ const ContactForm = () => {
           }
         );
   };
-
   return (
     <div className={styles.contactForm}>
       <Container margin="isMedium">
@@ -101,7 +100,6 @@ const ContactForm = () => {
         <Modal
           message={messageModal}
           setMessageModal={setMessageModal}
-          isVisibleModal={isVisibleModal}
           action={() => setIsVisibleModal(false)}
         />
       </Container>

@@ -6,32 +6,32 @@ export const Achievements = () => {
   return (
     <>
       <Head>
-        <title>Web craftman - Réalisations</title>
+        <title>Webosaurus - Réalisations</title>
         <meta
           name="description"
-          content="Découvrez toutes les réalisations de Web craftman : sites vitrines, projets professionels ou personnels."
+          content="Découvrez toutes les réalisations de Webosaurus : sites vitrines, projets professionels ou personnels."
         />
         <meta
           name="og:image"
           property="og:image"
-          content="https://webcraftman.fr/logo.png"
+          content="https://webosaurus.fr/logo.png"
         />
         <meta
           name="og:title"
           property="og:title"
-          content="Web craftman - Réalisations"
+          content="Webosaurus - Réalisations"
         />
         <meta
           name="og:description"
           property="og:description"
-          content="Découvrez toutes les réalisations de Web craftman : sites vitrines, projets professionels ou personnels."
+          content="Découvrez toutes les réalisations de Webosaurus : sites vitrines, projets professionels ou personnels."
         />
         <meta
           name="og:url"
           property="og:url"
-          content="https://webcraftman.fr/realisations"
+          content="https://webosaurus.fr/realisations"
         />
-        <link rel="canonical" href="https://webcraftman.fr/realisations" />
+        <link rel="canonical" href="https://webosaurus.fr/realisations" />
         <meta
           name="keywords"
           content="agence digitale, agence web, création site internet, site vitrine, pont à mousson"

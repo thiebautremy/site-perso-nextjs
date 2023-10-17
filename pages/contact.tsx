@@ -6,7 +6,7 @@ export const Contact = () => {
   return (
     <>
       <Head>
-        <title>Web craftman - Contact</title>
+        <title>Webosaurus - Contact</title>
         <meta
           name="description"
           content="Contactez moi pour vos projets web sur-mesure. Je vous accompagne avec mon expérience afin de créer un site vitrine qui vous ressemble."
@@ -14,12 +14,12 @@ export const Contact = () => {
         <meta
           name="og:image"
           property="og:image"
-          content="https://webcraftman.fr/logo.png"
+          content="https://webosaurus.fr/logo.png"
         />
         <meta
           name="og:title"
           property="og:title"
-          content="Web craftman - Contact"
+          content="Webosaurus - Contact"
         />
         <meta
           name="og:description"
@@ -29,9 +29,9 @@ export const Contact = () => {
         <meta
           name="og:url"
           property="og:url"
-          content="https://webcraftman.fr/contact"
+          content="https://webosaurus.fr/contact"
         />
-        <link rel="canonical" href="https://webcraftman.fr/contact" />
+        <link rel="canonical" href="https://webosaurus.fr/contact" />
         <meta
           name="keywords"
           content="agence digitale, agence web, création site internet, site vitrine, pont à mousson, contact"

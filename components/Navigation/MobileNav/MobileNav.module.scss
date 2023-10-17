@@ -1,0 +1,28 @@
+@use "@/styles/variables" as var;
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 var.$gap-small;
+
+  .linksContainerMobile {
+    display: flex;
+    flex-direction: column;
+    min-height: 15rem;
+    font-size: 1.3rem;
+    color: var.$color-light-blue;
+
+    a {
+      padding: calc(var.$gap-small / 2) 0;
+    }
+  }
+}
+
+.menuBtn {
+  background-color: transparent;
+  border: none;
+  padding: calc(var.$gap-small/2) 0;
+  display: flex !important;
+  align-items: center;
+  font-size: 1.2rem;
+}

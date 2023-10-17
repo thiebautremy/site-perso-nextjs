@@ -6,7 +6,7 @@ export default function FourOhFour() {
   return (
     <>
       <Head>
-        <title>Web craftman - Page non trouvée</title>
+        <title>Webosaurus - Page non trouvée</title>
       </Head>
       <div className={styles.fourOhFour}>
         <h1>Page non trouvée</h1>

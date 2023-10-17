@@ -11,7 +11,7 @@ const Description = () => {
       <div className={cx(styles.descriptionContent, "descriptionContent")}>
         <Container margin="isHuge">
           <motion.div
-            animate={{ x: [250, -10] }}
+            animate={{ x: [250, 0] }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
@@ -88,7 +88,7 @@ const Description = () => {
             </p>
           </motion.div>
           <motion.div
-            animate={{ x: [250, -10] }}
+            animate={{ x: [250, 0] }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}

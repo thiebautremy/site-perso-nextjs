@@ -6,32 +6,32 @@ export const Presentation = () => {
   return (
     <>
       <Head>
-        <title>Web craftman - Présentation</title>
+        <title>Webosaurus - Présentation</title>
         <meta
           name="description"
-          content="Webcraftman, votre agence web à Pont à mousson, offre des solutions en création de site internet vitrine, design, développement et référencement naturel, SEO."
+          content="webosaurus, votre agence web à Pont à mousson, offre des solutions en création de site internet vitrine, design, développement et référencement naturel, SEO."
         />
         <meta
           name="og:image"
           property="og:image"
-          content="https://webcraftman.fr/logo.png"
+          content="https://webosaurus.fr/logo.png"
         />
         <meta
           name="og:title"
           property="og:title"
-          content="Web craftman - Présentation"
+          content="Webosaurus - Présentation"
         />
         <meta
           name="og:description"
           property="og:description"
-          content="Webcraftman, votre agence web à Pont à mousson, offre des solutions en création de site internet vitrine, design, développement et référencement naturel, SEO."
+          content="webosaurus, votre agence web à Pont à mousson, offre des solutions en création de site internet vitrine, design, développement et référencement naturel, SEO."
         />
         <meta
           name="og:url"
           property="og:url"
-          content="https://webcraftman.fr/presentation"
+          content="https://webosaurus.fr/presentation"
         />
-        <link rel="canonical" href="https://webcraftman.fr/presentation" />
+        <link rel="canonical" href="https://webosaurus.fr/presentation" />
         <meta
           name="keywords"
           content="agence digitale, agence web, création site internet, site vitrine, pont à mousson"

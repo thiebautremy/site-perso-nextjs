@@ -16,6 +16,10 @@
     border: 8px solid var.$color-blue;
   }
 
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    width: 40%;
+  }
+
   @media screen and (max-width: var.$screen-phone) {
     width: 90%;
     min-height: 15rem;

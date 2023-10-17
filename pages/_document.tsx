@@ -4,7 +4,7 @@ export default function Document() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Web craftman",
+    name: "Webosaurus",
     address: {
       "@type": "PostalAddress",
       streetAddress: "358 rue Pierre Adt",
@@ -12,7 +12,7 @@ export default function Document() {
       postalCode: "54700 ",
     },
     email: "remythiebaut52@gmail.com",
-    url: "https://webcraftman.fr",
+    url: "https://webosaurus.fr",
     geo: {
       "@type": "GeoCoordinates",
       latitude: "48.921324 ",

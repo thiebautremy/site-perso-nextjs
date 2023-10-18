@@ -3,11 +3,10 @@
 .cardsContainer {
   display: flex;
   justify-content: space-evenly;
-  padding: var.$gap-xlarge 0;
+  padding: 0 0 var.$gap-xlarge;
   height: 30rem;
 
   @media screen and (max-width: var.$screen-tablet-landscape) {
-    padding: 0 0 var.$gap-xlarge;
     flex-wrap: wrap;
     height: unset;
   }

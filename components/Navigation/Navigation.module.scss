@@ -8,6 +8,7 @@
   background-color: var.$color-bg--light;
   color: var.$color-font--dark;
   height: 5rem;
+  border-bottom: 1px solid rgba(var.$color-blue, 0.7);
 
   @media screen and (max-width: 800px) {
     position: relative;

@@ -11,6 +11,8 @@
   position: relative;
   height: 35rem;
   padding: var.$gap-medium 0;
+  background-color: rgba(var.$color-bg--light, 0.7);
+
   @media screen and (max-width: var.$screen-phone) {
     height: 25rem;
   }

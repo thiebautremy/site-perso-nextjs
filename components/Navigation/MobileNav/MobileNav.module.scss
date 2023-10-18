@@ -10,7 +10,7 @@
     flex-direction: column;
     min-height: 15rem;
     font-size: 1.3rem;
-    color: var.$color-light-blue;
+    color: var.$color-font--dark;
 
     a {
       padding: calc(var.$gap-small / 2) 0;
@@ -19,6 +19,7 @@
 }
 
 .menuBtn {
+  color: var.$color-font--dark;
   background-color: transparent;
   border: none;
   padding: calc(var.$gap-small/2) 0;

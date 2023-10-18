@@ -5,8 +5,8 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: var.$color-bg--dark;
-  color: var.$color-light-blue;
+  background-color: var.$color-bg--light;
+  color: var.$color-font--dark;
   height: 5rem;
 
   @media screen and (max-width: 800px) {
@@ -30,21 +30,5 @@
 .image {
   &:hover {
     cursor: pointer;
-  }
-}
-
-.menuButton {
-  background-color: var.$color-bg--secondary;
-  border: none;
-  width: 100%;
-  color: var.$color-bg--dark;
-  padding: calc(var.$gap-small / 2);
-
-  span {
-    margin-right: var.$gap-small;
-  }
-
-  &:focus {
-    box-shadow: none;
   }
 }

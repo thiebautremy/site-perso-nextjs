@@ -1,6 +1,7 @@
 import { ReactElement, JSXElementConstructor, ReactFragment } from "react";
 import Footer from "../Footer/Footer";
 import Navigation from "../Navigation/Navigation";
+import styles from "./MainLayout.module.scss";
 
 const MainLayout = (props: {
   children:
@@ -16,7 +17,7 @@ const MainLayout = (props: {
   return (
     <main>
       <Navigation />
-      {props.children}
+      <div className={styles.mainContent}>{props.children}</div>
       <Footer />
     </main>
   );

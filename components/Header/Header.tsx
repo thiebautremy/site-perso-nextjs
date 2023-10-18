@@ -1,6 +1,4 @@
 import styles from "./HeaderStyle.module.scss";
-import Image from "next/image";
-import earth from "../../assets/earth.jpg";
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -14,16 +12,7 @@ const Header = () => {
         transition={{ duration: 1, ease: "easeInOut" }}
       >
         <div className={styles.headerContent}>
-          <div className={styles.headerContentImage}>
-            <Image
-              src={earth}
-              alt="La Terre avec des inscriptions de programmation"
-              title="Terre avec des inscriptions de programmation"
-              className={styles.image}
-              fill
-              style={{ objectFit: "cover" }}
-            />
-          </div>
+          <div className={styles.headerContentImage}></div>
           <div className={styles.headerContentText}>
             <h1 className={styles.title}>Création de site internet </h1>
             <p className={styles.text}>

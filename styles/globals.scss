@@ -13,7 +13,7 @@ body {
 
 body {
   font-family: font-regular, sans-serif;
-  background-color: var.$color-bg;
+  background-color: var.$color-bg--light;
   color: var.$color-bg--dark;
 }
 
@@ -93,20 +93,20 @@ strong {
 }
 
 .ctaBtn {
-  border: 1px solid var.$color-bg;
+  border: 1px solid var.$color-bg--light;
   border-radius: var.$gap-medium;
   padding: calc(var.$gap-small / 2) var.$gap-small;
   background-color: var.$color-blue;
-  color: var.$color-bg--dark;
+  color: var.$color-font--dark;
   transition: all 0.2s ease-in-out;
   font-size: 1.2rem;
   box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25),
     0px 0px 6px 0 rgba(255, 255, 255, 0.3);
 
   &:hover {
-    box-shadow: 0 4px 8px rgba(var.$color-bg, 0.2);
+    box-shadow: 0 4px 8px rgba(var.$color-bg--light, 0.2);
     background-color: var.$color-bg--dark;
-    color: var.$color-bg;
+    color: var.$color-bg--light;
     cursor: pointer;
   }
 }
@@ -184,55 +184,10 @@ strong {
   }
 }
 
-//? ==== NAVBAR PRIME REACT ==== \\
-.p-menubar {
-  justify-content: space-around;
-  background: rgba(var.$color-bg--secondary, $alpha: 0.95) !important;
-  border: none !important;
-  border-radius: 0 !important;
-}
-
-.p-menuitem {
-  padding: var.$gap-small;
-}
-
-.p-menubar
-  .p-menubar-root-list
-  > .p-menuitem.p-menuitem-active
-  > .p-menuitem-link,
-.p-menubar .p-submenu-list,
-.p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link,
-.p-menubar.p-menubar-mobile-active .p-menubar-root-list {
-  background: rgba(var.$color-bg--secondary, $alpha: 0.9) !important;
-}
-
-.p-menubar
-  .p-menubar-root-list
-  > .p-menuitem.p-menuitem-active
-  > .p-menuitem-link:not(.p-disabled):hover,
-.p-menubar
-  .p-menubar-root-list
-  > .p-menuitem
-  > .p-menuitem-link:not(.p-disabled):hover,
-.p-menubar .p-menubar-button:hover {
-  background: none !important;
-}
-
-.p-menuitem:focus-visible {
-  border: none !important;
-}
-.p-menuitem-link > span {
-  color: var.$color-bg--dark !important;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: var.$color-bg--dark !important;
-  }
-}
 //? ==== SIDEBAR ====\\
 .p-sidebar-left .p-sidebar {
   width: 15rem !important;
-  background-color: var.$color-bg--dark;
+  background-color: var.$color-bg--light;
 }
 
 .p-sidebar .p-sidebar-header .p-sidebar-close:focus-visible,

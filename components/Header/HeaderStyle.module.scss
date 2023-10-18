@@ -8,12 +8,9 @@
 
 .headerContentImage {
   width: 100%;
-  background-color: var.$color-white;
   position: relative;
   height: 35rem;
   padding: var.$gap-medium 0;
-  filter: opacity(0.9) grayscale(0.9);
-
   @media screen and (max-width: var.$screen-phone) {
     height: 25rem;
   }
@@ -21,13 +18,13 @@
 
 .headerContentText {
   position: absolute;
-  color: var.$color-bg;
+  color: var.$color-bg--light;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: var.$gap-medium var.$gap-xlarge;
-  background-color: rgba(var.$color-bg--dark, 0.8);
+  // background-color: rgba(var.$color-bg--light, 0.8);
   top: 8rem;
   bottom: 8rem;
   left: 5rem;
@@ -43,14 +40,13 @@
   }
 
   .title {
-    animation: colorChange 8s linear infinite;
+    animation: colorChange 4s linear infinite;
     font-size: 5rem;
     text-transform: uppercase;
-    text-align: end;
+    text-align: center;
     width: 100%;
 
     @media screen and (max-width: var.$screen-tablet-landscape) {
-      text-align: center;
       font-size: 3rem;
     }
 
@@ -62,15 +58,14 @@
   .text {
     font-size: 1.5rem;
     margin: var.$gap-medium auto;
-    color: var.$color-white;
+    color: var.$color-font--dark;
+    text-align: center;
 
     @media screen and (max-width: var.$screen-tablet-landscape) {
       font-size: 1.3rem;
-      text-align: center;
     }
 
     @media screen and (max-width: var.$screen-phone) {
-      text-align: center;
       font-size: 1.2rem;
     }
   }
@@ -81,10 +76,10 @@
     color: var.$color-blue;
   }
   33% {
-    color: var.$color-light-blue;
+    color: var.$color-font--dark;
   }
   66% {
-    color: var.$color-font--secondary;
+    color: var.$color-font--dark;
   }
   100% {
     color: var.$color-blue;

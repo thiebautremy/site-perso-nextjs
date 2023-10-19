@@ -14,7 +14,7 @@ body {
 body {
   font-family: font-regular, sans-serif;
   background-color: var.$color-bg--light;
-  color: var.$color-bg--dark;
+  color: var.$color-font--dark;
 }
 
 a {
@@ -43,8 +43,8 @@ h1 {
 h2 {
   font-size: 1.5rem;
   margin: var.$gap-medium 0;
+  padding-left: var.$gap-medium;
   position: relative;
-  text-indent: 2rem;
 
   &::before {
     content: "";
@@ -96,7 +96,7 @@ strong {
   border: 1px solid var.$color-bg--light;
   border-radius: var.$gap-medium;
   padding: calc(var.$gap-small / 2) var.$gap-small;
-  background-color: var.$color-blue;
+  background-color: var.$color-bg--dark;
   color: var.$color-font--dark;
   transition: all 0.2s ease-in-out;
   font-size: 1.2rem;
@@ -105,8 +105,8 @@ strong {
 
   &:hover {
     box-shadow: 0 4px 8px rgba(var.$color-bg--light, 0.2);
-    background-color: var.$color-bg--dark;
-    color: var.$color-bg--light;
+    background-color: var.$color-font--dark;
+    color: var.$color-font--light;
     cursor: pointer;
   }
 }

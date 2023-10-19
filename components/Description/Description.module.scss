@@ -4,7 +4,88 @@
   padding: var.$gap-xlarge 0;
   color: var.$color-font--dark;
 
-  .text {
-    color: var.$color-font--dark;
+  .descriptionModuleContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 38rem;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      flex-direction: column;
+    }
+
+    .descriptionModulePicture {
+      position: absolute;
+      height: 90%;
+      width: 45%;
+      top: var.$gap-medium;
+      overflow: hidden;
+
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        display: none;
+      }
+    }
+    .descriptionModuleText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: var.$radius;
+      width: 60%;
+      background-color: var.$color-bg--dark;
+      color: var.$color-font--dark;
+
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        width: 95%;
+        margin: auto;
+      }
+    }
+  }
+
+  .descriptionModuleContainer:nth-child(1) {
+    justify-content: flex-end;
+    margin: calc(var.$gap-xlarge * 2) var.$gap-medium calc(var.$gap-xlarge * 2)
+      0;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      margin: var.$gap-small auto;
+    }
+
+    .descriptionModulePicture {
+      left: 0;
+      border-top-right-radius: var.$radius;
+      border-bottom-right-radius: var.$radius;
+    }
+    .descriptionModuleText {
+      padding: var.$gap-small var.$gap-small var.$gap-small
+        calc(var.$gap-xlarge * 2);
+
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        padding: var.$gap-small;
+      }
+    }
+  }
+
+  .descriptionModuleContainer:nth-child(2) {
+    justify-content: flex-start;
+    margin: calc(var.$gap-xlarge * 2) 0 calc(var.$gap-xlarge * 2)
+      var.$gap-medium;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      margin: var.$gap-small auto;
+    }
+
+    .descriptionModulePicture {
+      right: 0;
+      border-top-left-radius: var.$radius;
+      border-bottom-left-radius: var.$radius;
+    }
+    .descriptionModuleText {
+      padding: var.$gap-small calc(var.$gap-xlarge * 2) var.$gap-small
+        var.$gap-small;
+
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        padding: var.$gap-small;
+      }
+    }
   }
 }

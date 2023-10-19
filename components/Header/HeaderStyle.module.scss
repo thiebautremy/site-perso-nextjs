@@ -4,6 +4,17 @@
   display: flex;
   // justify-content: space-between;
   position: relative;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    var.$color-bg--dark 0%,
+    var.$color-bg--light 25%,
+    var.$color-bg--dark 51%,
+    var.$color-bg--light 75%,
+    var.$color-bg--dark 100%
+  );
+  -webkit-animation: AnimateBG 10s ease-in-out infinite;
+  animation: AnimateBG 20s ease-in-out infinite;
 }
 
 .headerContentImage {
@@ -13,17 +24,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-    -45deg,
-    var.$color-blue 0%,
-    var.$color-font--light 25%,
-    var.$color-blue 51%,
-    var.$color-font--light 75%,
-    var.$color-blue 100%
-  );
-  -webkit-animation: AnimateBG 10s ease-in-out infinite;
-  animation: AnimateBG 20s ease-in-out infinite;
 
   @media screen and (max-width: var.$screen-phone) {
     height: 25rem;

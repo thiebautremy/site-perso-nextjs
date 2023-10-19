@@ -32,18 +32,26 @@ const Footer = () => {
             </div>
             <div className={styles.rightContainer}>
               <ul>
-                <Link href="/" scroll>
-                  <li>Accueil</li>
-                </Link>
-                <Link href="/realisations" scroll>
-                  <li>Réalisations</li>
-                </Link>
-                <Link href="/presentation" scroll>
-                  <li>Présentation</li>
-                </Link>
-                <Link href="/contact" scroll>
-                  <li>Me contacter</li>
-                </Link>
+                <li>
+                  <Link href="/" scroll>
+                    Accueil
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/realisations" scroll>
+                    Réalisations
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/presentation" scroll>
+                    Présentation
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" scroll>
+                    Me contacter
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

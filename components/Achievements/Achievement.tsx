@@ -42,6 +42,8 @@ const Achievement = ({ title, description, picture, url }: AchievementType) => {
               alt={picture.alt}
               title={picture.title}
               className={styles.image}
+              loading="eager"
+              placeholder="blur"
               fill
               style={{ objectFit: "cover" }}
             />

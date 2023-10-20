@@ -34,6 +34,8 @@ const Description = () => {
                 alt={"Graphique montant en flèche"}
                 title={"Graphique montant en flèche"}
                 className={styles.image}
+                loading="eager"
+                placeholder="blur"
                 fill
                 style={{ objectFit: "cover" }}
               />
@@ -69,6 +71,8 @@ const Description = () => {
                 alt={"Ordinateur, tablette et mobile sur un bureau"}
                 title={"Ordinateur, tablette et mobile sur un bureau"}
                 className={styles.image}
+                loading="eager"
+                placeholder="blur"
                 fill
                 style={{ objectFit: "cover" }}
               />

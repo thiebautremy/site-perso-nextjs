@@ -3,6 +3,8 @@ import Link from "next/link";
 import Container from "../Container/Container";
 import styles from "./Footer.module.scss";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import logoLongVectorised from "@/assets/logo/logo-long-vectorised.png";
 
 const Footer = () => {
   return (
@@ -16,7 +18,21 @@ const Footer = () => {
         <Container margin="isMedium">
           <div className={styles.footerContainer}>
             <div className={styles.leftContainer}>
-              <h4>Webosaurus - création de site internet</h4>
+              <h4 className={styles.title}>
+                <div className={styles.logoContainer}>
+                  <Image
+                    src={logoLongVectorised}
+                    alt={"Logo Webosaurus"}
+                    title={"Logo de Webosaurus"}
+                    className={styles.image}
+                    loading="eager"
+                    placeholder="blur"
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+                <span>- Création de site internet</span>
+              </h4>
               <address className={styles.address}>
                 358 rue Pierre ADT <br></br> 54700 Pont-à-mousson
               </address>

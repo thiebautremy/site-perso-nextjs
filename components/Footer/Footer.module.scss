@@ -23,6 +23,20 @@
   }
 
   .leftContainer {
+    .title {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin: var.$gap-small 0 0 calc(var.$gap-small / 2);
+      }
+    }
+    .logoContainer {
+      height: 3rem;
+      position: relative;
+      width: 8rem;
+      margin: 0 auto;
+    }
     .address {
       line-height: 2rem;
     }
@@ -40,7 +54,7 @@
   }
 }
 .bottomContainer {
-  border-top: 1px solid var.$color-font--light;
+  border-top: 1px solid var.$color-font--dark;
   padding: var.$gap-small;
   text-align: center;
 

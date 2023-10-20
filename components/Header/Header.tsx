@@ -1,5 +1,7 @@
 import styles from "./HeaderStyle.module.scss";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import logoLongVectorised from "@/assets/logo/logo-long-vectorised.png";
 
 const Header = () => {
   return (
@@ -12,8 +14,20 @@ const Header = () => {
         transition={{ duration: 1, ease: "easeInOut" }}
       >
         <div className={styles.headerContent}>
-          <div className={styles.headerContentImage}></div>
+          <div className={styles.headerContentBg}></div>
           <div className={styles.headerContentText}>
+            <div className={styles.logoContainer}>
+              <Image
+                src={logoLongVectorised}
+                alt={"Logo Webosaurus"}
+                title={"Logo de Webosaurus"}
+                className={styles.image}
+                loading="eager"
+                placeholder="blur"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
             <h1 className={styles.title}>Création de site internet </h1>
             <p className={styles.text}>
               Je développe un site vitrine qui correspond à vos besoins.

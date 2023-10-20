@@ -2,22 +2,16 @@
 
 .headerContent {
   display: flex;
-  // justify-content: space-between;
   position: relative;
-  background-size: 300% 300%;
+  border-bottom: 2px solid var.$color-font--dark;
   background-image: linear-gradient(
-    -45deg,
-    var.$color-bg--dark 0%,
-    var.$color-bg--light 25%,
-    var.$color-bg--dark 51%,
-    var.$color-bg--light 75%,
-    var.$color-bg--dark 100%
+    45deg,
+    rgba(var.$color-bg--dark, 0.9) 0%,
+    var.$color-bg--light 95%
   );
-  -webkit-animation: AnimateBG 10s ease-in-out infinite;
-  animation: AnimateBG 20s ease-in-out infinite;
 }
 
-.headerContentImage {
+.headerContentBg {
   width: 100%;
   position: relative;
   height: 35rem;
@@ -37,10 +31,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: var.$gap-medium var.$gap-xlarge;
-  // background-color: rgba(var.$color-bg--light, 0.8);
-  top: 8rem;
-  bottom: 8rem;
+  padding: var.$gap-small var.$gap-medium;
+  top: 4rem;
+  bottom: 4rem;
   left: 5rem;
   right: 5rem;
   border-radius: var.$radius;
@@ -53,13 +46,34 @@
     padding: calc(var.$gap-small / 2) var.$gap-small;
   }
 
+  .logoContainer {
+    height: 6rem;
+    position: relative;
+    width: 20rem;
+    margin: 0 auto;
+  }
+
   .title {
     // animation: colorChange 4s linear infinite;
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    color: var.$color-font--dark;
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: var.$gap-small 0;
+    background-image: linear-gradient(
+      -45deg,
+      var.$color-font--dark 0%,
+      var.$color-font--dark 25%,
+      var.$color-bg--light 51%,
+      var.$color-font--dark 75%,
+      var.$color-font--dark 100%
+    );
+    -webkit-animation: AnimateBG 8s ease- infinite;
+    animation: AnimateBG 8s ease infinite;
 
     @media screen and (max-width: var.$screen-tablet-landscape) {
       font-size: 3rem;

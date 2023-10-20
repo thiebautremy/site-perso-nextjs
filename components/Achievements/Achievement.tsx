@@ -43,7 +43,7 @@ const Achievement = ({ title, description, picture, url }: AchievementType) => {
               title={picture.title}
               className={styles.image}
               fill
-              style={{ objectFit: "fill" }}
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

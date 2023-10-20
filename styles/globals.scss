@@ -111,17 +111,6 @@ strong {
   }
 }
 
-.descriptionContent {
-  &:hover {
-    .textHighlighted {
-      &::before,
-      &::after {
-        transition: all 0.2s ease-in-out;
-      }
-    }
-  }
-}
-
 //? ==== ACHIEVEMENTS ==== //
 .achievementsContainer {
   &:hover {

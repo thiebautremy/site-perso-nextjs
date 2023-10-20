@@ -47,7 +47,10 @@
       0;
 
     @media screen and (max-width: var.$screen-tablet-landscape) {
-      margin: var.$gap-small auto;
+      margin: var.$gap-medium auto;
+    }
+    @media screen and (max-width: var.$screen-phone) {
+      margin: var.$gap-xlarge auto;
     }
 
     .descriptionModulePicture {
@@ -71,7 +74,11 @@
       var.$gap-medium;
 
     @media screen and (max-width: var.$screen-tablet-landscape) {
-      margin: var.$gap-small auto;
+      margin: var.$gap-medium auto;
+    }
+
+    @media screen and (max-width: var.$screen-phone) {
+      margin: var.$gap-large auto 15rem;
     }
 
     .descriptionModulePicture {

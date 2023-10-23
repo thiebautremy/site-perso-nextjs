@@ -40,7 +40,8 @@
     }
   }
 
-  .descriptionModuleContainer:nth-child(1) {
+  .descriptionModuleContainer:nth-child(1),
+  .descriptionModuleContainer:nth-child(3) {
     justify-content: flex-end;
     margin: calc(var.$gap-xlarge * 2) var.$gap-medium calc(var.$gap-xlarge * 2)
       0;

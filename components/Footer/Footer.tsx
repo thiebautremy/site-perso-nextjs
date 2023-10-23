@@ -18,7 +18,7 @@ const Footer = () => {
         <Container margin="isMedium">
           <div className={styles.footerContainer}>
             <div className={styles.leftContainer}>
-              <h4 className={styles.title}>
+              <div className={styles.title}>
                 <div className={styles.logoContainer}>
                   <Image
                     src={logoLongVectorised}
@@ -31,8 +31,8 @@ const Footer = () => {
                     style={{ objectFit: "contain" }}
                   />
                 </div>
-                <span>- Création de site internet</span>
-              </h4>
+                <h4>- Création de site internet</h4>
+              </div>
               <address className={styles.address}>
                 358 rue Pierre ADT <br></br> 54700 Pont-à-mousson
               </address>

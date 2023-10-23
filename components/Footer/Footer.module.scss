@@ -1,9 +1,13 @@
 @use "../../styles/variables" as var;
 
 .footer {
-  background-color: var.$color-bg--dark;
   color: var.$color-font--dark;
   font-size: 1.2rem;
+  background-image: linear-gradient(
+    180deg,
+    var.$color-bg--dark 50%,
+    var.$color-bg--light 100%
+  );
 }
 
 .footerContainer {
@@ -27,7 +31,7 @@
       display: flex;
       align-items: center;
 
-      span {
+      h4 {
         margin: var.$gap-small 0 0 calc(var.$gap-small / 2);
       }
     }

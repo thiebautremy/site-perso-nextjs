@@ -27,9 +27,9 @@ const Achievement = ({ title, description, picture, url }: AchievementType) => {
           <div className={styles.achievementDescription}>
             <h2>{title}</h2>
             <p>{description}</p>
-            <Link href={url} className={styles.link}>
+            <a href={url} className={styles.link}>
               Voir la réalisation
-            </Link>
+            </a>
           </div>
           <div
             className={cx(

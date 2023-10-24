@@ -28,10 +28,13 @@ const Header = () => {
                 style={{ objectFit: "contain" }}
               />
             </div>
-            <h1 className={styles.title}>Création de site internet </h1>
-            <p className={styles.text}>
-              Je développe un site vitrine qui correspond à vos besoins.
-            </p>
+            <h1 className={styles.title}>
+              <span>Agence Web</span>
+              <span>Création de site internet</span>
+            </h1>
+            <h2 className={styles.subTitle}>
+              Développons un site vitrine qui correspond à vos besoins
+            </h2>
           </div>
         </div>
       </motion.div>

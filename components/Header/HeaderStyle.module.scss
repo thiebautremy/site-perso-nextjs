@@ -76,8 +76,8 @@
       var.$color-font--dark 75%,
       var.$color-font--dark 100%
     );
-    -webkit-animation: AnimateBG 8s ease- infinite;
-    animation: AnimateBG 8s ease infinite;
+    -webkit-animation: AnimateBG 6s ease- infinite;
+    animation: AnimateBG 6s ease infinite;
 
     @media screen and (max-width: var.$screen-tablet-landscape) {
       font-size: 3rem;
@@ -86,9 +86,17 @@
     @media screen and (max-width: var.$screen-phone) {
       font-size: 2rem;
     }
+
+    span {
+      display: block;
+      &:nth-child(1) {
+        margin-bottom: calc(var.$gap-small / 2);
+      }
+    }
   }
 
-  .text {
+  .text,
+  .subTitle {
     font-size: 1.5rem;
     margin: var.$gap-medium auto;
     color: var.$color-font--dark;
@@ -100,6 +108,13 @@
 
     @media screen and (max-width: var.$screen-phone) {
       font-size: 1.2rem;
+    }
+  }
+
+  .subTitle {
+    padding-left: 0;
+    &::before {
+      content: none;
     }
   }
 }

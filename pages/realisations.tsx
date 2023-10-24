@@ -1,5 +1,6 @@
 import AchievementsContainer from "@/components/Achievements/Achievements";
 import MainLayout from "@/components/Layout/MainLayout";
+import Navigation from "@/components/Navigation/Navigation";
 import Head from "next/head";
 
 export const Achievements = () => {
@@ -38,6 +39,7 @@ export const Achievements = () => {
         />
       </Head>
       <MainLayout>
+        <Navigation />
         <AchievementsContainer />
       </MainLayout>
     </>

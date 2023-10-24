@@ -2,10 +2,12 @@ import styles from "./HeaderStyle.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import logoLongVectorised from "@/assets/logo/logo-long-vectorised.png";
+import Navigation from "../Navigation/Navigation";
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
+      <Navigation />
       <motion.div
         animate={{ x: [250, 0] }}
         initial={{ opacity: 0 }}

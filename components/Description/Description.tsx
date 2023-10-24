@@ -25,7 +25,7 @@ const Description = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <div className={styles.descriptionModuleContainer}>

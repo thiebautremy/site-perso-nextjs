@@ -1,11 +1,13 @@
 import styles from "./DesktopNav.module.scss";
 import Link from "next/link";
+import cx from "classnames";
 
 type DesktopNavType = {
   links: { url: string; label: string }[];
+  scrolled: boolean;
 };
 
-const DesktopNav = ({ links }: DesktopNavType) => {
+const DesktopNav = ({ links, scrolled }: DesktopNavType) => {
   return (
     <>
       <div className={styles.linksContainer}>
@@ -16,7 +18,10 @@ const DesktopNav = ({ links }: DesktopNavType) => {
         ))}
       </div>
       <div>
-        <Link href={"/contact"} className="ctaBtn">
+        <Link
+          href={"/contact"}
+          className={cx("ctaBtn", scrolled && "ctaBtnScrolled")}
+        >
           Me contacter
         </Link>
       </div>

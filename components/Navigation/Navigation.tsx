@@ -5,6 +5,7 @@ import DesktopNav from "./DesktopNav/DesktopNav";
 import { useState, useEffect } from "react";
 import MobileNav from "./MobileNav/MobileNav";
 import { useWindowSize } from "./helper";
+import cx from "classnames";
 
 const Navigation = () => {
   const links: { url: string; label: string }[] = [
@@ -23,14 +24,41 @@ const Navigation = () => {
   ];
   const size = useWindowSize();
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.innerWidth);
+      if (window.innerWidth > 600) {
+        if (window.scrollY > 70) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      } else {
+        if (window.scrollY > 0) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className={styles.navBar}>
+    <nav className={cx(styles.navBar, scrolled && styles.navBarScrolled)}>
       <Container margin="isHuge">
         <div className={styles.navBarContainer}>
           {size > 800 ? (
-            <DesktopNav links={links} />
+            <DesktopNav links={links} scrolled={scrolled} />
           ) : (
-            <MobileNav links={links} />
+            <MobileNav links={links} scrolled={scrolled} />
           )}
         </div>
       </Container>

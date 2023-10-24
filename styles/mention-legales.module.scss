@@ -1,10 +1,9 @@
 @use "styles/_variables.scss" as var;
 
 .mentionsLegales {
-  padding: var.$gap-xlarge 0;
-  background: linear-gradient(
-    130deg,
-    rgba(var.$color-blue, 0.5) 0%,
-    var.$color-bg--light 15%
-  );
+  padding-top: 12rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    padding-top: 5rem;
+  }
 }

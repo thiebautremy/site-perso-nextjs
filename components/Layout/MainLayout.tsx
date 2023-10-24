@@ -16,7 +16,7 @@ const MainLayout = (props: {
 }) => {
   return (
     <main>
-      <Navigation />
+      {/* <Navigation /> */}
       <div className={styles.mainContent}>{props.children}</div>
       <Footer />
     </main>

@@ -1,6 +1,7 @@
 import MainLayout from "@/components/Layout/MainLayout";
 import Head from "next/head";
 import PresentationContainer from "@/components/Presentation/Presentation";
+import Navigation from "@/components/Navigation/Navigation";
 
 export const Presentation = () => {
   return (
@@ -38,6 +39,7 @@ export const Presentation = () => {
         />
       </Head>
       <MainLayout>
+        <Navigation />
         <PresentationContainer />
       </MainLayout>
     </>

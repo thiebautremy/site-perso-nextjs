@@ -1,14 +1,16 @@
 @use "../../styles/variables" as var;
 
-.headerContent {
-  display: flex;
-  position: relative;
-  border-bottom: 2px solid var.$color-font--dark;
+.header {
   background-image: linear-gradient(
     45deg,
     rgba(var.$color-bg--dark, 0.9) 0%,
     var.$color-bg--light 95%
   );
+}
+.headerContent {
+  display: flex;
+  position: relative;
+  border-bottom: 2px solid var.$color-font--dark;
 }
 
 .headerContentBg {
@@ -39,7 +41,7 @@
   border-radius: var.$radius;
 
   @media screen and (max-width: var.$screen-phone) {
-    top: 2rem;
+    top: 3rem;
     bottom: 2rem;
     left: 3rem;
     right: 3rem;

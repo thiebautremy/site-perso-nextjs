@@ -42,7 +42,7 @@ const Footer = () => {
                   className={styles.email}
                   href="mailto:remythiebaut52@gmail.com"
                 >
-                  <span>remythiebaut52@gmail.com</span>
+                  <span>Par mail en cliquant ici</span>
                 </a>
               </div>
             </div>

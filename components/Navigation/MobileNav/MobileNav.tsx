@@ -3,12 +3,14 @@ import Link from "next/link";
 import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
 import { useState } from "react";
+import cx from "classnames";
 
 type MobileNavType = {
   links: { url: string; label: string }[];
+  scrolled: boolean;
 };
 
-const MobileNav = ({ links }: MobileNavType) => {
+const MobileNav = ({ links, scrolled }: MobileNavType) => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -16,7 +18,10 @@ const MobileNav = ({ links }: MobileNavType) => {
       <Sidebar
         visible={visible}
         onHide={() => setVisible(false)}
-        className="w-full md:w-20rem lg:w-30rem"
+        className={cx(
+          "w-full md:w-20rem lg:w-30rem",
+          scrolled && "sideBarScrolled"
+        )}
       >
         <div className={styles.links}>
           <div className={styles.linksContainerMobile}>
@@ -42,7 +47,7 @@ const MobileNav = ({ links }: MobileNavType) => {
           />
         }
         onClick={() => setVisible(true)}
-        className={styles.menuBtn}
+        className={cx(styles.menuBtn, scrolled && styles.menuBtnScrolled)}
         label="Menu"
       />
     </>

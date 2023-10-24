@@ -1,7 +1,12 @@
 @use "styles/_variables.scss" as var;
 
 .contactForm {
-  padding: var.$gap-xlarge 0;
+  padding-top: 12rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    padding-top: 5rem;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: center;

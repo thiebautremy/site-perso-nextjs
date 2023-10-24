@@ -1,5 +1,6 @@
 import ContactForm from "@/components/ContactForm/ContactForm";
 import MainLayout from "@/components/Layout/MainLayout";
+import Navigation from "@/components/Navigation/Navigation";
 import Head from "next/head";
 
 export const Contact = () => {
@@ -38,6 +39,7 @@ export const Contact = () => {
         />
       </Head>
       <MainLayout>
+        <Navigation />
         <ContactForm />
       </MainLayout>
     </>

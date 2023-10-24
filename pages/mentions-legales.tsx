@@ -2,6 +2,7 @@ import MainLayout from "@/components/Layout/MainLayout";
 import Head from "next/head";
 import styles from "@/styles/mention-legales.module.scss";
 import Container from "@/components/Container/Container";
+import Navigation from "@/components/Navigation/Navigation";
 
 export const Contact = () => {
   return (
@@ -39,6 +40,7 @@ export const Contact = () => {
         />
       </Head>
       <MainLayout>
+        <Navigation />
         <div className={styles.mentionsLegales}>
           <Container margin="isMedium">
             <h1>Mentions légales</h1>

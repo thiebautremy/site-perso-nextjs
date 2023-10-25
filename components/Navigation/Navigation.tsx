@@ -30,7 +30,7 @@ const Navigation = () => {
     const handleScroll = () => {
       console.log(window.innerWidth);
       if (window.innerWidth > 600) {
-        if (window.scrollY > 70) {
+        if (window.scrollY > 20) {
           setScrolled(true);
         } else {
           setScrolled(false);

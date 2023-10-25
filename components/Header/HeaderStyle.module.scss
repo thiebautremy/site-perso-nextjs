@@ -1,11 +1,29 @@
 @use "../../styles/variables" as var;
 
 .header {
-  background-image: linear-gradient(
-    45deg,
-    rgba(var.$color-bg--dark, 0.9) 0%,
-    var.$color-bg--light 95%
-  );
+  // background-image: linear-gradient(
+  //   45deg,
+  //   rgba(var.$color-bg--dark, 0.9) 0%,
+  //   var.$color-bg--light 95%
+  // );
+  // background-image: url("../../assets/background/bg.jpg");
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/background/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(250deg);
+    opacity: 0.3;
+  }
 }
 .headerContent {
   display: flex;

@@ -1,0 +1,53 @@
+@use "../../styles/variables" as var;
+
+.articleCardContainer {
+  &,
+  & * {
+    box-sizing: border-box;
+    transition: 400ms;
+  }
+  text-align: center;
+  color: var.$color-font--dark;
+  padding: var.$gap-small;
+  border-radius: var.$radius;
+  transition: all 0.2s ease-in-out;
+  background: rgba(var.$color-font--light, 0.3);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 21rem;
+  height: 16rem;
+  margin: var.$gap-small;
+
+  &:hover {
+    cursor: pointer;
+    .title {
+      transform: translateY(-1rem);
+    }
+    .description {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .title {
+    transform: translateY(2.5rem);
+    padding: 0;
+    text-align: left;
+    &::before {
+      content: none;
+    }
+  }
+
+  .description {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+    position: relative;
+    text-align: left;
+    letter-spacing: 0.1rem;
+  }
+}

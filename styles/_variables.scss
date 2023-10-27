@@ -1,6 +1,9 @@
 $color-blue: #0b2a3d;
 $color-font--dark: #072a40;
 $color-font--light: #fae6b1;
+$color-font--blog: #424242;
+$color-yellow: #d2e363;
+$color-black: #202020;
 $color-bg--dark: #d3f2fc;
 $color-bg--light: #f9f7f0;
 
@@ -23,4 +26,9 @@ $screen-desktop: 1200px;
 @font-face {
   font-family: "font-bold";
   src: url(../assets/font/Signika/static/Signika-Bold.ttf);
+}
+
+@font-face {
+  font-family: "font-article-regular";
+  src: url(../assets/font/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
 }

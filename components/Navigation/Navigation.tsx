@@ -21,6 +21,10 @@ const Navigation = () => {
       url: "/presentation",
       label: "Présentation",
     },
+    {
+      url: "/blog",
+      label: "Blog",
+    },
   ];
   const size = useWindowSize();
 
@@ -28,7 +32,6 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(window.innerWidth);
       if (window.innerWidth > 600) {
         if (window.scrollY > 20) {
           setScrolled(true);

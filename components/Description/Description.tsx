@@ -8,6 +8,8 @@ import TextHighlighted from "../TextHighlighted/TextHighlighted";
 import earth from "@/assets/description/earth.jpg";
 import responsive2 from "@/assets/description/responsive2.jpg";
 import internet from "@/assets/description/internet.jpg";
+import Link from "next/link";
+import { FaAngleRight } from "react-icons/fa";
 
 const Description = () => {
   return (
@@ -149,6 +151,15 @@ const Description = () => {
                 pourrez profiter de votre site vitrine pour bénéficier
                 d&apos;une meilleure exposition.
               </p>
+
+              <div className={styles.linkContainer}>
+                <Link
+                  href={"/blog/comment-creer-un-site-internet-a-pont-a-mousson"}
+                  className={styles.linkArticle}
+                >
+                  Lire l&apos;article <FaAngleRight />
+                </Link>
+              </div>
             </div>
           </div>
         </motion.div>

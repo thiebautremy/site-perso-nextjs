@@ -64,6 +64,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/blog" scroll>
+                    Blog
+                  </Link>
+                </li>
+                <li>
                   <Link href="/contact" scroll>
                     Me contacter
                   </Link>

@@ -62,6 +62,7 @@ const Page = ({ articleContent }: PageProps) => {
           property="article:modified_time"
           content={articleContent.updatedAt}
         ></meta>
+        <meta property="og:type" content="article" />
         <meta property="article:tag" content={articleContent.tag}></meta>
         <meta name="author" content="Webosaurus - Agence web"></meta>
       </Head>

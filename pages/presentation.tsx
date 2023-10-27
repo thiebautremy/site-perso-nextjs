@@ -37,6 +37,7 @@ export const Presentation = () => {
           name="keywords"
           content="agence digitale, agence web, création site internet, site vitrine, pont à mousson"
         />
+        <meta property="og:type" content="website" />
       </Head>
       <MainLayout>
         <Navigation />

@@ -11,7 +11,7 @@ export const Contact = () => {
         <title>Webosaurus - Mentions légales</title>
         <meta
           name="description"
-          content="Consultez les mentions légales de Webosaurus et découvrez les informations essentielles."
+          content="Consultez les mentions légales de Webosaurus et découvrez les informations essentielles sur la gestion du site internet."
         />
         <meta
           name="og:image"
@@ -26,7 +26,7 @@ export const Contact = () => {
         <meta
           name="og:description"
           property="og:description"
-          content="Consultez les mentions légales de Webosaurus et découvrez les informations essentielles."
+          content="Consultez les mentions légales de Webosaurus et découvrez les informations essentielles sur la gestion du site internet."
         />
         <meta
           name="og:url"
@@ -38,6 +38,7 @@ export const Contact = () => {
           name="keywords"
           content="agence digitale, agence web, création site internet, site vitrine, pont à mousson"
         />
+        <meta property="og:type" content="website" />
       </Head>
       <MainLayout>
         <Navigation />

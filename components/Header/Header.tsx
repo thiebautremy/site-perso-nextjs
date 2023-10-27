@@ -32,6 +32,7 @@ const Header = () => {
             <h1 className={styles.title}>
               <span>Agence Web</span>
               <span>Création de site internet</span>
+              <span>à Pont-à-mousson</span>
             </h1>
             <h2 className={styles.subTitle}>
               Développons un site vitrine qui correspond à vos besoins

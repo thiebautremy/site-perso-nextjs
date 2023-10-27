@@ -1,0 +1,126 @@
+@use "../../styles/variables" as var;
+
+.article {
+  padding: 10rem 0;
+
+  @media screen and (max-width: var.$screen-phone) {
+    padding: 5rem 0;
+  }
+
+  .title {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+      -45deg,
+      var.$color-font--dark 0%,
+      var.$color-font--dark 30%,
+      var.$color-bg--light 51%,
+      var.$color-font--dark 70%,
+      var.$color-font--dark 100%
+    );
+    -webkit-animation: AnimateBG 7s ease infinite;
+    animation: AnimateBG 7s ease infinite;
+  }
+  .pictureContainer {
+    margin: var.$gap-medium 0;
+    position: relative;
+    height: 20rem;
+    width: 100%;
+  }
+
+  .articleInfos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: var.$gap-medium;
+    border-bottom: 1px solid var.$color-font--dark;
+    padding-bottom: var.$gap-small;
+  }
+
+  .text {
+    font-family: "font-article-regular", Georgia, Droid-serif, serif;
+    letter-spacing: 0.2px;
+    border-left: 1px solid var.$color-font--dark;
+    color: var.$color-font--blog;
+
+    p,
+    h2,
+    h3 {
+      margin: var.$gap-medium calc(var.$gap-xlarge * 2) 0
+        calc(var.$gap-xlarge * 2);
+
+      @media screen and (max-width: var.$screen-desktop) {
+        margin: var.$gap-medium var.$gap-medium 0 var.$gap-medium;
+      }
+      @media screen and (max-width: var.$screen-phone) {
+        margin: var.$gap-medium calc(var.$gap-small / 2) 0 var.$gap-small;
+      }
+    }
+
+    p:nth-child(1) {
+      font-style: italic;
+      font-size: 1.3rem;
+      padding: 0 !important;
+      margin-bottom: var.$gap-xlarge;
+    }
+
+    p:nth-last-child(1) {
+      margin: var.$gap-xlarge 0;
+      color: var.$color-black;
+    }
+
+    h2,
+    h3 {
+      color: var.$color-black;
+    }
+    h3 {
+      position: relative;
+      padding-left: var.$gap-medium;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: var.$color-yellow;
+        left: 0;
+        z-index: 10;
+        border-radius: 50%;
+        top: 35%;
+      }
+    }
+
+    p {
+      padding-left: var.$gap-xlarge;
+
+      @media screen and (max-width: var.$screen-phone) {
+        padding-left: var.$gap-small;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

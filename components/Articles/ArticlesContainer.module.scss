@@ -1,0 +1,17 @@
+@use "../../styles/variables" as var;
+
+.articlesContainer {
+  padding: 12rem 0;
+
+  @media screen and (max-width: var.$screen-phone) {
+    padding: 5rem 0;
+  }
+
+  .articleCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: var.$gap-xlarge 0;
+  }
+}

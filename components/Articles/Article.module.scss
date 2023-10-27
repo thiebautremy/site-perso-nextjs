@@ -49,6 +49,13 @@
     h3 {
       margin: var.$gap-medium calc(var.$gap-xlarge * 2) 0
         calc(var.$gap-xlarge * 2);
+
+      @media screen and (max-width: var.$screen-desktop) {
+        margin: var.$gap-medium var.$gap-medium 0 var.$gap-medium;
+      }
+      @media screen and (max-width: var.$screen-phone) {
+        margin: var.$gap-medium calc(var.$gap-small / 2) 0 var.$gap-small;
+      }
     }
 
     p:nth-child(1) {
@@ -86,6 +93,10 @@
 
     p {
       padding-left: var.$gap-xlarge;
+
+      @media screen and (max-width: var.$screen-phone) {
+        padding-left: var.$gap-small;
+      }
     }
   }
 }

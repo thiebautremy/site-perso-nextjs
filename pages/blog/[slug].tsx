@@ -63,6 +63,7 @@ const Page = ({ articleContent }: PageProps) => {
           content={articleContent.updatedAt}
         ></meta>
         <meta property="article:tag" content={articleContent.tag}></meta>
+        <meta name="author" content="Webosaurus - Agence web"></meta>
       </Head>
       <MainLayout>
         <Navigation />

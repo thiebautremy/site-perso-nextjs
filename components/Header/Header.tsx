@@ -35,8 +35,7 @@ const Header = () => {
               <span>à Pont-à-mousson</span>
             </h1>
             <h2 className={styles.subTitle}>
-              <span>Développons</span> un site vitrine qui correspond à{" "}
-              <span>vos besoins</span>
+              Développons un site vitrine qui correspond à vos besoins
             </h2>
           </div>
         </div>

@@ -1,10 +1,13 @@
 @use "styles/_variables.scss" as var;
 
 .contactForm {
-  padding-top: 12rem;
+  padding: 12rem 0 3rem;
+  background-image: url("../../assets/background/texture.jpg");
+  background-position: 0;
+  background-size: 1000px 1000px;
 
   @media screen and (max-width: var.$screen-phone) {
-    padding-top: 5rem;
+    padding: 5rem 0 2rem;
   }
 
   display: flex;
@@ -103,7 +106,7 @@
   text-transform: uppercase;
   overflow: hidden;
   position: relative;
-  background-color: var.$color-bg--dark;
+  background-color: var.$color-yellow;
   font-weight: 700;
   font-size: 15px;
   color: var.$color-font--dark;

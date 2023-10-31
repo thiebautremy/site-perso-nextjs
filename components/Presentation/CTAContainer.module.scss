@@ -1,9 +1,11 @@
 @use "../../styles/variables" as var;
 
 .CTAContainer {
-  background-color: var.$color-bg--dark;
+  background-image: url("../../assets/background/texture-dark.jpg");
+  background-position: 0;
+  background-size: 1000px 1000px;
   border-radius: var.$radius;
-  color: var.$color-font--dark;
+  color: var.$color-yellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +35,7 @@
     padding: var.$gap-small var.$gap-medium;
     border-radius: var.$radius;
     color: var.$color-font--dark;
-    background-color: var.$color-bg--light;
+    background-color: var.$color-yellow;
     box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25),
       0px 0px 6px 0 rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease-in-out;

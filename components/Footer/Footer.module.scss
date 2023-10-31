@@ -11,12 +11,14 @@
 
 .footerContainer {
   display: flex;
+  flex-wrap: wrap;
 
   @media screen and (max-width: var.$screen-phone) {
     flex-direction: column;
   }
 
   .leftContainer,
+  .middleContainer,
   .rightContainer {
     padding: var.$gap-medium;
 
@@ -45,7 +47,15 @@
     }
   }
 
-  .rightContainer {
+  .middleContainer {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+
+    @media screen and (max-width: var.$screen-phone) {
+      justify-content: flex-start;
+    }
+
     li {
       margin-top: var.$gap-small;
       transition: all 0.2s ease-in-out;
@@ -53,6 +63,17 @@
       &:hover {
         color: var.$color-blue;
       }
+    }
+  }
+
+  .rightContainer {
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    a {
+      height: fit-content;
+      padding: var.$gap-small;
+      margin-top: var.$gap-small;
     }
   }
 }

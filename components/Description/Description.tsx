@@ -14,6 +14,7 @@ import { FaAngleRight } from "react-icons/fa";
 const Description = () => {
   return (
     <>
+      <Cards />
       <div className={cx(styles.descriptionContent, "descriptionContent")}>
         <TextHighlighted
           text="Aujourd'hui, la création d'un site internet est devenue
@@ -164,7 +165,6 @@ const Description = () => {
         </motion.div>
         <TextHighlighted text="La création d'un site internet est un investissement essentiel pour votre entreprise. Pour garantir son succès, il est recommandé de faire appel à un professionnel qui peut créer un site responsive, bien référencé et esthétiquement attrayant. Cela vous permettra de maximiser votre visibilité en ligne. Ne sous-estimez pas le pouvoir d'un site web bien conçu pour stimuler votre entreprise à Pont-à-Mousson." />
       </div>
-      <Cards />
     </>
   );
 };

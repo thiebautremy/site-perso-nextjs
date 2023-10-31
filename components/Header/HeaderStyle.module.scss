@@ -43,7 +43,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: var.$gap-small var.$gap-medium;
+  padding: var.$gap-medium var.$gap-medium var.$gap-small;
   top: 4rem;
   bottom: 4rem;
   left: 5rem;
@@ -81,14 +81,14 @@
     padding: var.$gap-small 0;
     background-image: linear-gradient(
       -45deg,
-      var.$color-font--dark 0%,
-      var.$color-font--dark 30%,
-      var.$color-bg--light 51%,
-      var.$color-font--dark 70%,
-      var.$color-font--dark 100%
+      var.$color-yellow 0%,
+      var.$color-yellow 45%,
+      var.$color-font--dark 51%,
+      var.$color-yellow 55%,
+      var.$color-yellow 100%
     );
-    -webkit-animation: AnimateBG 7s ease infinite;
-    animation: AnimateBG 7s ease infinite;
+    -webkit-animation: AnimateBG 7s ease-in-out infinite;
+    animation: AnimateBG 7s ease-in-out infinite;
 
     @media screen and (max-width: var.$screen-tablet-landscape) {
       font-size: 3rem;
@@ -110,7 +110,7 @@
   .text,
   .subTitle {
     font-size: 1.5rem;
-    margin: var.$gap-medium auto;
+    margin: var.$gap-medium auto var.$gap-small;
     color: var.$color-font--dark;
     text-align: center;
 

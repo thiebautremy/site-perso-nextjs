@@ -15,7 +15,7 @@ const Footer = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <footer className={styles.footer}>
-        <Container margin="isMedium">
+        <Container margin="isHuge">
           <div className={styles.footerContainer}>
             <div className={styles.leftContainer}>
               <div className={styles.title}>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className={styles.rightContainer}>
+            <div className={styles.middleContainer}>
               <ul>
                 <li>
                   <Link href="/" scroll>
@@ -68,12 +68,12 @@ const Footer = () => {
                     Blog
                   </Link>
                 </li>
-                <li>
-                  <Link href="/contact" scroll>
-                    Me contacter
-                  </Link>
-                </li>
               </ul>
+            </div>
+            <div className={styles.rightContainer}>
+              <Link href="/contact" scroll className="ctaBtn">
+                Me contacter
+              </Link>
             </div>
           </div>
           <div className={styles.bottomContainer}>

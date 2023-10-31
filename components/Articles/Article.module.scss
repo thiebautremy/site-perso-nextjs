@@ -80,17 +80,21 @@
     h3 {
       position: relative;
       padding-left: var.$gap-medium;
+      display: flex;
+      align-items: center;
 
       &::before {
         content: "";
+        background-image: url("../../assets/logo/logo-vectorised.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
         position: absolute;
-        width: 0.5rem;
-        height: 0.5rem;
-        background-color: var.$color-yellow;
+        width: 1.5rem;
+        height: 1.5rem;
         left: 0;
         z-index: 10;
         border-radius: 50%;
-        top: 35%;
       }
     }
 

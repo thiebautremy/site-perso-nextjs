@@ -2,12 +2,12 @@
 
 .fourOhFour {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   padding: var.$gap-xlarge 0;
-  background: linear-gradient(
-    130deg,
-    rgba(var.$color-blue, 0.5) 0%,
-    var.$color-bg--light 15%
-  );
+  padding: 12rem 0 12rem;
+  background-image: url("../assets/background/texture.jpg");
+  background-position: 0;
+  background-size: 1000px 1000px;
 }

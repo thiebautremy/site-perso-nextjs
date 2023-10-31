@@ -1,4 +1,5 @@
 import code from "@/assets/blog/code.jpg";
+import links from "@/assets/blog/links.jpg";
 
 const article1 = {
   title: "Comment créer un site internet à Pont-à-mousson ?",
@@ -34,9 +35,9 @@ const articlesData = [
     slug: "pourquoi-créer-un-site-internet",
     ...article2,
     picture: {
-      src: code,
-      alt: "Affichage code de programmation sur un écran",
-      title: "Affichage code de programmation sur un écran",
+      src: links,
+      alt: "Liens affichés entre de nombreuses personnes",
+      title: "Liens affichés entre de nombreuses personnes",
     },
     publishedAt: "2023-11-02T12:00:00+02:00",
     updatedAt: "2023-11-02T12:00:00+02:00",

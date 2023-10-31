@@ -129,6 +129,11 @@
     &::before {
       content: none;
     }
+
+    span {
+      color: var.$color-yellow;
+      font-size: 1.6rem;
+    }
   }
 }
 

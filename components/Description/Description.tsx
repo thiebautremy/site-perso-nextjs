@@ -18,11 +18,10 @@ const Description = () => {
         <TextHighlighted
           text="Aujourd'hui, la création d'un site internet est devenue
               une étape cruciale pour toute entreprise désireuse de prospérer.
-              Que vous soyez une petite entreprise ou une organisation plus
-              importante, un site web bien conçu peut apporter une vrai valeur
+              Un site web bien conçu peut apporter une vrai valeur
               ajoutée à votre projet. C'est pourquoi, je vous propose mon
               expertise afin de créer votre site web et devenir ainsi plus
-              visible dans un premier temps sur Pont à mousson."
+              visible sur Pont à mousson et au delà."
         />
         <motion.div
           initial={{ opacity: 0 }}

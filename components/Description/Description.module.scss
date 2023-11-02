@@ -3,7 +3,7 @@
 .descriptionContent {
   padding: var.$gap-xlarge 0;
   color: var.$color-font--dark;
-  background-image: url("../../assets/background/texture.jpg");
+  background-image: url("../../assets/background/texture.webp");
   background-position: 0;
   background-size: 1000px 1000px;
 
@@ -95,7 +95,7 @@
       border-bottom-right-radius: var.$radius;
     }
     .descriptionModuleText {
-      background-image: url("../../assets/background/texture-dark.jpg");
+      background-image: url("../../assets/background/texture-dark.webp");
       background-position: 0;
       background-size: 1000px 1000px;
       letter-spacing: 0.05rem;
@@ -129,7 +129,7 @@
     .descriptionModuleText {
       padding: var.$gap-small calc(var.$gap-xlarge * 2) var.$gap-small
         var.$gap-small;
-      background-image: url("../../assets/background/texture-dark.jpg");
+      background-image: url("../../assets/background/texture-dark.webp");
       background-position: 0;
       background-size: 1000px 1000px;
       color: var.$color-yellow;

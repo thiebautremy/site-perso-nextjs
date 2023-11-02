@@ -27,9 +27,11 @@ $screen-desktop: 1200px;
 @font-face {
   font-family: "font-bold";
   src: url(../assets/font/Signika/static/Signika-Bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "font-article-regular";
   src: url(../assets/font/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+  font-display: swap;
 }

@@ -1,17 +1,17 @@
 @use "@/styles/variables" as var;
 
-.achievementHomePage {
+.articleHomePage {
   position: relative;
   z-index: 2;
-  width: 30rem;
+  width: 20rem;
   margin: var.$gap-medium 0;
 
   &:hover {
-    .achievementContainerHomePage {
+    .articleContainerHomePage {
       transform: translate(5px, 5px);
     }
   }
-  .achievementContainerHomePage {
+  .articleContainerHomePage {
     border-radius: calc(var.$radius / 2);
     overflow: hidden;
     display: flex;
@@ -29,14 +29,7 @@
       padding: var.$gap-small;
     }
 
-    .achievementPictureContainer {
-      position: relative;
-      height: 10rem;
-      width: 101%;
-      z-index: 10;
-    }
-
-    .achievementDescription {
+    .articleDescription {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -47,34 +40,21 @@
         width: 100%;
       }
 
-      .link {
-        position: relative;
-        transition: color 0.3s ease;
-        font-size: 1.2rem;
-        font-style: italic;
-        margin-top: var.$gap-small;
-
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: -3px;
-          left: 0px;
-          height: 2px;
-          width: 0px;
-          background-color: var.$color-yellow;
-          transition: width 0.5s ease-in-out;
+      .title {
+        padding-left: 0;
+        font-weight: 700;
+        &::before {
+          all: unset;
         }
+      }
 
-        &:hover {
-          &::after {
-            width: 50%;
-          }
-        }
+      .catchPhrase {
+        line-height: 1.5;
       }
     }
   }
 
-  .achievementBackground {
+  .articleHomePageBackground {
     border-radius: calc(var.$radius / 2);
     position: absolute;
     width: 100%;

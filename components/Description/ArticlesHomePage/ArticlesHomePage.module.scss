@@ -1,0 +1,63 @@
+@use "@/styles/variables" as var;
+
+.articlesHomePage {
+  padding: var.$gap-medium 0;
+  color: var.$color-yellow;
+  background-image: url("../../../assets/background/texture-dark.webp");
+  background-position: 0;
+  background-size: 1000px 1000px;
+
+  @media screen and (max-width: var.$screen-phone) {
+    padding: 5rem 0 2rem;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto var.$gap-medium;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      width: 90%;
+    }
+  }
+
+  .allArticlesLinkContainer {
+    display: flex;
+    justify-content: flex-end;
+
+    .allArticlesLink {
+      font-size: 1.2rem;
+      margin: 0 var.$gap-medium;
+      position: relative;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0px;
+        height: 1px;
+        width: 0px;
+        background-color: var.$color-font--light;
+        transition: width 0.5s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

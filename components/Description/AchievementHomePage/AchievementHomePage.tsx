@@ -11,7 +11,6 @@ type AchievementType = {
 const AchievementHomePage = ({
   title,
   description,
-  techInfos,
   picture,
   url,
 }: AchievementType) => {

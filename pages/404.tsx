@@ -12,7 +12,9 @@ export default function FourOhFour() {
         <h1>Page non trouvée</h1>
         <p>Il semblerait que vous soyez perdu, laissez moi vous aider :</p>
         <Link href="/">
-          <button className="ctaBtn">Retour à l&apos;accueil</button>
+          <button className="ctaBtn">
+            <span>Retour à l&apos;accueil</span>
+          </button>
         </Link>
       </div>
     </>

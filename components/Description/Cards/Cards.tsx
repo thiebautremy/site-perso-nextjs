@@ -46,10 +46,18 @@ const Cards = () => {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
-      <div className={styles.cardsContainer}>
-        {cardsData.map((card) => (
-          <Card key={card.id} {...card} />
-        ))}
+      <div className={styles.cards}>
+        <h2 className={styles.title}>Une offre complète</h2>
+        <p className={styles.subtitle}>
+          La création d&apos;un site internet requiert des compétences larges
+          allant de la conception technique, au référencement jusqu&apos;à
+          l&apos;hébergement
+        </p>
+        <div className={styles.cardsContainer}>
+          {cardsData.map((card) => (
+            <Card key={card.id} {...card} />
+          ))}
+        </div>
       </div>
     </motion.div>
   );

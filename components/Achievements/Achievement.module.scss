@@ -3,11 +3,18 @@
 .achievementContainer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: calc(var.$gap-xlarge * 2) 0;
+  background-image: url("../../assets/background/texture-dark.webp");
+  background-position: 0;
+  background-size: 1000px 1000px;
+  min-height: 25rem;
+  border-radius: calc(var.$radius / 2);
 
   @media screen and (max-width: var.$screen-phone) {
     flex-direction: column;
     margin: var.$gap-medium 0;
+    padding: var.$gap-small;
   }
 
   &:hover {
@@ -16,7 +23,7 @@
       transform: scale(1.05);
 
       &::before {
-        background-color: rgba(var.$color-blue, 0.9);
+        background-color: rgba(var.$color-yellow, 0.9);
         transition: all 0.3s ease-in-out;
         height: 20rem;
       }
@@ -29,9 +36,14 @@
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: var.$gap-medium;
+    color: var.$color-yellow;
 
     @media screen and (max-width: var.$screen-phone) {
       width: 100%;
+    }
+
+    .techInfos {
+      font-style: italic;
     }
 
     .link {
@@ -48,13 +60,11 @@
         left: 0px;
         height: 1px;
         width: 0px;
-        background-color: var.$color-blue;
+        background-color: var.$color-yellow;
         transition: width 0.5s ease-in-out;
       }
 
       &:hover {
-        color: var.$color-blue;
-
         &::after {
           width: 50%;
         }
@@ -68,6 +78,7 @@
   height: 20rem;
   width: 62%;
   z-index: 10;
+  border-radius: calc(var.$gap-small/2);
 
   @media screen and (max-width: var.$screen-tablet-landscape) {
     height: 18rem;
@@ -86,7 +97,7 @@
     left: -30px;
     width: 3rem;
     height: 15rem;
-    background-color: rgba(var.$color-blue, 0.5);
+    background-color: rgba(var.$color-yellow, 0.5);
     transform: rotate(180deg);
     z-index: 100;
 

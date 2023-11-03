@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import styles from "./ContactForm.module.scss";
 import emailjs from "@emailjs/browser";
 import Modal from "@/components/Modal/Modal";

@@ -1,4 +1,3 @@
-import ordi from "@/assets/projects/ordinateur.png";
 import mcmontage from "@/assets/projects/mcmontage.png";
 import pronotdf from "@/assets/projects/pronotdf.png";
 import ccass from "@/assets/projects/ccass.png";
@@ -10,6 +9,8 @@ const achievementsData = [
     id: 1,
     title: "MC Montage",
     description: "Site vitrine pour une entreprise de rayonnage industriel",
+    techInfos:
+      "Réalisé avec le framework NextJS, réalisation du design, formulaire de contact, hébergement gratuit sur Netlify.",
     url: "https://mcmontage.fr",
     picture: {
       src: mcmontage,
@@ -22,6 +23,8 @@ const achievementsData = [
     title: "Prono TDF",
     description:
       "Site permettant de pronostiquer sur les étapes du Tour de France",
+    techInfos:
+      "Réalisé avec ReactJS, base de données Firebase, authentification avec firebase, gestion des rôles utilisateurs, graphique pour affichage des données",
     url: "https://pronotdf.netlify.app/",
     picture: {
       src: pronotdf,
@@ -33,6 +36,7 @@ const achievementsData = [
     id: 3,
     title: "Cours de cassation",
     description: "Site de la cour de cassation",
+    techInfos: "Réalisé avec le CMS Drupal, intégration en SCSS.",
     url: "https://www.courdecassation.fr/",
     picture: {
       src: ccass,
@@ -45,6 +49,8 @@ const achievementsData = [
     title: "Kili Technology",
     description:
       "Site de Kili Technology, entreprise d'intelligence artificielle",
+    techInfos:
+      "Réalisé avec le framework NextJS, gestion du contenu avec le headless CMS Storyblok, hébergé sur Netlify.",
     url: "https://kili-technology.com/",
     picture: {
       src: kili,
@@ -57,6 +63,7 @@ const achievementsData = [
     title: "FTI",
     description:
       "Site vitrine pour la Fédération luxembourgeoise des Travailleurs Intellectuels Indépendants",
+    techInfos: "Réalisé avec CMS Drupal, réalisation du design avec Figma.",
     url: "https://www.fti.lu/",
     picture: {
       src: fti,

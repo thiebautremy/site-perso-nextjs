@@ -1,5 +1,3 @@
-"use client";
-import Link from "next/link";
 import styles from "./Achievement.module.scss";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
@@ -8,11 +6,18 @@ import Container from "../Container/Container";
 
 type AchievementType = {
   title: string;
+  techInfos: string;
   description: string;
   picture: { src: StaticImageData; alt: string; title: string };
   url: string;
 };
-const Achievement = ({ title, description, picture, url }: AchievementType) => {
+const Achievement = ({
+  title,
+  description,
+  techInfos,
+  picture,
+  url,
+}: AchievementType) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -27,6 +32,7 @@ const Achievement = ({ title, description, picture, url }: AchievementType) => {
           <div className={styles.achievementDescription}>
             <h2>{title}</h2>
             <p>{description}</p>
+            <p className={styles.techInfos}>{techInfos}</p>
             <a href={url} className={styles.link}>
               Voir la réalisation
             </a>

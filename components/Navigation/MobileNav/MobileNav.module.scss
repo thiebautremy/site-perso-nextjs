@@ -3,7 +3,7 @@
 .links {
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 var.$gap-small;
+  padding: 0 var.$gap-small;
 
   .linksContainerMobile {
     display: flex;

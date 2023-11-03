@@ -22,7 +22,7 @@ const DesktopNav = ({ links, scrolled }: DesktopNavType) => {
           href={"/contact"}
           className={cx("ctaBtn", scrolled && "ctaBtnScrolled")}
         >
-          Me contacter
+          <span>Me contacter</span>
         </Link>
       </div>
     </>

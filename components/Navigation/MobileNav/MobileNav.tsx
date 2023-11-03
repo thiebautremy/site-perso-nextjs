@@ -32,8 +32,8 @@ const MobileNav = ({ links, scrolled }: MobileNavType) => {
             ))}
           </div>
           <div>
-            <Link href={"/contact"} className="ctaBtn">
-              Me contacter
+            <Link href={"/contact"} className="ctaBtn ctaBtnScrolled">
+              <span>Me contacter</span>
             </Link>
           </div>
         </div>

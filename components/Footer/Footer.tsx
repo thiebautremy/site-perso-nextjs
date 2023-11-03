@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             <div className={styles.rightContainer}>
               <Link href="/contact" scroll className="ctaBtn">
-                Me contacter
+                <span>Me contacter</span>
               </Link>
             </div>
           </div>

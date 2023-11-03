@@ -3,7 +3,7 @@
 .footer {
   color: var.$color-font--dark;
   border-top: 1px solid var.$color-font--dark;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-image: url("../../assets/background/texture.webp");
   background-position: 0;
   background-size: 1000px 1000px;
@@ -70,11 +70,11 @@
     display: flex;
     flex-grow: 2;
     align-items: center;
-    a {
-      height: fit-content;
-      padding: var.$gap-small;
-      margin-top: var.$gap-small;
-    }
+    // a {
+    //   height: fit-content;
+    //   padding: var.$gap-small;
+    //   margin-top: var.$gap-small;
+    // }
   }
 }
 .bottomContainer {

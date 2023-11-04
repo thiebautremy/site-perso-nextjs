@@ -29,7 +29,12 @@
       width: 90%;
     }
   }
-
+  .articlesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 var.$gap-small;
+  }
   .allArticlesLinkContainer {
     display: flex;
     justify-content: flex-end;

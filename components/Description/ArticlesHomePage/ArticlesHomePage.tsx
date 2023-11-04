@@ -21,9 +21,11 @@ const ArticlesHomePage = () => {
             Retrouvez nos derniers articles sur la création de site internet, le
             SEO, les bonnes pratiques etc...
           </p>
-          {blogData.slice(0, 3).map((article) => (
-            <ArticleHomePage key={article.id} {...article} />
-          ))}
+          <div className={styles.articlesContainer}>
+            {blogData.slice(0, 3).map((article) => (
+              <ArticleHomePage key={article.id} {...article} />
+            ))}
+          </div>
           <div className={styles.allArticlesLinkContainer}>
             <Link href="/blog" className={styles.allArticlesLink}>
               Voir tous les articles <FaAngleRight />

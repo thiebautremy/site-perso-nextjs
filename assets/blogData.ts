@@ -32,7 +32,7 @@ const articlesData = [
   },
   {
     id: 2,
-    slug: "pourquoi-créer-un-site-internet",
+    slug: "pourquoi-creer-un-site-internet",
     ...article2,
     picture: {
       src: links,

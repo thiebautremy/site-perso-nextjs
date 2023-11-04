@@ -12,6 +12,7 @@
     }
   }
   .articleContainerHomePage {
+    min-height: 24rem;
     border-radius: calc(var.$radius / 2);
     overflow: hidden;
     display: flex;

@@ -1,7 +1,6 @@
 @use "@/styles/variables" as var;
 
 .descriptionContent {
-  padding: var.$gap-medium 0;
   color: var.$color-font--dark;
   background-image: url("../../assets/background/texture.webp");
   background-position: 0;

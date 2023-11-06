@@ -12,7 +12,9 @@ const TextHighlighted = ({ text }: any) => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <p className={styles.textHighlighted}>{text}</p>
+        <div className={styles.textHighlightedContainer}>
+          <p className={styles.textHighlighted}>{text}</p>
+        </div>
       </motion.div>
     </Container>
   );

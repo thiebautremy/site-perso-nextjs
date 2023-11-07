@@ -3,9 +3,6 @@ import Achievement from "./Achievement";
 import styles from "./Achievements.module.scss";
 import achievementsData from "./achievementsData";
 import cx from "classnames";
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
 
 const Achievements = () => {
   return (

@@ -2,11 +2,19 @@ import styles from "./ArticlesHomePage.module.scss";
 import { motion } from "framer-motion";
 import Container from "@/components/Container/Container";
 import blogData from "@/assets/blogData";
+import { Article as ArticleType } from "@/types/types";
 import ArticleHomePage from "./ArticleHomePage";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 const ArticlesHomePage = () => {
+  const [articles, setArticles] = useState<ArticleType[]>([]);
+
+  useEffect(() => {
+    setArticles(blogData.slice(0, 3));
+  }, []);
+
   return (
     <div className={styles.articlesHomePage}>
       <Container margin="isHuge">
@@ -22,7 +30,7 @@ const ArticlesHomePage = () => {
             SEO, les bonnes pratiques etc...
           </p>
           <div className={styles.articlesContainer}>
-            {blogData.slice(0, 3).map((article) => (
+            {articles.map((article) => (
               <ArticleHomePage key={article.id} {...article} />
             ))}
           </div>

@@ -1,12 +1,12 @@
 import styles from "./AchievementHomePage.module.scss";
 import Image, { StaticImageData } from "next/image";
 
-type AchievementType = {
+export type AchievementType = {
   title: string;
-  techInfos: string;
   description: string;
   picture: { src: StaticImageData; alt: string; title: string };
   url: string;
+  id: number;
 };
 const AchievementHomePage = ({
   title,

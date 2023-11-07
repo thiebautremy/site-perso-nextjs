@@ -22,7 +22,7 @@ const ArticleHomePage = ({
           <div className={styles.articleDescription}>
             <span>{`Publié le : ${formattedDate}`}</span>
             <h2 className={styles.title}>{title}</h2>
-            <p className={styles.catchPhrase}>{parse(catchPhrase)}</p>
+            <div className={styles.catchPhrase}>{parse(catchPhrase)}</div>
           </div>
         </div>
         <div className={styles.articleHomePageBackground}></div>

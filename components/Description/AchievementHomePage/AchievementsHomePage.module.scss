@@ -1,0 +1,64 @@
+@use "@/styles/variables" as var;
+
+.achievements {
+  background-image: url("../../../assets/background/texture-dark.webp");
+  padding: 2rem 0;
+  color: var.$color-yellow;
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto var.$gap-medium;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      width: 90%;
+    }
+  }
+
+  .allAchievementsLinkContainer {
+    display: flex;
+    justify-content: flex-end;
+
+    .allAchievementsLink {
+      font-size: 1.2rem;
+      margin: 0 var.$gap-medium;
+      position: relative;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0px;
+        height: 1px;
+        width: 0px;
+        background-color: var.$color-font--light;
+        transition: width 0.5s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .achievementsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 var.$gap-small;
+  }
+}

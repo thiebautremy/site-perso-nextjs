@@ -3,6 +3,10 @@
 .textHighlightedContainer {
   padding: var.$gap-xlarge;
 
+  @media screen and (max-width: var.$screen-phone) {
+    padding: var.$gap-small;
+  }
+
   .textHighlighted {
     padding: var.$gap-medium var.$gap-xlarge;
     font-size: 1.2rem;

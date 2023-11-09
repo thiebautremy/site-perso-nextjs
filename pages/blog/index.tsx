@@ -1,31 +1,35 @@
-import React, { useState, useEffect } from "react";
-import articlesData from "@/assets/blogData";
+import React, { useState, useEffect, Suspense } from "react";
 import MainLayout from "@/components/Layout/MainLayout";
 import Navigation from "@/components/Navigation/Navigation";
 import Head from "next/head";
 import ArticlesContainer from "@/components/Articles/ArticlesContainer";
 import { Article } from "@/types/types";
 
-export default function Articles() {
+export default function Articles({ data }: any) {
   const [articles, setArticles] = useState<Article[]>([]);
-
-  const getArticles = async () => {
-    setArticles(articlesData);
-  };
-
   useEffect(() => {
-    getArticles();
-  }, []);
+    setArticles(data);
+  }, [data]);
 
   return (
     <>
       <HeadCustom />
       <MainLayout>
         <Navigation />
-        <ArticlesContainer articles={articles} />
+        <Suspense fallback={<p>loading...</p>}>
+          <ArticlesContainer articles={articles} />
+        </Suspense>
       </MainLayout>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/blog`, {
+    method: "GET",
+  });
+  const data = await res.json();
+  return { props: { ...data } };
 }
 
 const HeadCustom = () => (

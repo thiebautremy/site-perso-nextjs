@@ -12,12 +12,12 @@
     }
   }
   .articleContainerHomePage {
-    min-height: 24rem;
+    min-height: 26rem;
     border-radius: calc(var.$radius / 2);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-image: url("../../../assets/background/texture.webp");
     background-position: 0;
@@ -38,18 +38,24 @@
       color: var.$color-font--dark;
 
       @media screen and (max-width: var.$screen-phone) {
+        padding: var.$gap-small;
         width: 100%;
       }
-
+      span {
+        height: 2rem;
+      }
       .title {
         padding-left: 0;
         font-weight: 700;
+        height: 7rem;
+        margin: 0;
         &::before {
           all: unset;
         }
       }
 
       .catchPhrase {
+        font-size: 1.2rem;
         line-height: 1.5;
       }
     }

@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
 import Image from "next/image";
-import CTAContainer from "../Presentation/CTAContainer";
+import CTAContainer from "../CTAContainer/CTAContainer";
 
 const Article = ({
   title,

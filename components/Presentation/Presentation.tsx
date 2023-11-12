@@ -1,19 +1,19 @@
-import Container from "../Container/Container";
-import CTAContainer from "./CTAContainer";
+import Container from "@/components/Container/Container";
+import CTAContainer from "@/components/CTAContainer/CTAContainer";
 import styles from "./Presentation.module.scss";
 import { motion } from "framer-motion";
 
 const Presentation = () => {
   return (
     <div className={styles.presentationContainer}>
-      <Container margin="isHuge">
-        <motion.div
-          animate={{ x: [250, 0] }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-        >
+      <motion.div
+        animate={{ x: [250, 0] }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
+        <Container margin="isHuge">
           <h1>Présentation de Webosaurus</h1>
           <h2>
             Vous cherchez une agence web spécialisée en création de site web à{" "}
@@ -70,9 +70,9 @@ const Presentation = () => {
               pour démarrer votre projet web !
             </p>
           </div>
-          <CTAContainer />
-        </motion.div>
-      </Container>
+        </Container>
+        <CTAContainer />
+      </motion.div>
     </div>
   );
 };

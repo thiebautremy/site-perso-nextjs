@@ -168,6 +168,14 @@ strong {
     color: var.$color-font--dark;
   }
 }
+.hover {
+  transform: scale(1.05, 1.05);
+}
+
+.notHover {
+  transform: scale(0.95, 0.95);
+  filter: blur(1px);
+}
 
 //? ==== ACHIEVEMENTS ==== //
 .achievementsContainer {

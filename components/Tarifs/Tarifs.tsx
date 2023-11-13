@@ -18,7 +18,7 @@ const Tarifs = () => {
     {
       id: 1,
       title: "Site vitrine",
-      price: "500 €",
+      price: "600 €",
       hover: false,
       className: "",
       description: [
@@ -30,7 +30,7 @@ const Tarifs = () => {
     {
       id: 2,
       title: "Site vitrine +",
-      price: "800 €",
+      price: "900 €",
       hover: false,
       className: "",
       description: [
@@ -62,7 +62,6 @@ const Tarifs = () => {
       const cardHover = tarifsCardsState.find((object) => object.id === id);
       if (cardHover !== undefined) {
         const newCardHover = { ...cardHover, hover: true, className: "hover" };
-        console.log(newCardHover);
         const newCardsNotHover = tarifsCardsState.filter(
           (card) => card.id !== id
         );
@@ -70,9 +69,6 @@ const Tarifs = () => {
           object.className = "notHover";
           object.hover = false;
         });
-
-        console.log(newCardsNotHover);
-
         const newtarifsCardState = [newCardHover, ...newCardsNotHover];
         setTarifsCardsState(newtarifsCardState);
       }
@@ -95,7 +91,7 @@ const Tarifs = () => {
         <Container margin="isHuge">
           <h1>Tarifs des prestations de Webosaurus</h1>
           <h2>
-            Voici les tarifs de nos prestations notre web à{" "}
+            Voici les tarifs de nos prestations web à{" "}
             <strong>Pont-à-Mousson</strong> ?
           </h2>
           <div className={styles.content}>

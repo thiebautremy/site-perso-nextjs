@@ -22,6 +22,10 @@ const Navigation = () => {
       label: "Présentation",
     },
     {
+      url: "/tarifs",
+      label: "Tarifs",
+    },
+    {
       url: "/blog",
       label: "Blog",
     },

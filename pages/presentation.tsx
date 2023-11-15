@@ -10,7 +10,7 @@ export const Presentation = () => {
         <title>Webosaurus - Présentation</title>
         <meta
           name="description"
-          content="webosaurus, votre agence web à Pont à mousson, offre des solutions en création de site internet vitrine, design, développement et référencement naturel, SEO."
+          content="Webosaurus, votre agence web à Pont à mousson, offre des solutions en création de site internet vitrine, design, développement et référencement naturel, SEO."
         />
         <meta
           name="og:image"

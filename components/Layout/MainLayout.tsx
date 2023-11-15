@@ -1,7 +1,13 @@
 import { ReactElement, JSXElementConstructor, ReactFragment } from "react";
+import { Signika } from "next/font/google";
 import Footer from "../Footer/Footer";
-import Navigation from "../Navigation/Navigation";
 import styles from "./MainLayout.module.scss";
+
+const signika = Signika({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const MainLayout = (props: {
   children:
@@ -15,8 +21,7 @@ const MainLayout = (props: {
     | undefined;
 }) => {
   return (
-    <main>
-      {/* <Navigation /> */}
+    <main className={signika.className}>
       <div className={styles.mainContent}>{props.children}</div>
       <Footer />
     </main>

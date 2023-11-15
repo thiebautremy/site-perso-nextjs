@@ -12,7 +12,6 @@ body {
 }
 
 body {
-  font-family: font-regular, sans-serif;
   background-color: var.$color-bg--light;
   color: var.$color-font--dark;
 }
@@ -167,6 +166,14 @@ strong {
   span {
     color: var.$color-font--dark;
   }
+}
+.hover {
+  transform: scale(1.05, 1.05);
+}
+
+.notHover {
+  transform: scale(0.95, 0.95);
+  filter: blur(1px);
 }
 
 //? ==== ACHIEVEMENTS ==== //

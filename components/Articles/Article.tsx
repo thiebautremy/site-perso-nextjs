@@ -4,7 +4,15 @@ import Container from "../Container/Container";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
 import Image from "next/image";
-import CTAContainer from "../Presentation/CTAContainer";
+import CTAContainer from "../CTAContainer/CTAContainer";
+import { DM_Serif_Display } from "next/font/google";
+import cx from "classnames";
+
+const dmSerifDisplay = DM_Serif_Display({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const Article = ({
   title,
@@ -55,7 +63,9 @@ const Article = ({
           </div>
         </Container>
         <Container margin="isHuge">
-          <div className={styles.text}>{parse(text)}</div>
+          <div className={cx(styles.text, dmSerifDisplay.className)}>
+            {parse(text)}
+          </div>
           <CTAContainer />
         </Container>
       </motion.div>

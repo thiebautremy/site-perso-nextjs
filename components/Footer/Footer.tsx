@@ -28,6 +28,7 @@ const Footer = () => {
                     loading="eager"
                     placeholder="blur"
                     fill
+                    sizes="(max-width: 768px) 30vw, (max-width: 1200px) 50vw"
                     style={{ objectFit: "contain" }}
                   />
                 </div>
@@ -61,6 +62,11 @@ const Footer = () => {
                 <li>
                   <Link href="/presentation" scroll>
                     Présentation
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/tarifs" scroll>
+                    Tarifs
                   </Link>
                 </li>
                 <li>

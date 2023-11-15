@@ -1,0 +1,136 @@
+@use "styles/variables" as var;
+
+.tarifsContainer {
+  padding: 12rem 0 3rem;
+  background-image: url("../../assets/background/texture.webp");
+  background-position: 0;
+  background-size: 1000px 1000px;
+
+  @media screen and (max-width: var.$screen-phone) {
+    padding: 5rem 0 2rem;
+  }
+
+  .content {
+    padding: var.$gap-small 0;
+
+    .cardsContainer {
+      padding: var.$gap-medium 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        min-height: 21rem;
+        width: 20rem;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 7px 7px 8px 0 rgba(0, 0, 0, 0.25),
+          0px 0px 6px 0 rgba(255, 255, 255, 0.3);
+        border-radius: var.$radius;
+        background-image: url("../../assets/background/texture-dark.webp");
+        background-position: 0;
+        background-size: 1000px 1000px;
+        padding: 0 calc(var.$gap-small / 2);
+        margin-bottom: calc(var.$gap-small / 2);
+
+        .title {
+          font-weight: 800;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.64);
+          margin-top: 10px;
+          font-size: 25px;
+          letter-spacing: 1px;
+        }
+
+        .price {
+          color: white;
+          font-weight: 800;
+          font-size: 50px;
+          text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+        }
+
+        .description {
+          color: rgba(255, 255, 255, 0.6);
+          margin: var.$gap-small 0;
+          font-size: 1rem;
+          min-height: 8rem;
+          text-align: left;
+
+          li {
+            padding: calc(var.$gap-small / 5) 0 calc(var.$gap-small / 5)
+              calc(var.$gap-small);
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background-color: var.$color-yellow;
+              bottom: 30%;
+              left: 0;
+              z-index: 10;
+            }
+          }
+        }
+
+        .contactBtn {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .formulasList {
+      margin-top: var.$gap-xlarge;
+
+      @media screen and (max-width: var.$screen-phone) {
+        margin-top: var.$gap-small;
+      }
+      .formula {
+        margin: var.$gap-medium 0;
+        padding: var.$gap-medium;
+        border-radius: var.$radius;
+        font-size: 1.2rem;
+        background-color: var.$color-yellow;
+        color: var.$color-font--dark;
+        text-align: center;
+        position: relative;
+
+        &:hover {
+          .TRexSkull {
+            transform: scale(1.2) rotate(10deg) translateX(100%);
+          }
+        }
+
+        strong {
+          letter-spacing: 0;
+          display: block;
+          margin-bottom: var.$gap-small;
+          font-size: 1.5rem;
+        }
+        .TRexSkull {
+          position: absolute;
+          left: -1rem;
+          top: -1.5rem;
+          font-size: 4rem;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    .benefitsList {
+      margin-left: var.$gap-medium;
+      .benefit {
+        font-size: 1.2rem;
+        list-style: disc;
+        padding: calc(var.$gap-small / 2);
+      }
+    }
+  }
+}

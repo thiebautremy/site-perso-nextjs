@@ -6,6 +6,7 @@ export type AchievementType = {
   description: string;
   picture: { src: StaticImageData; alt: string; title: string };
   url: string;
+  id: number;
 };
 const AchievementHomePage = ({
   title,

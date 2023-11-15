@@ -38,6 +38,7 @@
         background-position: 0;
         background-size: 1000px 1000px;
         padding: 0 calc(var.$gap-small / 2);
+        margin-bottom: calc(var.$gap-small / 2);
 
         .title {
           font-weight: 800;
@@ -124,6 +125,12 @@
       }
     }
     .benefitsList {
+      margin-left: var.$gap-medium;
+      .benefit {
+        font-size: 1.2rem;
+        list-style: disc;
+        padding: calc(var.$gap-small / 2);
+      }
     }
   }
 }

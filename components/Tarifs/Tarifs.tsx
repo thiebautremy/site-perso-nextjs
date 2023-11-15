@@ -20,7 +20,7 @@ const Tarifs = () => {
     {
       id: 1,
       title: "Formule Starter",
-      price: "600 €",
+      price: "700 €",
       hover: false,
       className: "",
       description: [

@@ -28,6 +28,7 @@ const Footer = () => {
                     loading="eager"
                     placeholder="blur"
                     fill
+                    sizes="(max-width: 768px) 30vw, (max-width: 1200px) 50vw"
                     style={{ objectFit: "contain" }}
                   />
                 </div>

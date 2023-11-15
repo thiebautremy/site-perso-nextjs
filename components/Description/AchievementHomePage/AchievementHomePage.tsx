@@ -6,7 +6,6 @@ export type AchievementType = {
   description: string;
   picture: { src: StaticImageData; alt: string; title: string };
   url: string;
-  id: number;
 };
 const AchievementHomePage = ({
   title,
@@ -26,6 +25,7 @@ const AchievementHomePage = ({
             loading="eager"
             placeholder="blur"
             fill
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
             style={{ objectFit: "cover" }}
           />
         </div>

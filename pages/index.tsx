@@ -2,8 +2,12 @@ import Head from "next/head";
 import Description from "@/components/Description/Description";
 import MainLayout from "@/components/Layout/MainLayout";
 import Header from "@/components/Header/Header";
+import { type Article } from "@/types/types";
 
-export default function Home() {
+type HomeProps = {
+  blogData: { data: Article[] };
+};
+const Home: React.FC<HomeProps> = ({ blogData }) => {
   return (
     <>
       <Head>
@@ -36,8 +40,18 @@ export default function Home() {
       </Head>
       <MainLayout>
         <Header />
-        <Description />
+        <Description blogData={blogData.data} />
       </MainLayout>
     </>
   );
+};
+
+export default Home;
+
+export async function getServerSideProps() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/blog`, {
+    method: "GET",
+  });
+  const data = await res.json();
+  return { props: { blogData: data } };
 }

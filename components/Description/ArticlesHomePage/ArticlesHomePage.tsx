@@ -1,19 +1,22 @@
 import styles from "./ArticlesHomePage.module.scss";
 import Container from "@/components/Container/Container";
-import blogData from "@/assets/blogData";
-import { Article as ArticleType } from "@/types/types";
+import { Article, Article as ArticleType } from "@/types/types";
 import ArticleHomePage from "./ArticleHomePage";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import AnimationLayout from "@/components/Layout/AnimationLayout";
 
-const ArticlesHomePage = () => {
+type ArticlesHomePageProps = {
+  blogData: Article[];
+};
+
+const ArticlesHomePage: React.FC<ArticlesHomePageProps> = ({ blogData }) => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
 
   useEffect(() => {
     setArticles(blogData.slice(0, 3));
-  }, []);
+  }, [blogData]);
 
   return (
     <div className={styles.articlesHomePage}>

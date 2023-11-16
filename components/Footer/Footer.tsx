@@ -22,11 +22,11 @@ const Footer = () => {
                     loading="eager"
                     placeholder="blur"
                     fill
-                    sizes="(max-width: 768px) 30vw, (max-width: 1200px) 50vw"
+                    sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw"
                     style={{ objectFit: "contain" }}
                   />
                 </div>
-                <h4>- Création de site internet</h4>
+                <h5>- Création de site internet</h5>
               </div>
               <address className={styles.address}>
                 358 rue Pierre ADT <br></br> 54700 Pont-à-mousson

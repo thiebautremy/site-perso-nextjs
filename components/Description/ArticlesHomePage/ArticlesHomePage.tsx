@@ -1,10 +1,9 @@
 import styles from "./ArticlesHomePage.module.scss";
 import Container from "@/components/Container/Container";
-import { Article, Article as ArticleType } from "@/types/types";
+import { Article } from "@/types/types";
 import ArticleHomePage from "./ArticleHomePage";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
-import { useEffect, useState } from "react";
 import AnimationLayout from "@/components/Layout/AnimationLayout";
 
 type ArticlesHomePageProps = {
@@ -12,12 +11,6 @@ type ArticlesHomePageProps = {
 };
 
 const ArticlesHomePage: React.FC<ArticlesHomePageProps> = ({ blogData }) => {
-  const [articles, setArticles] = useState<ArticleType[]>([]);
-
-  useEffect(() => {
-    setArticles(blogData.slice(0, 3));
-  }, [blogData]);
-
   return (
     <div className={styles.articlesHomePage}>
       <Container margin="isHuge">
@@ -28,7 +21,7 @@ const ArticlesHomePage: React.FC<ArticlesHomePageProps> = ({ blogData }) => {
             SEO, les bonnes pratiques etc...
           </p>
           <div className={styles.articlesContainer}>
-            {articles.map((article) => (
+            {blogData.map((article) => (
               <ArticleHomePage key={article.id} {...article} />
             ))}
           </div>

@@ -24,9 +24,8 @@ const AchievementHomePage = ({
             title={picture.title}
             className={styles.image}
             loading="eager"
-            placeholder="blur"
             fill
-            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
+            sizes="(max-width: 768px) 40vw, (max-width: 1200px) 100vw"
             style={{ objectFit: "cover" }}
           />
         </div>

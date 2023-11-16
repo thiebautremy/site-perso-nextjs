@@ -1,10 +1,18 @@
 import Cards from "./Cards/Cards";
 import styles from "./Description.module.scss";
 import cx from "classnames";
-import TextHighlighted from "../TextHighlighted/TextHighlighted";
-import FAQ from "./FAQ/FAQ";
-import ArticlesHomePage from "./ArticlesHomePage/ArticlesHomePage";
-import AchievementsHomePage from "./AchievementHomePage/AchievementsHomePage";
+import dynamic from "next/dynamic";
+
+const TextHighlighted = dynamic(
+  () => import("../TextHighlighted/TextHighlighted")
+);
+const AchievementsHomePage = dynamic(
+  () => import("./AchievementHomePage/AchievementsHomePage")
+);
+const ArticlesHomePage = dynamic(
+  () => import("./ArticlesHomePage/ArticlesHomePage")
+);
+const FAQ = dynamic(() => import("./FAQ/FAQ"));
 
 const Description = () => {
   return (

@@ -1,19 +1,13 @@
-"use client";
 import Link from "next/link";
 import Container from "../Container/Container";
 import styles from "./Footer.module.scss";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import logoLongVectorised from "@/assets/logo/logo-long-vectorised.png";
+import AnimationLayout from "../Layout/AnimationLayout";
 
 const Footer = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
-    >
+    <AnimationLayout>
       <footer className={styles.footer}>
         <Container margin="isHuge">
           <div className={styles.footerContainer}>
@@ -89,7 +83,7 @@ const Footer = () => {
           </div>
         </Container>
       </footer>
-    </motion.div>
+    </AnimationLayout>
   );
 };
 

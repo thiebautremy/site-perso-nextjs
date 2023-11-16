@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   const schema = {
@@ -22,9 +23,11 @@ export default function Document() {
   return (
     <Html lang="fr">
       <Head>
-        <script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          id="myScript"
+          strategy="lazyOnload"
         />
         <meta property="og:type" content="website" />
 

@@ -1,13 +1,15 @@
 import { ReactElement, JSXElementConstructor, ReactFragment } from "react";
 import { Signika } from "next/font/google";
-import Footer from "../Footer/Footer";
 import styles from "./MainLayout.module.scss";
+import dynamic from "next/dynamic";
 
 const signika = Signika({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
+
+const Footer = dynamic(() => import("../Footer/Footer"));
 
 const MainLayout = (props: {
   children:

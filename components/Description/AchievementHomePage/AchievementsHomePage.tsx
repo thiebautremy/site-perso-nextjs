@@ -1,10 +1,10 @@
 import { FaAngleRight } from "react-icons/fa";
-import { motion } from "framer-motion";
 import achievementsData from "@/components/Achievements/achievementsData";
 import Link from "next/link";
 import styles from "./AchievementsHomePage.module.scss";
 import AchievementHomePage, { AchievementType } from "./AchievementHomePage";
 import { useEffect, useState } from "react";
+import AnimationLayout from "@/components/Layout/AnimationLayout";
 
 const AchievementsHomePage = () => {
   const [achievements, setAchievements] = useState<AchievementType[]>([]);
@@ -14,12 +14,7 @@ const AchievementsHomePage = () => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
-    >
+    <AnimationLayout>
       <div className={styles.achievements}>
         <h2 className={styles.title}>
           Les derniers projets de création de sites web
@@ -38,7 +33,7 @@ const AchievementsHomePage = () => {
           </Link>
         </div>
       </div>
-    </motion.div>
+    </AnimationLayout>
   );
 };
 

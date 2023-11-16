@@ -1,18 +1,13 @@
 import { Accordion, AccordionTab } from "primereact/accordion";
 import styles from "./FAQ.module.scss";
-import { motion } from "framer-motion";
 import Container from "@/components/Container/Container";
+import AnimationLayout from "@/components/Layout/AnimationLayout";
 
 const FAQ = () => {
   return (
     <Container margin="isHuge">
       <div className={styles.faq}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-        >
+        <AnimationLayout>
           <Accordion>
             <AccordionTab header={<h2>Pourquoi créer un site internet ?</h2>}>
               <p className={styles.text}>
@@ -93,7 +88,7 @@ const FAQ = () => {
               </p>
             </AccordionTab>
           </Accordion>
-        </motion.div>
+        </AnimationLayout>
       </div>
     </Container>
   );

@@ -1,3 +1,4 @@
+import AnimationLayout from "@/components/Layout/AnimationLayout";
 import Card from "./Card";
 import styles from "./Cards.module.scss";
 import {
@@ -6,7 +7,6 @@ import {
   FaRegChartBar,
   FaArrowUpWideShort,
 } from "react-icons/fa6";
-import { motion } from "framer-motion";
 
 const Cards = () => {
   const cardsData = [
@@ -40,12 +40,7 @@ const Cards = () => {
   ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
-    >
+    <AnimationLayout>
       <div className={styles.cards}>
         <h2 className={styles.title}>Une offre complète</h2>
         <p className={styles.subtitle}>
@@ -59,7 +54,7 @@ const Cards = () => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </AnimationLayout>
   );
 };
 

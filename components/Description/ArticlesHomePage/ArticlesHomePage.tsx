@@ -1,5 +1,4 @@
 import styles from "./ArticlesHomePage.module.scss";
-import { motion } from "framer-motion";
 import Container from "@/components/Container/Container";
 import blogData from "@/assets/blogData";
 import { Article as ArticleType } from "@/types/types";
@@ -7,6 +6,7 @@ import ArticleHomePage from "./ArticleHomePage";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import AnimationLayout from "@/components/Layout/AnimationLayout";
 
 const ArticlesHomePage = () => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
@@ -18,12 +18,7 @@ const ArticlesHomePage = () => {
   return (
     <div className={styles.articlesHomePage}>
       <Container margin="isHuge">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-        >
+        <AnimationLayout>
           <h2 className={styles.title}>Les derniers articles</h2>
           <p className={styles.subtitle}>
             Retrouvez nos derniers articles sur la création de site internet, le
@@ -39,7 +34,7 @@ const ArticlesHomePage = () => {
               Voir tous les articles <FaAngleRight />
             </Link>
           </div>
-        </motion.div>
+        </AnimationLayout>
       </Container>
     </div>
   );

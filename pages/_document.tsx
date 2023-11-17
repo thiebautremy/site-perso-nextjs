@@ -24,6 +24,18 @@ export default function Document() {
     <Html lang="fr">
       <Head>
         <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-E4H3JCJ3C8"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E4H3JCJ3C8')`}
+        </Script>
+
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           id="myScript"

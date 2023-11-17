@@ -24,7 +24,7 @@ const Header = () => {
                 alt={"Logo Webosaurus"}
                 title={"Logo de Webosaurus"}
                 className={styles.image}
-                loading="eager"
+                loading="lazy"
                 sizes="(max-width: 768px) 10vw, (max-width: 1200px) 5vw"
                 fill
                 style={{ objectFit: "contain" }}

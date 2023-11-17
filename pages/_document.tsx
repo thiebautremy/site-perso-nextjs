@@ -32,6 +32,10 @@ export default function Document() {
         <meta property="og:type" content="website" />
 
         <meta name="robots" content="index" />
+        <meta
+          name="google-site-verification"
+          content="lJglgwqCjmHc9T4STICOyemXyUOQvxUPNiq87P5pP1k"
+        />
       </Head>
       <body>
         <Main />

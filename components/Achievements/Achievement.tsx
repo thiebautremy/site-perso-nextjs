@@ -48,7 +48,7 @@ const Achievement = ({
               alt={picture.alt}
               title={picture.title}
               className={styles.image}
-              loading="eager"
+              loading="lazy"
               placeholder="blur"
               fill
               priority

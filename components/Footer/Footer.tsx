@@ -19,7 +19,7 @@ const Footer = () => {
                     alt={"Logo Webosaurus"}
                     title={"Logo de Webosaurus"}
                     className={styles.image}
-                    loading="eager"
+                    loading="lazy"
                     placeholder="blur"
                     fill
                     sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw"

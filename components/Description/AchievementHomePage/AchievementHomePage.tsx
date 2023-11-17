@@ -23,7 +23,7 @@ const AchievementHomePage = ({
             alt={picture.alt}
             title={picture.title}
             className={styles.image}
-            loading="eager"
+            loading="lazy"
             fill
             sizes="(max-width: 768px) 40vw, (max-width: 1200px) 100vw"
             style={{ objectFit: "cover" }}

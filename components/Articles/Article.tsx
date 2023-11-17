@@ -46,7 +46,7 @@ const Article = ({
             alt={picture.alt}
             title={picture.title}
             className={styles.image}
-            loading="eager"
+            loading="lazy"
             placeholder="blur"
             fill
             style={{ objectFit: "cover" }}

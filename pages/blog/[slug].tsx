@@ -56,11 +56,11 @@ const Page = ({ articleContent }: PageProps) => {
         />
         <meta
           property="article:published_time"
-          content={articleContent.publishedAt}
+          content={articleContent.publishedAt.toString()}
         ></meta>
         <meta
           property="article:modified_time"
-          content={articleContent.updatedAt}
+          content={articleContent.updatedAt.toString()}
         ></meta>
         <meta property="og:type" content="article" />
         <meta property="article:tag" content={articleContent.tag}></meta>

@@ -22,11 +22,7 @@ const ArticlesHomePage: React.FC<ArticlesHomePageProps> = ({ blogData }) => {
           </p>
           <div className={styles.articlesContainer}>
             {blogData
-              .sort(
-                (a: { publishedAt: Date }, b: { publishedAt: Date }) =>
-                  new Date(b.publishedAt).getTime() -
-                  new Date(a.publishedAt).getTime()
-              )
+              .sort((a, b) => b.id - a.id)
               .slice(0, 3)
               .map((article) => (
                 <ArticleHomePage key={article.id} {...article} />

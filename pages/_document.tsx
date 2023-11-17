@@ -26,13 +26,14 @@ export default function Document() {
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-E4H3JCJ3C8"
-        ></Script>
-        <Script id="google-analytics">
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-E4H3JCJ3C8')`}
+  gtag('config', 'G-E4H3JCJ3C8');`}
         </Script>
 
         <Script

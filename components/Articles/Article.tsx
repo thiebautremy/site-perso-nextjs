@@ -1,12 +1,12 @@
 import styles from "./Article.module.scss";
 import { Article as ArticleType } from "@/types/types";
 import Container from "../Container/Container";
-import { motion } from "framer-motion";
 import parse from "html-react-parser";
 import Image from "next/image";
 import CTAContainer from "../CTAContainer/CTAContainer";
 import { DM_Serif_Display } from "next/font/google";
 import cx from "classnames";
+import AnimationLayout from "../Layout/AnimationLayout";
 
 const dmSerifDisplay = DM_Serif_Display({
   weight: "400",
@@ -33,13 +33,7 @@ const Article = ({
       <Container margin="isHuge">
         <h1 className={styles.title}>{title}</h1>
       </Container>
-      <motion.div
-        animate={{ x: [250, 0] }}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 1, ease: "easeInOut" }}
-      >
+      <AnimationLayout>
         <div className={styles.pictureContainer}>
           <Image
             src={picture.src}
@@ -47,8 +41,8 @@ const Article = ({
             title={picture.title}
             className={styles.image}
             loading="lazy"
-            placeholder="blur"
             fill
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 80vw"
             style={{ objectFit: "cover" }}
           />
         </div>
@@ -68,7 +62,7 @@ const Article = ({
           </div>
           <CTAContainer />
         </Container>
-      </motion.div>
+      </AnimationLayout>
     </div>
   );
 };

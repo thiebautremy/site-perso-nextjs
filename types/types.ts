@@ -7,7 +7,7 @@ export type Article = {
   text: string;
   catchPhrase: string;
   picture: { src: StaticImageData; alt: string; title: string };
-  publishedAt: string;
+  publishedAt: Date;
   updatedAt: string;
   tag: string;
   readingTime: number;

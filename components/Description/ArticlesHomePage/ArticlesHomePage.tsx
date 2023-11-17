@@ -21,9 +21,16 @@ const ArticlesHomePage: React.FC<ArticlesHomePageProps> = ({ blogData }) => {
             SEO, les bonnes pratiques etc...
           </p>
           <div className={styles.articlesContainer}>
-            {blogData.map((article) => (
-              <ArticleHomePage key={article.id} {...article} />
-            ))}
+            {blogData
+              .sort(
+                (a: { publishedAt: Date }, b: { publishedAt: Date }) =>
+                  new Date(b.publishedAt).getTime() -
+                  new Date(a.publishedAt).getTime()
+              )
+              .slice(0, 3)
+              .map((article) => (
+                <ArticleHomePage key={article.id} {...article} />
+              ))}
           </div>
           <div className={styles.allArticlesLinkContainer}>
             <Link href="/blog" className={styles.allArticlesLink}>

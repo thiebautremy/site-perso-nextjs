@@ -1,16 +1,10 @@
 import styles from "./Achievement.module.scss";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import cx from "classnames";
 import Container from "../Container/Container";
+import { type Achievement as AchievementType } from "@/types/types";
 
-type AchievementType = {
-  title: string;
-  techInfos: string;
-  description: string;
-  picture: { src: StaticImageData; alt: string; title: string };
-  url: string;
-};
 const Achievement = ({
   title,
   description,
@@ -51,7 +45,6 @@ const Achievement = ({
               loading="lazy"
               placeholder="blur"
               fill
-              priority
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
               style={{ objectFit: "cover" }}
             />

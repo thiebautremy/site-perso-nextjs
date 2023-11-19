@@ -2,8 +2,15 @@ import AchievementsContainer from "@/components/Achievements/Achievements";
 import MainLayout from "@/components/Layout/MainLayout";
 import Navigation from "@/components/Navigation/Navigation";
 import Head from "next/head";
+import { type Achievement } from "@/types/types";
+import { Suspense } from "react";
 
-export const Achievements = () => {
+type AchievementsProps = {
+  achievementsData: Achievement[];
+};
+
+const Achievements: React.FC<AchievementsProps> = ({ achievementsData }) => {
+  console.log(achievementsData);
   return (
     <>
       <Head>
@@ -41,9 +48,24 @@ export const Achievements = () => {
       </Head>
       <MainLayout>
         <Navigation />
-        <AchievementsContainer />
+        <Suspense>
+          <AchievementsContainer achievementsData={achievementsData} />
+        </Suspense>
       </MainLayout>
     </>
   );
 };
+
 export default Achievements;
+
+export async function getServerSideProps() {
+  const resAchievements = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}api/achievements`,
+    {
+      method: "GET",
+    }
+  );
+  const achievementsData = await resAchievements.json();
+  console.log(achievementsData.data);
+  return { props: { achievementsData: achievementsData.data } };
+}

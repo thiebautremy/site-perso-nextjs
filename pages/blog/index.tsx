@@ -1,28 +1,29 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import MainLayout from "@/components/Layout/MainLayout";
 import Navigation from "@/components/Navigation/Navigation";
 import Head from "next/head";
 import ArticlesContainer from "@/components/Articles/ArticlesContainer";
 import { Article } from "@/types/types";
 
-export default function Articles({ data }: any) {
-  const [articles, setArticles] = useState<Article[]>([]);
-  useEffect(() => {
-    setArticles(data);
-  }, [data]);
+type BlogProps = {
+  data: Article[];
+};
 
+const Articles: React.FC<BlogProps> = ({ data }) => {
   return (
     <>
       <HeadCustom />
       <MainLayout>
         <Navigation />
         <Suspense fallback={<p>loading...</p>}>
-          <ArticlesContainer articles={articles} />
+          <ArticlesContainer articles={data} />
         </Suspense>
       </MainLayout>
     </>
   );
-}
+};
+
+export default Articles;
 
 export async function getServerSideProps() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/blog`, {

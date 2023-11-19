@@ -2,12 +2,18 @@ import Head from "next/head";
 import Description from "@/components/Description/Description";
 import MainLayout from "@/components/Layout/MainLayout";
 import Header from "@/components/Header/Header";
-import { type Article } from "@/types/types";
+import { Achievement, type Article } from "@/types/types";
+import dynamic from "next/dynamic";
+
+const DynamicCards = dynamic(
+  () => import("@/components/Description/OfferCards/OfferCards")
+);
 
 type HomeProps = {
   blogData: { data: Article[] };
+  achievementsData: { data: Achievement[] };
 };
-const Home: React.FC<HomeProps> = ({ blogData }) => {
+const Home: React.FC<HomeProps> = ({ blogData, achievementsData }) => {
   return (
     <>
       <Head>
@@ -40,7 +46,11 @@ const Home: React.FC<HomeProps> = ({ blogData }) => {
       </Head>
       <MainLayout>
         <Header />
-        <Description blogData={blogData.data} />
+        <DynamicCards />
+        <Description
+          blogData={blogData.data}
+          achievementsData={achievementsData.data}
+        />
       </MainLayout>
     </>
   );
@@ -49,9 +59,16 @@ const Home: React.FC<HomeProps> = ({ blogData }) => {
 export default Home;
 
 export async function getServerSideProps() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/blog`, {
+  const resBlog = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/blog`, {
     method: "GET",
   });
-  const data = await res.json();
-  return { props: { blogData: data } };
+  const resAchievements = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}api/achievements`,
+    {
+      method: "GET",
+    }
+  );
+  const blogData = await resBlog.json();
+  const achievementsData = await resAchievements.json();
+  return { props: { blogData, achievementsData } };
 }

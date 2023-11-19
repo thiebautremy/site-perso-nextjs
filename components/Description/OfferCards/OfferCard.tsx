@@ -1,14 +1,14 @@
 import { ReactElement } from "react";
-import styles from "./Card.module.scss";
+import styles from "./OfferCard.module.scss";
 
-type CardType = {
+type OfferCardType = {
   title: string;
   description: string;
   logo: ReactElement;
   key: number;
 };
 
-const Card = ({ title, description, logo }: CardType) => {
+const Card = ({ title, description, logo }: OfferCardType) => {
   return (
     <div className={styles.cardContainer}>
       <span className={styles.logo}>{logo}</span>

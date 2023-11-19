@@ -5,8 +5,14 @@ import styles from "./AchievementsHomePage.module.scss";
 import AchievementHomePage, { AchievementType } from "./AchievementHomePage";
 import { useEffect, useState } from "react";
 import AnimationLayout from "@/components/Layout/AnimationLayout";
+import { type Achievement } from "@/types/types";
 
-const AchievementsHomePage = () => {
+type AchievementsHomePageProps = {
+  achievementsData: Achievement[];
+};
+const AchievementsHomePage: React.FC<AchievementsHomePageProps> = ({
+  achievementsData,
+}) => {
   const [achievements, setAchievements] = useState<AchievementType[]>([]);
 
   useEffect(() => {
@@ -23,7 +29,7 @@ const AchievementsHomePage = () => {
           Quelques uns des derniers projets de création de site web
         </p>
         <div className={styles.achievementsContainer}>
-          {achievements.map((achievement) => (
+          {achievementsData.slice(0, 2).map((achievement) => (
             <AchievementHomePage key={achievement.id} {...achievement} />
           ))}
         </div>

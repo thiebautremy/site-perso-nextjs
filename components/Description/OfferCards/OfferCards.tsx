@@ -1,6 +1,6 @@
 import AnimationLayout from "@/components/Layout/AnimationLayout";
-import Card from "./Card";
-import styles from "./Cards.module.scss";
+import OfferCard from "./OfferCard";
+import styles from "./OfferCards.module.scss";
 import {
   FaCode,
   FaDatabase,
@@ -8,7 +8,7 @@ import {
   FaArrowUpWideShort,
 } from "react-icons/fa6";
 
-const Cards = () => {
+const OfferCards = () => {
   const cardsData = [
     {
       id: 1,
@@ -50,7 +50,7 @@ const Cards = () => {
         </p>
         <div className={styles.cardsContainer}>
           {cardsData.map((card) => (
-            <Card key={card.id} {...card} />
+            <OfferCard key={card.id} {...card} />
           ))}
         </div>
       </div>
@@ -58,4 +58,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default OfferCards;

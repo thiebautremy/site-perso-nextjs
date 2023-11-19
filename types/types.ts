@@ -12,3 +12,16 @@ export type Article = {
   tag: string;
   readingTime: number;
 };
+
+export type Achievement = {
+  id: number;
+  title: string;
+  description: string;
+  techInfos: string;
+  url: string;
+  picture: {
+    src: StaticImageData;
+    alt: string;
+    title: string;
+  };
+};

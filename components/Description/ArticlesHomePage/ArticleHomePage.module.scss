@@ -57,6 +57,9 @@
       .catchPhrase {
         font-size: 1.2rem;
         line-height: 1.5;
+        max-height: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }

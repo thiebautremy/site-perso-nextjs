@@ -1,9 +1,7 @@
 import { FaAngleRight } from "react-icons/fa";
-import achievementsData from "@/components/Achievements/achievementsData";
 import Link from "next/link";
 import styles from "./AchievementsHomePage.module.scss";
-import AchievementHomePage, { AchievementType } from "./AchievementHomePage";
-import { useEffect, useState } from "react";
+import AchievementHomePage from "./AchievementHomePage";
 import AnimationLayout from "@/components/Layout/AnimationLayout";
 import { type Achievement } from "@/types/types";
 
@@ -13,12 +11,6 @@ type AchievementsHomePageProps = {
 const AchievementsHomePage: React.FC<AchievementsHomePageProps> = ({
   achievementsData,
 }) => {
-  const [achievements, setAchievements] = useState<AchievementType[]>([]);
-
-  useEffect(() => {
-    setAchievements(achievementsData.slice(0, 2));
-  }, []);
-
   return (
     <AnimationLayout>
       <div className={styles.achievements}>

@@ -2,6 +2,7 @@ import { ReactElement, JSXElementConstructor, ReactFragment } from "react";
 import { Signika } from "next/font/google";
 import styles from "./MainLayout.module.scss";
 import dynamic from "next/dynamic";
+import CookieBanner from "../CookieBanner/CookieBanner";
 
 const signika = Signika({
   weight: "400",
@@ -25,6 +26,7 @@ const MainLayout = (props: {
   return (
     <main className={signika.className}>
       <div className={styles.mainContent}>{props.children}</div>
+      <CookieBanner />
       <Footer />
     </main>
   );

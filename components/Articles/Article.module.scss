@@ -48,7 +48,8 @@
 
     p,
     h2,
-    h3 {
+    h3,
+    ul {
       margin: var.$gap-medium calc(var.$gap-xlarge * 2) 0
         calc(var.$gap-xlarge * 2);
 
@@ -97,7 +98,8 @@
       }
     }
 
-    p {
+    p,
+    ul {
       padding-left: var.$gap-xlarge;
 
       @media screen and (max-width: var.$screen-phone) {

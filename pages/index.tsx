@@ -58,7 +58,7 @@ const Home: React.FC<HomeProps> = ({ blogData, achievementsData }) => {
 
 export default Home;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const resBlog = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/blog`, {
     method: "GET",
   });

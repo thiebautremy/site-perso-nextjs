@@ -21,7 +21,7 @@ const ArticlesContainer = ({ articles }: ArticlesContainerProps) => {
         >
           <h1>Articles</h1>
           <div className={styles.articleCardsContainer}>
-            {articles.map((article) => (
+            {articles.reverse().map((article) => (
               <ArticleCard key={article.id} {...article} />
             ))}
           </div>

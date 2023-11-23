@@ -2,6 +2,7 @@ import code from "@/assets/blog/code.jpg";
 import links from "@/assets/blog/links.jpg";
 import money from "@/assets/blog/money.jpg";
 import gsc from "@/assets/blog/gsc.jpg";
+import webDesign from "@/assets/blog/web-design.jpg";
 
 const article1 = {
   title: "Comment créer un site internet à Pont-à-mousson ?",
@@ -28,6 +29,13 @@ const article4 = {
   catchPhrase:
     "Pour être bien référencé dans les moteurs de recherche, créez un contenu de qualité, utilisez les balises HTML correctement, obtenez des liens de qualité et assurez-vous que votre site se charge rapidement.",
   text: "<p className='textHighlighted'>Être bien référencé dans les moteurs de recherche est un peu comme être le meilleur élève de la classe : tout le monde veut y arriver, mais peu savent réellement comment s'y prendre. Ne vous inquiétez pas, je vais vous donner quelques astuces pour vous aider à grimper les échelons du référencement !</p><h3>1. Soyez un(e) super-héros(ses) du contenu</h3><p>Les moteurs de recherche adorent le contenu frais et pertinent. Alors, mettez votre cape de super-héros(ses) du contenu et créez des articles, des vidéos et des infographies de qualité. Mais attention, ne tombez pas dans le piège de l'excès de mots-clés, sinon vous risquez de finir en tant que super-vilain(e) du référencement.</p><h3>2. Les balises HTML, votre super-pouvoir secret</h3><p>Les balises HTML sont comme les bases du référencement naturel. Utilisez judicieusement les balises de titre (H1, H2, etc.), les balises de description (meta description) et les balises d'attribut alt pour les images. Ces pratiques aident les moteurs de recherche à comprendre le contenu de votre site et à le classer correctement.</p><h3>3. Les liens, vos alliés dans la bataille du référencement</h3><p>Imaginez que les liens sont comme des alliés qui se soutiennent mutuellement. Obtenez des liens de qualité provenant d'autres sites web pertinents pour le vôtre. Mais méfiez-vous des mauvais liens, car ils pourraient vous entraîner dans le fin fond des pages de résultats de recherche. Et on va pas se mentir, personne ne consulte la page 143 des résultats de recherche sur Google.</p><h3>4. La vitesse de chargement, votre super-vitesse</h3><p>Les moteurs de recherche sont impatients, tout comme les humains à la caisse d’un supermarché. Assurez-vous que votre site se charge rapidement pour offrir une expérience agréable aux utilisateurs et pour montrer aux moteurs de recherche que votre site est bien conçu et vaut la peine d’être visité.</p><h3>5. Suivre son audience</h3><p>Maintenant qu'en tant que meilleur élève vous avez respecté les bonnes pratiques à la lettre, il va falloir suivre l'évolution de votre traffic. Il existe de nombreux outils pour mesure les impressions et l'audience afin de voir le nombre de visiteur, comme la Google Search Console. Attention, ces derniers doivent respecter les lois sur la protection des données !</p><p>Être bien référencé dans les moteurs de recherche demande du travail, de la patience et un peu des connaissances technique en conception de site internet et de référencement. Suivez ces bonnes pratiques et vous serez sur la bonne voie pour devenir un(e) champion(ne) du référencement !</p>",
+};
+
+const article5 = {
+  title: "Quelles sont les dernières tendances en matière de design web ?",
+  catchPhrase:
+    "Les dernières tendances du design web : minimalisme, gradients, micro-animations, dark mode, illustrations et glassmorphism.",
+  text: "<p className='textHighlighted'>Le monde du design web évolue rapidement, et il est important de rester à jour avec les dernières tendances. Alors, accrochez-vous à votre clavier et préparez-vous à plonger dans l'univers du design web.</p><h2>Minimalisme</h2><p>Le minimalisme est comme un T-Rex dans le monde du design web. Il est puissant, efficace et laisse une impression durable. Un site web minimaliste a un impact fort avec peu de fioritures. Imaginez un T-Rex se promenant dans un musée, captivant l'attention de tous les visiteurs avec sa présence imposante et sa simplicité saisissante. C'est exactement l'effet que le minimalisme peut avoir sur votre site web. En simplifiant l'interface et en éliminant les éléments superflus, vous créez une expérience utilisateur percutante.</p><h2>Gradients</h2><p>Les gradients ajoutent de la couleur et de la texture à votre site web tout en créant une ambiance dynamique. Mais attention, n'en faites pas trop, sinon cela pourrait ressembler à un site internet du début des années 2000 ! Ils ajoutent de la profondeur et de l'intérêt visuel à votre design en mélangeant subtilement différentes couleurs. Mais rappelez-vous, tout est une question d'équilibre.</p><h2>Micro-animations</h2><p>Les micro-animations ajoutent une touche de mouvement subtil à votre site, captivant l'attention des utilisateurs. Ces petites animations peuvent rendre votre site web plus vivant et engageant, créer un impact visuel fort et attirer l'attention des visiteurs. Qu'il s'agisse d'un bouton qui change de couleur au survol ou d'un menu qui se déploie en douceur, ces petites animations ajoutent une dimension supplémentaire à l'expérience utilisateur. La aussi attention à ne pas tomber dans l’excès sinon votre création ressemblera plus à un sapin de Noël qu’à un site internet.</p><h2>Dark mode</h2><p>Le dark mode peut rendre votre site web plus attrayant pour les utilisateurs. Mais attention, si vous l'utilisez sans discernement, cela pourrait effrayer vos visiteurs ! Le dark mode peut donner à votre site web une allure moderne et élégante. Cependant, utilisez-le avec parcimonie et assurez-vous qu'il s'intègre harmonieusement à votre design global. Sinon, vos visiteurs pourraient être effrayés et fuir plus vite que vous ne le pensez. Attention également à l’accessibilité et aux différences de couleurs, en effet certaines personnes avec des troubles ophtalmiques pourraient ne pas discerner certains éléments.</p><h2>Illustrations</h2><p>Les illustrations ajoutent une touche ludique et personnalisée à votre site web. Alors, laissez libre cours à votre créativité et ajoutez des illustrations uniques pour rendre votre site web vraiment 'RAAAaaaaawr-some' (Traduction: GéniAAAAaaaal) ! Les illustrations sont un moyen fantastique d'ajouter une touche de personnalité et de créativité à votre site web. Qu'il s'agisse de dessins amusants, de personnages adorables ou de paysages fantastiques, les illustrations peuvent donner vie à votre site et le rendre véritablement unique.</p><h2>Glassmorphism</h2><p>Le glassmorphism est l’utilisation d’effets de transparence et de flou pour créer une apparence moderne et élégante ! Le glassmorphism ajoute de la profondeur et de la sophistication à votre design, tout en laissant transparaître subtilement les éléments en arrière-plan. Alors, n'ayez pas peur de vous laisser séduire par cette tendance et de donner à votre site web un look aussi rafraîchissant qu'un verre de limonade glacée un jour d'été ensoleillé !</p><p>N'oubliez pas que ces tendances peuvent évoluer aussi rapidement que les dinosaures ont disparu. Alors, restez curieux, expérimentez et adaptez-vous aux nouvelles tendances pour créer des expériences web incroyables !</p>",
 };
 
 const articlesData = [
@@ -85,6 +93,20 @@ const articlesData = [
     publishedAt: "2023-11-17T12:00:00+02:00",
     updatedAt: "2023-11-17T12:00:00+02:00",
     tag: "Comment être bien référencé dans les moteurs de recherche ?",
+    readingTime: 2,
+  },
+  {
+    id: 5,
+    slug: "les-dernieres-tendances-de-design-web",
+    ...article5,
+    picture: {
+      src: webDesign,
+      alt: "Différentes palettes de couleurs",
+      title: "Différentes palettes de couleurs",
+    },
+    publishedAt: "2023-11-23T21:37:00+02:00",
+    updatedAt: "2023-11-23T21:37:00+02:00",
+    tag: "Quelles sont les dernières tendances en matière de design web ?",
     readingTime: 2,
   },
 ];

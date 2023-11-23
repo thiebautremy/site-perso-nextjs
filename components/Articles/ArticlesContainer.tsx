@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./ArticlesContainer.module.scss";
 import { Article } from "@/types/types";
 import Container from "../Container/Container";

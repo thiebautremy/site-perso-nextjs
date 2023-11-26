@@ -6,7 +6,9 @@ import {
   FaRegChartBar,
   FaArrowUpWideShort,
 } from "react-icons/fa6";
-import OfferCard from "./OfferCard";
+import dynamic from "next/dynamic";
+
+const DynamicCards = dynamic(() => import("./OfferCard"));
 
 const OfferCards = () => {
   const cardsData = [
@@ -50,7 +52,7 @@ const OfferCards = () => {
         </p>
         <div className={styles.cardsContainer}>
           {cardsData.map((card) => (
-            <OfferCard key={card.id} {...card} />
+            <DynamicCards key={card.id} {...card} />
           ))}
         </div>
       </div>

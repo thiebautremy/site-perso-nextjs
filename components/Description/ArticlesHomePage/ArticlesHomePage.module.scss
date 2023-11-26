@@ -11,7 +11,7 @@
     padding: 5rem 0 2rem;
   }
 
-  .title {
+  &__title {
     text-align: center;
     font-size: 2rem;
 
@@ -20,7 +20,7 @@
     }
   }
 
-  .subtitle {
+  &__subtitle {
     text-align: center;
     width: 50%;
     margin: 0 auto var.$gap-medium;
@@ -29,17 +29,17 @@
       width: 90%;
     }
   }
-  .articlesContainer {
+  &__articlesContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 var.$gap-small;
   }
-  .allArticlesLinkContainer {
+  &__allArticlesLinkContainer {
     display: flex;
     justify-content: flex-end;
 
-    .allArticlesLink {
+    &__Link {
       font-size: 1.2rem;
       margin: 0 var.$gap-medium;
       position: relative;

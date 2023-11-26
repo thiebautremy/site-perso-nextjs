@@ -11,7 +11,7 @@
       transform: translate(5px, 5px);
     }
   }
-  .articleContainerHomePage {
+  &__articleContainerHomePage {
     min-height: 26rem;
     border-radius: calc(var.$radius / 2);
     overflow: hidden;
@@ -30,7 +30,7 @@
       padding: var.$gap-small;
     }
 
-    .articleDescription {
+    &__articleDescription {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;

@@ -22,11 +22,11 @@
     margin-top: var.$gap-medium;
   }
 
-  .logo {
+  &__logo {
     font-size: 2rem;
   }
 
-  .title {
+  &__title {
     font-weight: bold;
     letter-spacing: 0.1rem;
     min-height: 3rem;

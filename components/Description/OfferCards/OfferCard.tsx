@@ -11,8 +11,8 @@ type OfferCardType = {
 const Card = ({ title, description, logo }: OfferCardType) => {
   return (
     <div className={styles.cardContainer}>
-      <span className={styles.logo}>{logo}</span>
-      <h3 className={styles.title}>{title}</h3>
+      <span className={styles.cardContainer__logo}>{logo}</span>
+      <h3 className={styles.cardContainer__title}>{title}</h3>
       <p>{description}</p>
     </div>
   );

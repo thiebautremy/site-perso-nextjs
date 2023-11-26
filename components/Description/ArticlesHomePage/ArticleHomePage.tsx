@@ -16,10 +16,14 @@ const ArticleHomePage = ({
   });
 
   return (
-    <Link href={`/blog/${slug}`} className={styles.link}>
+    <Link href={`/blog/${slug}`}>
       <div className={styles.articleHomePage}>
-        <div className={styles.articleContainerHomePage}>
-          <div className={styles.articleDescription}>
+        <div className={styles.articleHomePage__articleContainerHomePage}>
+          <div
+            className={
+              styles.articleHomePage__articleContainerHomePage__articleDescription
+            }
+          >
             <span>{`Publié le : ${formattedDate}`}</span>
             <h2 className={styles.title}>{title}</h2>
             <div className={styles.catchPhrase}>{parse(catchPhrase)}</div>

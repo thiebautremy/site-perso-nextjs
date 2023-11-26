@@ -8,7 +8,7 @@
   color: var.$color-yellow;
   padding: var.$gap-medium 0;
 
-  .title {
+  &__title {
     text-align: center;
     font-size: 2rem;
 
@@ -17,7 +17,7 @@
     }
   }
 
-  .subtitle {
+  &__subtitle {
     text-align: center;
     width: 50%;
     margin: 0 auto var.$gap-medium;
@@ -27,7 +27,7 @@
     }
   }
 
-  .cardsContainer {
+  &__cardsContainer {
     display: flex;
     justify-content: space-evenly;
 

@@ -44,13 +44,13 @@ const OfferCards = () => {
   return (
     <AnimationLayout>
       <div className={styles.cards}>
-        <h2 className={styles.title}>Une offre complète</h2>
-        <p className={styles.subtitle}>
+        <h2 className={styles.cards__title}>Une offre complète</h2>
+        <p className={styles.cards__subtitle}>
           La création d&apos;un site internet requiert des compétences larges
           allant de la conception technique, au référencement jusqu&apos;à
           l&apos;hébergement
         </p>
-        <div className={styles.cardsContainer}>
+        <div className={styles.cards__cardsContainer}>
           {cardsData.map((card) => (
             <DynamicCards key={card.id} {...card} />
           ))}

@@ -30,6 +30,7 @@ export default function Document() {
           strategy="lazyOnload"
         />
         <meta property="og:type" content="website" />
+
         <meta name="robots" content="index" />
         <meta
           name="google-site-verification"

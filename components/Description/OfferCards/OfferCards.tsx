@@ -1,5 +1,4 @@
 import AnimationLayout from "@/components/Layout/AnimationLayout";
-import OfferCard from "./OfferCard";
 import styles from "./OfferCards.module.scss";
 import {
   FaCode,
@@ -7,6 +6,11 @@ import {
   FaRegChartBar,
   FaArrowUpWideShort,
 } from "react-icons/fa6";
+import dynamic from "next/dynamic";
+
+const DynamicCards = dynamic(
+  () => import("@/components/Description/OfferCards/OfferCards")
+);
 
 const OfferCards = () => {
   const cardsData = [
@@ -50,7 +54,7 @@ const OfferCards = () => {
         </p>
         <div className={styles.cardsContainer}>
           {cardsData.map((card) => (
-            <OfferCard key={card.id} {...card} />
+            <DynamicCards key={card.id} {...card} />
           ))}
         </div>
       </div>

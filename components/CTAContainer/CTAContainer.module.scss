@@ -1,9 +1,10 @@
 @use "../../styles/variables" as var;
 
 .CTAContainer {
-  background-image: url("../../assets/background/texture-dark.webp");
-  background-position: 0;
-  background-size: 1000px 1000px;
+  backdrop-filter: blur(16px) saturate(181%);
+  -webkit-backdrop-filter: blur(16px) saturate(181%);
+  background-color: rgba(17, 25, 40, 0.81);
+  border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: var.$radius;
   color: var.$color-yellow;
   display: flex;
@@ -14,8 +15,6 @@
   margin: var.$gap-medium 0;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  box-shadow: 7px 7px 8px 0 rgba(0, 0, 0, 0.25),
-    0px 0px 6px 0 rgba(255, 255, 255, 0.3);
 
   @media screen and (max-width: var.$screen-phone) {
     padding: var.$gap-small;

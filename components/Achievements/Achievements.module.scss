@@ -2,9 +2,7 @@
 
 .achievementsContainer {
   padding: 12rem 0 3rem;
-  background-image: url("../../assets/background/texture.webp");
-  background-position: 0;
-  background-size: 1000px 1000px;
+  background-color: var.$color-font--dark;
 
   @media screen and (max-width: var.$screen-phone) {
     padding: 5rem 0 2rem;

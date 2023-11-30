@@ -59,9 +59,7 @@
       border-bottom-right-radius: var.$radius;
     }
     .descriptionModuleText {
-      background-image: url("../../assets/background/texture-dark.webp");
-      background-position: 0;
-      background-size: 1000px 1000px;
+      background-color: var.$color-bg--light;
       letter-spacing: 0.05rem;
       padding: var.$gap-small var.$gap-small var.$gap-small
         calc(var.$gap-xlarge * 2);
@@ -93,9 +91,7 @@
     .descriptionModuleText {
       padding: var.$gap-small calc(var.$gap-xlarge * 2) var.$gap-small
         var.$gap-small;
-      background-image: url("../../assets/background/texture-dark.webp");
-      background-position: 0;
-      background-size: 1000px 1000px;
+      background-color: var.$color-bg--light;
       color: var.$color-yellow;
       letter-spacing: 0.05rem;
 

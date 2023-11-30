@@ -2,9 +2,8 @@
 
 .tarifsContainer {
   padding: 12rem 0 3rem;
-  background-image: url("../../assets/background/texture.webp");
-  background-position: 0;
-  background-size: 1000px 1000px;
+  background-color: var.$color-font--dark;
+  color: var.$color-yellow;
 
   @media screen and (max-width: var.$screen-phone) {
     padding: 5rem 0 2rem;
@@ -31,12 +30,11 @@
         color: white;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-        box-shadow: 7px 7px 8px 0 rgba(0, 0, 0, 0.25),
-          0px 0px 6px 0 rgba(255, 255, 255, 0.3);
         border-radius: var.$radius;
-        background-image: url("../../assets/background/texture-dark.webp");
-        background-position: 0;
-        background-size: 1000px 1000px;
+        backdrop-filter: blur(16px) saturate(181%);
+        -webkit-backdrop-filter: blur(16px) saturate(181%);
+        background-color: rgba(17, 25, 40, 0.81);
+        border: 1px solid rgba(255, 255, 255, 0.125);
         padding: 0 calc(var.$gap-small / 2);
         margin-bottom: calc(var.$gap-small / 2);
 
@@ -88,7 +86,7 @@
       }
     }
     .formulasList {
-      margin-top: var.$gap-xlarge;
+      margin: var.$gap-xlarge 0;
 
       @media screen and (max-width: var.$screen-phone) {
         margin-top: var.$gap-small;
@@ -117,8 +115,8 @@
         }
         .TRexSkull {
           position: absolute;
-          left: -1rem;
-          top: -1.5rem;
+          left: 1rem;
+          top: 0;
           font-size: 4rem;
           transition: all 0.3s ease-in-out;
         }

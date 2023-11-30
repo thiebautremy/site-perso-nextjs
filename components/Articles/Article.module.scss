@@ -2,9 +2,8 @@
 
 .article {
   padding: 12rem 0 3rem;
-  background-image: url("../../assets/background/texture.webp");
-  background-position: 0;
-  background-size: 1000px 1000px;
+  background-color: var.$color-font--dark;
+  color: var.$color-yellow;
 
   @media screen and (max-width: var.$screen-phone) {
     padding: 5rem 0 2rem;
@@ -17,11 +16,11 @@
     background-size: 300% 300%;
     background-image: linear-gradient(
       -45deg,
-      var.$color-font--dark 0%,
-      var.$color-font--dark 30%,
-      var.$color-bg--light 51%,
-      var.$color-font--dark 70%,
-      var.$color-font--dark 100%
+      var.$color-yellow 0%,
+      var.$color-yellow 30%,
+      var.$color-font--dark 51%,
+      var.$color-yellow 70%,
+      var.$color-yellow 100%
     );
     -webkit-animation: AnimateBG 7s ease infinite;
     animation: AnimateBG 7s ease infinite;
@@ -37,14 +36,13 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: var.$gap-medium;
-    border-bottom: 1px solid var.$color-font--dark;
+    border-bottom: 1px solid var.$color-yellow;
     padding-bottom: var.$gap-small;
   }
 
   .text {
     letter-spacing: 0.2px;
-    border-left: 1px solid var.$color-font--dark;
-    color: var.$color-font--blog;
+    border-left: 1px solid var.$color-yellow;
 
     p,
     h2,
@@ -70,14 +68,9 @@
 
     p:nth-last-child(1) {
       margin: var.$gap-xlarge 0;
-      color: var.$color-black;
     }
 
-    h2,
-    h3 {
-      color: var.$color-black;
-    }
-    h3 {
+    h2 {
       position: relative;
       padding-left: var.$gap-medium;
       display: flex;
@@ -85,7 +78,7 @@
 
       &::before {
         content: "";
-        background-image: url("../../assets/logo/logo-vectorised.png");
+        background-image: url("../../assets/logo/yellow-short.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

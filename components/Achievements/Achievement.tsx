@@ -1,9 +1,9 @@
 import styles from "./Achievement.module.scss";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import cx from "classnames";
 import Container from "../Container/Container";
 import { type Achievement as AchievementType } from "@/types/types";
+import AnimationLayout from "../Layout/AnimationLayout";
 
 const Achievement = ({
   title,
@@ -13,12 +13,7 @@ const Achievement = ({
   url,
 }: AchievementType) => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
-    >
+    <AnimationLayout>
       <Container margin="isMedium">
         <div
           className={cx(styles.achievementContainer, "achievementContainer")}
@@ -51,7 +46,7 @@ const Achievement = ({
           </div>
         </div>
       </Container>
-    </motion.div>
+    </AnimationLayout>
   );
 };
 

@@ -16,7 +16,7 @@ export const Contact = () => {
         <meta
           name="og:image"
           property="og:image"
-          content="https://webosaurus.fr/logo.png"
+          content="https://webosaurus.fr/logo-vectorised.png"
         />
         <meta
           name="og:title"

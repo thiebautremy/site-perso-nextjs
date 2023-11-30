@@ -2,7 +2,7 @@ import Link from "next/link";
 import Container from "../Container/Container";
 import styles from "./Footer.module.scss";
 import Image from "next/image";
-import logoLongVectorised from "@/assets/logo/logo-long-vectorised.png";
+import logoLongVectorised from "@/assets/logo/logo-long-yellow.png";
 import AnimationLayout from "../Layout/AnimationLayout";
 
 const Footer = () => {
@@ -71,7 +71,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className={styles.rightContainer}>
-              <Link href="/contact" scroll className="ctaBtn">
+              <Link href="/contact" scroll className="ctaBtn ">
                 <span>Me contacter</span>
               </Link>
             </div>

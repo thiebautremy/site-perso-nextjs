@@ -1,11 +1,22 @@
 import { useState, useEffect, ReactNode } from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-type Props = {
+const boxVariant = {
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.8 },
+    ease: "easeInOut",
+  },
+  hidden: { opacity: 0, scale: 0.9 },
+};
+
+type AnimationLayoutProps = {
   children: ReactNode;
 };
 
-const AnimationLayout: React.FC<Props> = ({ children }) => {
+const AnimationLayout: React.FC<AnimationLayoutProps> = ({ children }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -13,14 +24,30 @@ const AnimationLayout: React.FC<Props> = ({ children }) => {
     setIsMobile(width < 768);
   }, []);
 
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return isMobile ? (
     <div>{children}</div>
   ) : (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
+      // initial="hidden"
+      // variants={boxVariant}
+      // ref={ref}
+      // animate={control}
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      whileTap={{ opacity: 0, scale: 0.8 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
     >
       {children}
     </motion.div>

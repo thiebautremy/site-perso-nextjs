@@ -1,132 +1,100 @@
 @use "../../styles/variables" as var;
 
 .header {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/background/texture.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.7;
-  }
+  background-color: var.$color-font--dark;
 }
+
 .headerContent {
-  display: flex;
-  position: relative;
-  border-bottom: 2px solid var.$color-font--dark;
-}
-
-.headerContentBg {
-  width: 100%;
-  position: relative;
-  height: 40rem;
+  color: var.$color-yellow;
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  @media screen and (max-width: var.$screen-phone) {
-    height: 25rem;
-  }
-}
-
-.headerContentText {
-  position: absolute;
-  color: var.$color-bg--light;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: var.$gap-medium var.$gap-medium var.$gap-small;
-  top: 4rem;
-  bottom: 4rem;
+  justify-content: space-around;
+  padding: calc(var.$gap-large * 4) var.$gap-medium var.$gap-xlarge;
+  top: 20rem;
   left: 5rem;
   right: 5rem;
   border-radius: var.$radius;
 
   @media screen and (max-width: var.$screen-phone) {
-    top: 3rem;
-    bottom: 2rem;
-    left: 3rem;
-    right: 3rem;
+    flex-direction: column-reverse;
+    top: 0rem;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
     padding: calc(var.$gap-small / 2) 0;
+    margin: var.$gap-medium 0;
   }
 
   .logoContainer {
-    height: 6rem;
+    height: 15rem;
     position: relative;
-    width: 20rem;
-    margin: 0 auto;
+    width: 30rem;
+    // margin: 0 0 0 10rem;
 
     @media screen and (max-width: var.$screen-phone) {
       width: 15rem;
     }
   }
-
-  .title {
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    padding: var.$gap-small 0;
-    background-image: linear-gradient(
-      -45deg,
-      var.$color-yellow 0%,
-      var.$color-yellow 45%,
-      var.$color-font--dark 51%,
-      var.$color-yellow 55%,
-      var.$color-yellow 100%
-    );
-    -webkit-animation: AnimateBG 7s ease-in-out infinite;
-    animation: AnimateBG 7s ease-in-out infinite;
-
-    @media screen and (max-width: var.$screen-tablet-landscape) {
+  .headerContentText {
+    .title {
       font-size: 3rem;
-    }
+      width: 100%;
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      padding: var.$gap-small 0;
+      color: transparent;
+      background-image: linear-gradient(
+        -45deg,
+        var.$color-yellow 0%,
+        var.$color-yellow 45%,
+        var.$color-font--dark 51%,
+        var.$color-yellow 55%,
+        var.$color-yellow 100%
+      );
+      -webkit-animation: AnimateBG 7s ease-in-out infinite;
+      animation: AnimateBG 7s ease-in-out infinite;
 
-    @media screen and (max-width: var.$screen-phone) {
-      font-size: 2rem;
-    }
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        font-size: 3rem;
+      }
 
-    span {
-      display: block;
-      &:nth-child(1),
-      &:nth-child(2) {
-        margin-bottom: calc(var.$gap-small / 2);
+      @media screen and (max-width: var.$screen-phone) {
+        font-size: 1.7rem;
+        text-align: center;
+      }
+
+      span {
+        display: block;
+      }
+
+      .firstTitle {
+        font-size: 5rem;
+        color: var.$color-bg--light;
+        margin-bottom: var.$gap-medium;
+
+        @media screen and (max-width: var.$screen-phone) {
+          font-size: 3rem;
+        }
       }
     }
-  }
 
-  .text,
-  .subTitle {
-    font-size: 1.5rem;
-    margin: var.$gap-medium auto var.$gap-small;
-    color: var.$color-font--dark;
-    text-align: center;
+    .subTitle {
+      font-size: 1.5rem;
+      margin: var.$gap-medium auto var.$gap-small;
+      text-align: center;
+      padding-left: 0;
+      &::before {
+        content: none;
+      }
 
-    @media screen and (max-width: var.$screen-tablet-landscape) {
-      font-size: 1.3rem;
-    }
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        font-size: 1.3rem;
+      }
 
-    @media screen and (max-width: var.$screen-phone) {
-      font-size: 1.2rem;
-    }
-  }
-
-  .subTitle {
-    padding-left: 0;
-    &::before {
-      content: none;
+      @media screen and (max-width: var.$screen-phone) {
+        font-size: 1.2rem;
+      }
     }
   }
 }

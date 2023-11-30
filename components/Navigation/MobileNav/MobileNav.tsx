@@ -4,6 +4,7 @@ import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
 import { useState } from "react";
 import cx from "classnames";
+import { FaAlignLeft } from "react-icons/fa";
 
 type MobileNavType = {
   links: { url: string; label: string }[];
@@ -32,7 +33,7 @@ const MobileNav = ({ links, scrolled }: MobileNavType) => {
             ))}
           </div>
           <div>
-            <Link href={"/contact"} className="ctaBtn ctaBtnScrolled">
+            <Link href={"/contact"} className={"ctaBtn"}>
               <span>Me contacter</span>
             </Link>
           </div>
@@ -40,12 +41,7 @@ const MobileNav = ({ links, scrolled }: MobileNavType) => {
       </Sidebar>
 
       <Button
-        icon={
-          <i
-            className="pi pi-align-justify"
-            style={{ marginRight: "0.5rem" }}
-          />
-        }
+        icon={<FaAlignLeft />}
         onClick={() => setVisible(true)}
         className={cx(styles.menuBtn, scrolled && styles.menuBtnScrolled)}
         label="Menu"

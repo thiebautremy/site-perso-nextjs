@@ -10,7 +10,7 @@
     flex-direction: column;
     min-height: 15rem;
     font-size: 1.3rem;
-    color: var.$color-font--light;
+    color: var.$color-yellow;
 
     a {
       padding: calc(var.$gap-small / 2) 0;
@@ -19,15 +19,19 @@
 }
 
 .menuBtn {
-  color: var.$color-font--dark;
+  color: var.$color-yellow;
   background-color: transparent;
   border: none;
   padding: calc(var.$gap-small/2) 0;
   display: flex !important;
   align-items: center;
   font-size: 1.2rem;
+
+  span {
+    margin-left: 0.5rem;
+  }
 }
 
 .menuBtnScrolled {
-  color: var.$color-font--light;
+  color: var.$color-font--dark;
 }

@@ -19,15 +19,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../../../assets/background/texture.webp");
-    background-position: 0;
-    background-size: 1000px 1000px;
+    background-color: var.$color-bg--light;
     transition: all 0.3s ease-in-out;
 
     @media screen and (max-width: var.$screen-phone) {
       flex-direction: column;
       margin: var.$gap-medium 0;
       padding: var.$gap-small;
+      min-height: 18rem;
     }
 
     &__articleDescription {
@@ -52,6 +51,11 @@
         &::before {
           all: unset;
         }
+
+        @media screen and (max-width: var.$screen-phone) {
+          height: 5rem;
+          font-size: 1.2rem;
+        }
       }
 
       .catchPhrase {
@@ -60,6 +64,12 @@
         max-height: 200px;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        @media screen and (max-width: var.$screen-phone) {
+          font-size: 1.1rem;
+          line-height: 1.2;
+          max-height: 150px;
+        }
       }
     }
   }

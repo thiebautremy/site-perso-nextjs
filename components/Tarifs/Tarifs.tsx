@@ -119,9 +119,7 @@ const Tarifs = () => {
                     </ul>
                     <Link
                       href={"/contact"}
-                      className={cx(
-                        `ctaBtn ctaBtnScrolled ${styles.contactBtn}`
-                      )}
+                      className={cx(`ctaBtn  ${styles.contactBtn}`)}
                     >
                       <span>Me contacter</span>
                     </Link>

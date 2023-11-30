@@ -1,5 +1,12 @@
 @use "@/styles/variables" as var;
 
 .faq {
-  padding: var.$gap-xlarge 0;
+  padding: calc(var.$gap-large * 2) 0;
+
+  h2 {
+    @media screen and (max-width: var.$screen-phone) {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+  }
 }

@@ -28,15 +28,18 @@ const Description: React.FC<DescriptionProps> = ({
       {/* <Cards /> */}
       <div className={cx(styles.descriptionContent, "descriptionContent")}>
         <TextHighlighted
-          text="Aujourd'hui, la création d'un site internet est devenue
-              une étape cruciale pour toute entreprise désireuse de prospérer.
-              Un site web bien conçu peut apporter une vrai valeur
-              ajoutée à votre projet. C'est pourquoi, je vous propose mon
-              expertise afin de créer votre site web et devenir ainsi plus
-              visible sur Pont à mousson et au delà."
+          firstSentence="Un site web est essentiel pour prospérer"
+          secondSentence="Il peut apporter de la valeur ajoutée"
+          thirdSentence="Je vous propose de créer votre site web pour être visible"
+          fourthSentence="à Pont-à-Mousson et au-delà"
         />
         <AchievementsHomePage achievementsData={achievementsData} />
-        <TextHighlighted text="La création d'un site internet est un investissement essentiel pour votre entreprise. Pour garantir son succès, il est recommandé de faire appel à un professionnel qui peut créer un site responsive, bien référencé et esthétiquement attrayant. Cela vous permettra de maximiser votre visibilité en ligne. Ne sous-estimez pas le pouvoir d'un site web bien conçu pour stimuler votre entreprise à Pont-à-Mousson." />
+        <TextHighlighted
+          firstSentence="Un site web est essentiel pour votre entreprise"
+          secondSentence="Faites appel à un professionnel pour créer un site responsive,"
+          thirdSentence="Bien référencé et attrayant"
+          fourthSentence=" Maximiser votre visibilité à Pont-à-Mousson et au-delà"
+        />
         <ArticlesHomePage blogData={blogData} />
         <FAQ />
       </div>

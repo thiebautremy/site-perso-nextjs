@@ -30,7 +30,11 @@ export default function Document() {
           strategy="lazyOnload"
         />
         <meta property="og:type" content="website" />
-
+        <meta
+          name="twitter:image"
+          property="twitter:image"
+          content="https://webosaurus.fr/logo-vectorised.png"
+        />
         <meta name="robots" content="index" />
         <meta
           name="google-site-verification"

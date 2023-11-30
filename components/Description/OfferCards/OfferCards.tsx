@@ -1,4 +1,3 @@
-import AnimationLayout from "@/components/Layout/AnimationLayout";
 import styles from "./OfferCards.module.scss";
 import {
   FaCode,
@@ -7,6 +6,7 @@ import {
   FaArrowUpWideShort,
 } from "react-icons/fa6";
 import dynamic from "next/dynamic";
+import AnimationLayout from "@/components/Layout/AnimationLayout";
 
 const DynamicCards = dynamic(() => import("./OfferCard"));
 

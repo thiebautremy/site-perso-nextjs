@@ -1,12 +1,10 @@
 @use "../../styles/variables" as var;
 
 .footer {
-  color: var.$color-font--dark;
-  border-top: 1px solid var.$color-font--dark;
+  color: var.$color-yellow;
+  border-top: 1px solid var.$color-yellow;
   font-size: 1.1rem;
-  background-image: url("../../assets/background/texture.webp");
-  background-position: 0;
-  background-size: 1000px 1000px;
+  background-color: var.$color-font--dark;
 }
 
 .footerContainer {
@@ -33,14 +31,17 @@
       align-items: center;
 
       h5 {
-        margin: var.$gap-small 0 0 calc(var.$gap-small / 2);
+        margin: 1.2rem 0 0 calc(var.$gap-small / 2);
+
+        @media screen and (max-width: var.$screen-phone) {
+          display: none;
+        }
       }
     }
     .logoContainer {
       height: 3rem;
       position: relative;
       width: 8rem;
-      // margin: 0 auto;
     }
     .address {
       line-height: 2rem;
@@ -61,7 +62,7 @@
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        color: var.$color-blue;
+        color: var.$color-bg--light;
       }
     }
   }
@@ -70,11 +71,6 @@
     display: flex;
     flex-grow: 2;
     align-items: center;
-    // a {
-    //   height: fit-content;
-    //   padding: var.$gap-small;
-    //   margin-top: var.$gap-small;
-    // }
   }
 }
 .bottomContainer {

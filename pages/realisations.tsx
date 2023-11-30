@@ -10,7 +10,6 @@ type AchievementsProps = {
 };
 
 const Achievements: React.FC<AchievementsProps> = ({ achievementsData }) => {
-  console.log(achievementsData);
   return (
     <>
       <Head>
@@ -22,7 +21,7 @@ const Achievements: React.FC<AchievementsProps> = ({ achievementsData }) => {
         <meta
           name="og:image"
           property="og:image"
-          content="https://webosaurus.fr/logo.png"
+          content="https://webosaurus.fr/logo-vectorised.png"
         />
         <meta
           name="og:title"
@@ -66,6 +65,5 @@ export async function getServerSideProps() {
     }
   );
   const achievementsData = await resAchievements.json();
-  console.log(achievementsData.data);
   return { props: { achievementsData: achievementsData.data } };
 }

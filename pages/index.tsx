@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Description from "@/components/Description/Description";
 import MainLayout from "@/components/Layout/MainLayout";
 import Header from "@/components/Header/Header";
 import { Achievement, type Article } from "@/types/types";
@@ -7,6 +6,10 @@ import dynamic from "next/dynamic";
 
 const DynamicCards = dynamic(
   () => import("@/components/Description/OfferCards/OfferCards")
+);
+
+const DynamicDescription = dynamic(
+  () => import("@/components/Description/Description")
 );
 
 type HomeProps = {
@@ -25,7 +28,7 @@ const Home: React.FC<HomeProps> = ({ blogData, achievementsData }) => {
         <meta
           name="og:image"
           property="og:image"
-          content="https://webosaurus.fr/logo.png"
+          content="https://webosaurus.fr/logo-vectorised.png"
         />
         <meta
           name="og:title"
@@ -47,7 +50,7 @@ const Home: React.FC<HomeProps> = ({ blogData, achievementsData }) => {
       <MainLayout>
         <Header />
         <DynamicCards />
-        <Description
+        <DynamicDescription
           blogData={blogData.data}
           achievementsData={achievementsData.data}
         />

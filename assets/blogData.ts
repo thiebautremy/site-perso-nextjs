@@ -3,6 +3,7 @@ import links from "@/assets/blog/links.jpg";
 import money from "@/assets/blog/money.jpg";
 import gsc from "@/assets/blog/gsc.jpg";
 import webDesign from "@/assets/blog/web-design.jpg";
+import services from "@/assets/blog/services.jpg";
 
 const article1 = {
   title: "Comment créer un site internet à Pont-à-mousson ?",
@@ -36,6 +37,13 @@ const article5 = {
   catchPhrase:
     "Les dernières tendances du design web : minimalisme, gradients, micro-animations, dark mode, illustrations et glassmorphism.",
   text: "<p className='textHighlighted'>Le monde du design web évolue rapidement, et il est important de rester à jour avec les dernières tendances. Alors, accrochez-vous à votre clavier et préparez-vous à plonger dans l'univers du design web.</p><h2>Minimalisme</h2><p>Le minimalisme est comme un T-Rex dans le monde du design web. Il est puissant, efficace et laisse une impression durable. Un site web minimaliste a un impact fort avec peu de fioritures. Imaginez un T-Rex se promenant dans un musée, captivant l'attention de tous les visiteurs avec sa présence imposante et sa simplicité saisissante. C'est exactement l'effet que le minimalisme peut avoir sur votre site web. En simplifiant l'interface et en éliminant les éléments superflus, vous créez une expérience utilisateur percutante.</p><h2>Gradients</h2><p>Les gradients ajoutent de la couleur et de la texture à votre site web tout en créant une ambiance dynamique. Mais attention, n'en faites pas trop, sinon cela pourrait ressembler à un site internet du début des années 2000 ! Ils ajoutent de la profondeur et de l'intérêt visuel à votre design en mélangeant subtilement différentes couleurs. Mais rappelez-vous, tout est une question d'équilibre.</p><h2>Micro-animations</h2><p>Les micro-animations ajoutent une touche de mouvement subtil à votre site, captivant l'attention des utilisateurs. Ces petites animations peuvent rendre votre site web plus vivant et engageant, créer un impact visuel fort et attirer l'attention des visiteurs. Qu'il s'agisse d'un bouton qui change de couleur au survol ou d'un menu qui se déploie en douceur, ces petites animations ajoutent une dimension supplémentaire à l'expérience utilisateur. La aussi attention à ne pas tomber dans l’excès sinon votre création ressemblera plus à un sapin de Noël qu’à un site internet.</p><h2>Dark mode</h2><p>Le dark mode peut rendre votre site web plus attrayant pour les utilisateurs. Mais attention, si vous l'utilisez sans discernement, cela pourrait effrayer vos visiteurs ! Le dark mode peut donner à votre site web une allure moderne et élégante. Cependant, utilisez-le avec parcimonie et assurez-vous qu'il s'intègre harmonieusement à votre design global. Sinon, vos visiteurs pourraient être effrayés et fuir plus vite que vous ne le pensez. Attention également à l’accessibilité et aux différences de couleurs, en effet certaines personnes avec des troubles ophtalmiques pourraient ne pas discerner certains éléments.</p><h2>Illustrations</h2><p>Les illustrations ajoutent une touche ludique et personnalisée à votre site web. Alors, laissez libre cours à votre créativité et ajoutez des illustrations uniques pour rendre votre site web vraiment 'RAAAaaaaawr-some' (Traduction: GéniAAAAaaaal) ! Les illustrations sont un moyen fantastique d'ajouter une touche de personnalité et de créativité à votre site web. Qu'il s'agisse de dessins amusants, de personnages adorables ou de paysages fantastiques, les illustrations peuvent donner vie à votre site et le rendre véritablement unique.</p><h2>Glassmorphism</h2><p>Le glassmorphism est l’utilisation d’effets de transparence et de flou pour créer une apparence moderne et élégante ! Le glassmorphism ajoute de la profondeur et de la sophistication à votre design, tout en laissant transparaître subtilement les éléments en arrière-plan. Alors, n'ayez pas peur de vous laisser séduire par cette tendance et de donner à votre site web un look aussi rafraîchissant qu'un verre de limonade glacée un jour d'été ensoleillé !</p><p>N'oubliez pas que ces tendances peuvent évoluer aussi rapidement que les dinosaures ont disparu. Alors, restez curieux, expérimentez et adaptez-vous aux nouvelles tendances pour créer des expériences web incroyables !</p>",
+};
+
+const article6 = {
+  title: "Quels services propose une agence web à Pont-à-mousson ?",
+  catchPhrase:
+    "Les différents services que propose une agence web à Pont à mousson allant de la conception graphique jusqu'à l'hébergement du site internet.",
+  text: "<p className='textHighlighted'>Une agence web est une entreprise spécialisée dans la création et le développement de sites web. Elle propose une large gamme de services, allant de la conception graphique à la maintenance et à l'optimisation pour les moteurs de recherche (SEO).</p><h2>La conception graphique</h2><p>L'agence web crée le design du site web, en tenant compte de votre identité visuelle et de vos objectifs. Elle s'occupera de la charte graphique, du choix des couleurs, des polices de caractères, etc. Tant qu'à faire un site internet autant qu'il soit un minimum agréable afin d'éviter la fuite des visiteurs avec les yeux saignant dû à des choix de couleurs douteux...</p><h2>Le développement</h2><p>L'agence web développe le site web en utilisant les technologies appropriées, telles que HTML, CSS et JavaScript. Elle s'occupera de la structure du site, de l'intégration des contenus et des fonctionnalités. Si une agence web ne vous propose pas ce service vous êtes peut être rentré dans une boucherie.</p><h2>La programmation</h2><p>L'agence web programme les fonctionnalités spécifiques du site web, telles que le formulaire de contact ou le panier d'achat. Elle s'assurera que le site web soit fonctionnel et réponde à vos besoins.</p><h2>La maintenance</h2><p>L'agence web met à jour le site web et corrige les bugs (et il y'en à toujours !). Elle s'assurera que le site web soit toujours opérationnel, sécurisé et à jour.</p><h2>L'optimisation pour les moteurs de recherche (SEO)</h2><p>L'agence web optimise le site web pour qu'il soit mieux référencé par les moteurs de recherche. Elle s'assurera que le site web soit visible sur les résultats de recherche et que les internautes puissent le trouver facilement.<br></br> Vous êtes déjà allé sur la deuxième pas des résultats de recherche ? Si oui, vous faites partie de la majorité des utilisateurs donc autant que votre site soit le mieux classé possible.</p><h2>La conception et la gestion de campagnes de marketing digital</h2><p>L'agence web vous aidera à créer et à mettre en place des campagnes de marketing digital, telles que le référencement payant (SEA), le marketing sur les réseaux sociaux (SMO) et des services proposés par la petite entreprise locale du nom de Google.</p><h2>La création de contenus web</h2><p>L'agence web vous aidera à créer des contenus web, tels que des articles de blog, des pages de présentation ou des e-books.</p><h2>La formation à l'utilisation des outils web</h2><p>L'agence web vous formera à l'utilisation des outils web. <br></br>Cours n°1 : Gérer son contenu en ligne.<br></br>Cours n°2 : Hacker les serveurs du Pentagone !</p><br></br><p>Une agence web peut vous accompagner dans tous les aspects de la création et de la gestion de votre site web. En choisissant une agence web adaptée à vos besoins, vous pouvez vous assurer que votre site web soit un outil efficace pour votre entreprise.</p>",
 };
 
 const articlesData = [
@@ -108,6 +116,20 @@ const articlesData = [
     updatedAt: "2023-11-23T21:37:00+02:00",
     tag: "Quelles sont les dernières tendances en matière de design web ?",
     readingTime: 2,
+  },
+  {
+    id: 6,
+    slug: "services-agence-web-pont-a-mousson",
+    ...article6,
+    picture: {
+      src: services,
+      alt: "Différents services web",
+      title: "Différentes services web",
+    },
+    publishedAt: "2023-12-02T08:00:00+02:00",
+    updatedAt: "2023-12-02T08:00:00+02:00",
+    tag: "Quels services propose une agence web à Pont-à-mousson ?",
+    readingTime: 1,
   },
 ];
 

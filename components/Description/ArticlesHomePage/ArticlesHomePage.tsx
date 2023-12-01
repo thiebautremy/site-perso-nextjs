@@ -14,7 +14,9 @@ type ArticlesHomePageProps = {
 const ArticlesHomePage: React.FC<ArticlesHomePageProps> = ({ blogData }) => {
   const [blogDataState, setBlogDataState] = useState<Article[]>([]);
   useEffect(() => {
-    setBlogDataState(blogData.reverse().slice(0, 3));
+    setBlogDataState(
+      blogData.slice(blogData.length - 3, blogData.length).reverse()
+    );
   }, [blogData]);
   return (
     <div className={styles.articlesHomePage}>

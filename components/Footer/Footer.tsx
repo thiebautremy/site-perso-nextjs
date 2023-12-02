@@ -26,7 +26,7 @@ const Footer = () => {
                     style={{ objectFit: "contain" }}
                   />
                 </div>
-                <h5>- Création de site internet</h5>
+                <h6>- Création de site internet</h6>
               </div>
               <address className={styles.address}>
                 358 rue Pierre ADT <br></br> 54700 Pont-à-mousson

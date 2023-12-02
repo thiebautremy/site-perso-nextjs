@@ -30,8 +30,8 @@
       display: flex;
       align-items: center;
 
-      h5 {
-        margin: 1.2rem 0 0 calc(var.$gap-small / 2);
+      h6 {
+        margin: 1.4rem 0 0 calc(var.$gap-small / 2);
 
         @media screen and (max-width: var.$screen-phone) {
           display: none;

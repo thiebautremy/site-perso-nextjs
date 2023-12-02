@@ -35,8 +35,12 @@
         -webkit-backdrop-filter: blur(16px) saturate(181%);
         background-color: rgba(17, 25, 40, 0.81);
         border: 1px solid rgba(255, 255, 255, 0.125);
-        padding: 0 calc(var.$gap-small / 2);
+        padding: 0 var.$gap-small;
         margin-bottom: calc(var.$gap-small / 2);
+
+        @media screen and (max-width: var.$screen-phone) {
+          margin-bottom: var.$gap-medium;
+        }
 
         .title {
           font-weight: 800;
@@ -51,7 +55,11 @@
           color: white;
           font-weight: 800;
           font-size: 50px;
-          text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+          text-shadow: 0px 0px 10px rgba(197, 174, 174, 0.42);
+
+          @media screen and (max-width: var.$screen-phone) {
+            font-size: 40px;
+          }
         }
 
         .description {
@@ -112,6 +120,10 @@
           display: block;
           margin-bottom: var.$gap-small;
           font-size: 1.5rem;
+
+          @media screen and (max-width: var.$screen-phone) {
+            font-size: 1.2rem;
+          }
         }
         .TRexSkull {
           position: absolute;
@@ -119,6 +131,10 @@
           top: 0;
           font-size: 4rem;
           transition: all 0.3s ease-in-out;
+
+          @media screen and (max-width: var.$screen-phone) {
+            left: 0rem;
+          }
         }
       }
     }

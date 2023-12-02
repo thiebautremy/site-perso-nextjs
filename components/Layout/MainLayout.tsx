@@ -1,6 +1,5 @@
 import { ReactElement, JSXElementConstructor, ReactFragment } from "react";
 import { Signika } from "next/font/google";
-import styles from "./MainLayout.module.scss";
 import dynamic from "next/dynamic";
 
 const signika = Signika({
@@ -24,7 +23,7 @@ const MainLayout = (props: {
 }) => {
   return (
     <main className={signika.className}>
-      <div className={styles.mainContent}>{props.children}</div>
+      <div>{props.children}</div>
       <Footer />
     </main>
   );

@@ -1,5 +1,4 @@
 import styles from "./ArticlesHomePage.module.scss";
-import Container from "@/components/Container/Container";
 import { Article } from "@/types/types";
 import ArticleHomePage from "./ArticleHomePage";
 import Link from "next/link";

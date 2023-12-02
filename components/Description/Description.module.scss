@@ -59,7 +59,7 @@
       border-bottom-right-radius: var.$radius;
     }
     .descriptionModuleText {
-      background-color: var.$color-bg--light;
+      background-color: var.$color-white;
       letter-spacing: 0.05rem;
       padding: var.$gap-small var.$gap-small var.$gap-small
         calc(var.$gap-xlarge * 2);
@@ -91,7 +91,7 @@
     .descriptionModuleText {
       padding: var.$gap-small calc(var.$gap-xlarge * 2) var.$gap-small
         var.$gap-small;
-      background-color: var.$color-bg--light;
+      background-color: var.$color-white;
       color: var.$color-yellow;
       letter-spacing: 0.05rem;
 

@@ -121,21 +121,21 @@ const Tarifs = () => {
           <ul className={styles.formulasList}>
             <li className={styles.formula}>
               <GiTRexSkull className={styles.TRexSkull} />
-              <strong>La formule Starter</strong> est idéale pour les petites
+              <strong>La formule Starter</strong> Idéale pour les petites
               entreprises ou les particuliers qui souhaitent créer un site
               internet simple et efficace.
             </li>
             <li className={styles.formula}>
               <GiTRexSkull className={styles.TRexSkull} />
-              <strong>La formule Pro</strong> est recommandée pour les
-              entreprises ou les professionnels qui souhaitent créer un site
-              internet plus complet, plus performant et mieux référencé sur les
-              moteurs de recherche.
+              <strong>La formule Pro</strong> Recommandée pour les entreprises
+              ou les professionnels qui souhaitent créer un site internet plus
+              complet, plus performant et mieux référencé sur les moteurs de
+              recherche.
             </li>
             <li className={styles.formula}>
               <GiTRexSkull className={styles.TRexSkull} />
-              <strong>La formule Premium</strong> est la solution idéale pour
-              les entreprises ou les professionnels qui souhaitent créer un site
+              <strong>La formule Premium</strong> La solution idéale pour les
+              entreprises ou les professionnels qui souhaitent créer un site
               internet haut de gamme et sur mesure.
             </li>
           </ul>

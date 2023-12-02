@@ -45,17 +45,6 @@ h2 {
   padding-left: var.$gap-medium;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 0.2rem;
-    height: 1.5rem;
-    border-right: 0.2rem solid var.$color-blue;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-  }
-
   @media screen and (max-width: var.$screen-tablet-landscape) {
     text-indent: 0;
     padding-left: var.$gap-medium;
@@ -101,7 +90,7 @@ strong {
   border: none;
   background-color: var.$color-yellow;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 4px 8px rgba(var.$color-bg--light, 0.2);
+  box-shadow: 0 4px 8px rgba(var.$color-white, 0.2);
 
   &::after {
     content: " ";
@@ -110,7 +99,7 @@ strong {
     position: absolute;
     transition: all 0.4s ease-in-out;
     right: 0;
-    background: var.$color-bg--light;
+    background: var.$color-white;
   }
 
   &:hover::after {

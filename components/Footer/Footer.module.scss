@@ -62,7 +62,7 @@
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        color: var.$color-bg--light;
+        color: var.$color-white;
       }
     }
   }
@@ -82,7 +82,7 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      color: var.$color-blue;
+      color: var.$color-white;
     }
   }
 }

@@ -35,7 +35,14 @@ export default function Document() {
           property="twitter:image"
           content="https://webosaurus.fr/logo-vectorised.png"
         />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="webosaurus" />
         <meta name="robots" content="index" />
+        <meta name="twitter:title" content="Webosaurus - Agence web" />
+        <meta
+          name="twitter:description"
+          content="Agence web à Pont à Mousson. Création de site internet et référencement par Webosaurus pour un site vitrine de qualité à un prix abordable à Pont à mousson."
+        />
         <meta
           name="google-site-verification"
           content="lJglgwqCjmHc9T4STICOyemXyUOQvxUPNiq87P5pP1k"

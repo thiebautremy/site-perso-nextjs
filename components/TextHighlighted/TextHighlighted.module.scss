@@ -11,11 +11,11 @@
     display: block;
     height: 0.2rem;
     width: 50%;
+    right: 25%;
     background-color: var.$color-yellow;
   }
 
   &::before {
-    right: 10rem;
     top: 3rem;
 
     @media screen and (max-width: var.$screen-phone) {
@@ -24,7 +24,6 @@
   }
 
   &::after {
-    left: 10rem;
     bottom: 3rem;
 
     @media screen and (max-width: var.$screen-phone) {

@@ -12,6 +12,7 @@
   .title {
     -webkit-background-clip: text;
     background-clip: text;
+    padding: calc(var.$gap-small / 2) 0;
     color: transparent;
     background-size: 300% 300%;
     background-image: linear-gradient(

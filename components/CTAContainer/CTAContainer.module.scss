@@ -1,50 +1,87 @@
 @use "../../styles/variables" as var;
 
 .CTAContainer {
-  backdrop-filter: blur(16px) saturate(181%);
-  -webkit-backdrop-filter: blur(16px) saturate(181%);
-  background-color: rgba(17, 25, 40, 0.81);
+  // backdrop-filter: blur(16px) saturate(181%);
+  // -webkit-backdrop-filter: blur(16px) saturate(181%);
+  // background-color: rgba(17, 25, 40, 0.81);
   border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: var.$radius;
   color: var.$color-yellow;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: var.$gap-medium;
-  margin: var.$gap-medium 0;
+  margin: var.$gap-medium auto;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  width: 50%;
 
   @media screen and (max-width: var.$screen-phone) {
+    width: 90%;
     padding: var.$gap-small;
     margin-bottom: var.$gap-xlarge;
   }
 
-  .title {
-    font-size: 2rem;
-
-    @media screen and (max-width: var.$screen-phone) {
-      font-size: 1.5rem;
-    }
+  .imageContainer {
+    position: relative;
+    width: 17rem;
+    height: 12rem;
+    margin: auto;
+    padding: var.$gap-medium;
   }
+  .textContainer {
+    padding: var.$gap-medium;
+    border-top-right-radius: var.$radius;
+    border-bottom-right-radius: var.$radius;
+    backdrop-filter: blur(16px) saturate(181%);
+    -webkit-backdrop-filter: blur(16px) saturate(181%);
+    background-color: rgba(17, 25, 40, 0.81);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  .ctaBtn {
-    margin: var.$gap-small auto;
-    text-transform: uppercase;
-    padding: var.$gap-small var.$gap-medium;
-    border-radius: var.$radius;
-    color: var.$color-font--dark;
-    background-color: var.$color-yellow;
-    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25),
-      0px 0px 6px 0 rgba(255, 255, 255, 0.3);
-    transition: all 0.3s ease-in-out;
+    .title {
+      font-size: 2rem;
 
-    &:hover {
-      color: var.$color-yellow;
-      background-color: var.$color-font--dark;
-      box-shadow: 3px 3px 4px 0 rgba(255, 255, 255, 0.3),
-        0px 0px 6px 0 rgba(0, 0, 0, 0.25);
+      @media screen and (max-width: var.$screen-phone) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .benefits {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .benefit {
+        display: flex;
+        align-items: center;
+
+        svg {
+          color: var.$color-green;
+          margin-right: calc(var.$gap-small / 2);
+        }
+      }
+    }
+
+    .ctaBtn {
+      margin: var.$gap-small auto;
+      text-transform: uppercase;
+      padding: var.$gap-small var.$gap-medium;
+      border-radius: var.$radius;
+      color: var.$color-font--dark;
+      background-color: var.$color-yellow;
+      box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25),
+        0px 0px 6px 0 rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var.$color-yellow;
+        background-color: var.$color-font--dark;
+        box-shadow: 3px 3px 4px 0 rgba(255, 255, 255, 0.3),
+          0px 0px 6px 0 rgba(0, 0, 0, 0.25);
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ import styles from "./Footer.module.scss";
 import Image from "next/image";
 import logoLongVectorised from "@/assets/logo/logo-long-yellow.png";
 import AnimationLayout from "../Layout/AnimationLayout";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -40,6 +41,15 @@ const Footer = () => {
                   <span>Par mail en cliquant ici</span>
                 </a>
               </div>
+              <p>N° Siret: 98219082900019</p>
+              <a
+                href="https://www.linkedin.com/company/webosaurus-pont-a-mousson/"
+                className={styles.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
             </div>
             <div className={styles.middleContainer}>
               <ul>

@@ -30,13 +30,6 @@ export default function Document() {
           strategy="lazyOnload"
         />
         <meta property="og:type" content="website" />
-        <meta
-          name="og:image"
-          property="og:image"
-          content="https://webosaurus.fr/logo-long-yellow.png"
-        />
-        <meta property="og:image:width" content="988" />
-        <meta property="og:image:height" content="323" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="webosaurus" />
         <meta name="robots" content="index" />

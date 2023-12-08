@@ -29,9 +29,9 @@ const Page = ({ articleContent }: PageProps) => {
         <meta
           name="og:image"
           property="og:image"
-          content="https://webosaurus.fr/logo-long-yellow.png"
+          content="https://webosaurus.fr/yellow-short.png"
         />
-        <meta property="og:image:width" content="988" />
+        <meta property="og:image:width" content="240" />
         <meta property="og:image:height" content="323" />
         <meta
           name="og:title"

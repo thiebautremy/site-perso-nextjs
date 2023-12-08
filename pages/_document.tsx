@@ -35,7 +35,7 @@ export default function Document() {
           property="twitter:image"
           content="https://webosaurus.fr/logo-vectorised.png"
         />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="webosaurus" />
         <meta name="robots" content="index" />
         <meta name="twitter:title" content="Webosaurus - Agence web" />

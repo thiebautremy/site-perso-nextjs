@@ -29,7 +29,7 @@ export default function Document() {
           id="myScript"
           strategy="lazyOnload"
         />
-        <meta property="og:type" content="website" />
+
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="webosaurus" />
         <meta name="robots" content="index" />

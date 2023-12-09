@@ -37,6 +37,7 @@ const Home: React.FC<HomeProps> = ({ blogData, achievementsData }) => {
           property="og:title"
           content="Webosaurus - agence digitale spécialisée dans la conception et la création de site internet à Pont à mousson"
         />
+        <meta property="og:type" content="website" />
         <meta
           name="og:description"
           property="og:description"

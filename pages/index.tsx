@@ -28,14 +28,14 @@ const Home: React.FC<HomeProps> = ({ blogData, achievementsData }) => {
         <meta
           name="og:image"
           property="og:image"
-          content="https://webosaurus.fr/yellow-short.png"
+          content="https://webosaurus.fr/logo-long-yellow.png"
         />
-        <meta property="og:image:width" content="240" />
+        <meta property="og:image:width" content="988" />
         <meta property="og:image:height" content="323" />
         <meta
           name="og:title"
           property="og:title"
-          content="Webosaurus - agence digitale spécialisée dans la conception et la création de site internet à Pont à mousson"
+          content="Webosaurus - Agence digitale spécialisée dans la conception et la création de site internet à Pont à mousson"
         />
         <meta property="og:type" content="website" />
         <meta

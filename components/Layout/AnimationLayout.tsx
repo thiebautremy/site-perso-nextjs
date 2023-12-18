@@ -12,14 +12,17 @@ const AnimationLayout: React.FC<AnimationLayoutProps> = ({ children }) => {
     const width = window.innerWidth;
     setIsMobile(width < 768);
   }, []);
+  const boxVariant = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  };
 
   return isMobile ? (
     <div>{children}</div>
   ) : (
     <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
+      initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      whileTap={{ opacity: 0, scale: 0.8 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >

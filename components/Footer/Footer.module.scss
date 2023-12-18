@@ -83,9 +83,9 @@
 .bottomContainer {
   border-top: 1px solid var.$color-font--dark;
   padding: var.$gap-small;
-  text-align: center;
 
   a > p {
+    text-align: center;
     transition: all 0.2s ease-in-out;
 
     &:hover {

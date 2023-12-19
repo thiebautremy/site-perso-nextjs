@@ -34,6 +34,17 @@
 	</url>
 	<url>
 		<loc>
+			https://webosaurus.fr/tarifs
+		</loc>
+		<lastmod>
+			2023-12-19
+		</lastmod>
+		<priority>
+			1
+		</priority>
+	</url>
+	<url>
+		<loc>
 			https://webosaurus.fr/blog
 		</loc>
 		<lastmod>

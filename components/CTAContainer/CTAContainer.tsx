@@ -17,13 +17,13 @@ const CTAContainer = () => {
             className={styles.image}
             loading="lazy"
             fill
-            sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw"
+            sizes="(max-width: 768px) 15vw, (max-width: 1200px) 15vw"
             style={{ objectFit: "contain" }}
           />
         </div>
         <div className={styles.textContainer}>
           <h3 className={styles.title}>Vous avez un projet ?</h3>
-          <p>Alors contactez moi et parlons-en.</p>
+          <p>Contactez moi et parlons-en.</p>
           <div className={styles.benefits}>
             <span className={styles.benefit}>
               <FaCheckCircle />

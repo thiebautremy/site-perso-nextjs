@@ -1,9 +1,6 @@
-@use "../../styles/variables" as var;
+@use "@/styles/variables" as var;
 
 .CTAContainer {
-  // backdrop-filter: blur(16px) saturate(181%);
-  // -webkit-backdrop-filter: blur(16px) saturate(181%);
-  // background-color: rgba(17, 25, 40, 0.81);
   border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: var.$radius;
   color: var.$color-yellow;
@@ -13,20 +10,23 @@
   margin: var.$gap-medium auto;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  width: 50%;
 
-  @media screen and (max-width: var.$screen-phone) {
-    width: 90%;
-    padding: var.$gap-small;
+  @media screen and (max-width: var.$screen-desktop) {
     margin-bottom: var.$gap-xlarge;
+    flex-direction: column;
   }
 
   .imageContainer {
     position: relative;
-    width: 17rem;
-    height: 12rem;
     margin: auto;
     padding: var.$gap-medium;
+    width: 16rem;
+    height: 11rem;
+
+    @media screen and (max-width: var.$screen-desktop) {
+      width: 11.3rem;
+      height: 8rem;
+    }
   }
   .textContainer {
     padding: var.$gap-medium;
@@ -41,10 +41,17 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: var.$screen-desktop) {
+      width: 100%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: var.$radius;
+      border-bottom-left-radius: var.$radius;
+    }
+
     .title {
       font-size: 2rem;
 
-      @media screen and (max-width: var.$screen-phone) {
+      @media screen and (max-width: var.$screen-desktop) {
         font-size: 1.5rem;
       }
     }
